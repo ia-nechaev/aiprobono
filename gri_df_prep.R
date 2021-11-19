@@ -39,7 +39,7 @@ print(str_c("Saving to ", path_to_save))
 # saving reports in a company name folder 
 
 # making a test list of urls and paths
-ran_gen_id <- floor(runif(3, min=1, max=3443))
+ran_gen_id <- floor(runif(30, min=1, max=3443))
 #ran_gen_id <- c(ran_gen_id,3168)
 # temp_url_list <- url_list %>% slice(ran_gen_id) #dplyr solution
 temp_url_list <- url_list[ran_gen_id,]
@@ -62,7 +62,7 @@ temp_url_list %<>% mutate(
     ),
     " ", "_") %>% str_c(".pdf"))
 
-temp_url_list %<>% mutate(request_status="")
+temp_url_list %<>% mutate(request_status="", type_dld="", url_dld="") 
 setwd(path_to_save)
 temp_url_list$folder[1]
 
@@ -96,7 +96,7 @@ for(i in 1:nrow(temp_url_list)){
 
 #download all reports var 2
 setwd(path_to_save)
-h <-new_handle(failonerror = F)
+h <-new_handle(failonerror = T)
 i<-1
 
 while(i<=nrow(temp_url_list)){
@@ -110,12 +110,16 @@ while(i<=nrow(temp_url_list)){
                       handle = h
             )
       
-      cat(req$status_code, "\n")
+      cat(req$status_code," ", req$type,  "\n")
       
       temp_url_list$request_status[i] <- req$status_code
+      temp_url_list$url_dld[i]        <- req$url
+      temp_url_list$type_dld[i]       <- req$type
+      
     },
     error = function(e){ 
-      temp_url_list$request_status[i] <- e
+      temp_url_list$request_status[i] <- "Error dw"
+      cat("Error: ", temp_url_list$Organization[i], req$status_code," ", req$type,  "\n")
       return(NULL)
     },
     warning = function(w){
@@ -133,6 +137,7 @@ while(i<=nrow(temp_url_list)){
 
 
 
+write.csv(temp_url_list, "GriTempUrlList2.csv")
 
 
 
@@ -147,6 +152,12 @@ dir<-str_c(temp_url_list$folder[1],
       temp_url_list$filename[1],
       sep = "/")
 
+curl_fetch_disk("https://ww3.viabcp.com/Connect/ViaBCP2019/Relaciones%20con%20Inversionistas/Reporte%20de%20Sostenibilidad%20BCP%202018%20Final.pdf",
+                str_c(temp_url_list$folder[4],
+                      temp_url_list$Publication_Year[4],
+                      temp_url_list$filename[4], sep = "/"),
+                handle = h  
+)
 
 #temp_url_list %<>% mutate(Organization) %>% 
 #  str_remove(rem_punct) %>% 
@@ -157,5 +168,22 @@ dir<-str_c(temp_url_list$folder[1],
 
 # Save contents in separate csv file or might be just tabularize it?
 
+out <- tryCatch(
+  expr = {
 
+    
+  },
+  error = function(e){ 
+
+    return(NULL)
+  },
+  warning = function(w){
+    # (Optional)
+    # Do this if an warning is caught...
+  },
+  finally = {
+    # (Optional)
+    # Do this at the end before quitting the tryCatch structure...
+  }
+)
 
