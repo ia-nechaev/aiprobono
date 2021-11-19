@@ -18,17 +18,17 @@ setwd("../")
 
 gri_list_df <- read.csv("reports/GriTempUrlList2.csv", stringsAsFactors=FALSE)
 saving_dir <- "reports"
-gri_list_df<-gri_list_df %>% mutate(fullpath=str_c(saving_dir, gri_list_df$folder,gri_list_df$Publication_Year,gri_list_df$filename, sep = "/"))
+gri_list_df<-gri_list_df %>% mutate(fullpath=str_c(saving_dir, gri_list_df$folder,gri_list_df$Publication_Year,gri_list_df$filename, sep = "/") )
 
 
 reg_pn <- regex("[[:alpha:]]")
-gri_list_df<-gri_list_df %>% filter(gri_list_df$type_dld=="application/pdf", !str_detect(gri_list_df$pdf_contents_page,reg_pn), !gri_list_df$pdf_contents_page=="")
-
+gri_list_df %<>% filter(gri_list_df$type_dld=="application/pdf", !str_detect(gri_list_df$pdf_contents_page,reg_pn), !gri_list_df$pdf_contents_page=="")
+gri_list_df %<>% mutate(pdf_contents_page=as.numeric(pdf_contents_page))
 
 extract_one_cpage <- function(i,j){
   contents_page <- extract_tables(
     file   = gri_list_df$fullpath[i],
-    pages = as.numeric(gri_list_df$pdf_contents_page[i])+j,
+    pages = gri_list_df$pdf_contents_page[i]+j,
     method = "decide", 
     output = "data.frame")
   return(contents_page)
@@ -41,26 +41,24 @@ all_cp <-c()
 for(i in 1:nrow(gri_list_df)){
   cp <-c()
   print(gri_list_df$Organization[i])
-  
   for(j in 0:4){
     out <- tryCatch(
       expr = {
         cp <- c(cp,extract_one_cpage(i,j))
-        print("page #", gri_list_df$pdf_contents_page[i], "+", j, "OK")
+        print(cat("page #", gri_list_df$pdf_contents_page[i]+j, "OK "))
       },
       error = function(e){ 
-        print("page #")
-        print(gri_list_df$pdf_contents_page[i])
+        print(cat("Fail: ",gri_list_df$pdf_contents_page[i]+j))
         return(NULL)
       }
     )
   }
   
   all_cp <-c(all_cp,cp)
-  print("Processed")
+  print(cat(gri_list_df$Organization[i], "processed "))
 }
   
 #_____________________
 
-gri_list_df$pdf_contents_page[1]
+gri_list_df$pdf_contents_page[1]+22
 cp<-bind_rows(extract_one_cpage(1,0))
