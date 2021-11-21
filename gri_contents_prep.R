@@ -8,13 +8,13 @@ library(stringr)
 library(rJava)
 library(tabulizer)
 library(tidyverse)
+library(pdftools)
+library(jsonlite)
 
 getwd()
 setwd("../")
 
-# Try to get contents table
-
-
+# Try to get the table with GRI codes and the page numbers
 
 gri_list_df <- read.csv("reports/GriTempUrlList2.csv", stringsAsFactors=FALSE)
 saving_dir <- "reports"
@@ -59,6 +59,38 @@ for(i in 1:nrow(gri_list_df)){
 }
   
 #_____________________
+
+# proceccing GRI standard
+getwd()
+gs_toc <- pdf_toc("reports/standards.pdf")
+gs_toc_j <- toJSON(gs_toc, auto_unbox = T, pretty = T)
+
+
+gs_toc_jr <- fromJSON(gs_toc_j,simplifyDataFrame=T,flatten = T)
+
+gs_toc_jr$children$title[[6]] %>% glimpse()
+
+str(gs_toc_jr[[2]][[2]][[5]], max.level=1, list.len=10)
+
+g400<-gs_toc_jr[[2]][[2]][[6]]
+
+ug4<-unlist(g400)
+
+gri_code <- regex("(4[0-1][0-9])(?:-[0-9])?", ignore_case = FALSE)
+
+ug4f <- ug4[str_detect(ug4,gri_code)]
+
+rem_word <- regex("(\w*).(4[0-1][0-9])(?:-[0-9])?..", ignore_case = FALSE)
+
+
+mycolnames <-c("code", "name")
+ug4df <- data.frame(str_extract(ug4f,gri_code), ug4f)
+names(ug4df) <- mycolnames
+ug4df$name %<>% str_remove_all(rem_word)
+
+ug4df <-  ug4df[-c(1:19),]
+getwd()
+write.csv(ug4df, "reports/gri_codes.csv")
 
 gri_list_df$pdf_contents_page[1]+22
 cp<-bind_rows(extract_one_cpage(1,0))

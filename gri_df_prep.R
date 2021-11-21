@@ -25,11 +25,18 @@ gri_rep_df %>% filter(!Report_PDF_Address=="") %>% count
 
 # make the list of pdf links to download
 url_list <- gri_rep_df %>% filter(!Report_PDF_Address=="")
+
+# make the html report list
+rem_pdf <- regex("(\\.pdf)", ignore_case = TRUE )
+hurl_list <- gri_rep_df %>% filter(!Report_HTML_Address=="", !str_detect(Report_HTML_Address,rem_pdf))
+hurl_list %<>% mutate(Report_Title=iconv(Report_Title,from="UTF-8", to="ASCII//TRANSLIT"))
+
 # remove p. page pages in pdf contents column
 rem_letters <- regex("(?:p\\. |page.? |p )", ignore_case = TRUE )
 
 url_list <- url_list %>% mutate(pdf_contents_page=str_remove(Content_index_location_PDF, rem_letters))
 url_list <-url_list %>% mutate(Report_Title=iconv(Report_Title,from="UTF-8", to="ASCII//TRANSLIT"))
+
 
 getwd()
 saving_dir <- "reports/"
@@ -138,6 +145,8 @@ while(i<=nrow(temp_url_list)){
 
 
 write.csv(temp_url_list, "GriTempUrlList2.csv")
+
+write.csv(hurl_list, "GriUrlList.csv")
 
 
 
