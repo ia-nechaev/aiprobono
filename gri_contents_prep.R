@@ -37,7 +37,7 @@ extract_one_cpage <- function(i,j){
 
 
 extract_gri_indexes <- function (){  
-  all_cp <-c()
+  gic <-c()
   
   # pages_nl <- list(pn=c(),pc=)
   
@@ -53,27 +53,34 @@ extract_gri_indexes <- function (){
       
       out <- tryCatch(
         expr = {
-          
-          
+
           pagecont <- extract_one_cpage(i,j)
-          cp       <- c(cp, compname, list(pagenum, list(pagecont)))
+          cp       <- c(cp, list(pagecont))
           
-          print(cat("page #", pagenum, "OK "))
+          names(cp)[j+1] <- pagenum
+          
+          print(paste("page #", pagenum, "OK "))
           
         },
         error = function(e){ 
-          cp       <- c(cp, compname, list(pagenum, list("Fail to read due to error")))
           
-          print(cat("Fail: ", pagenum))
+          cp       <- c(cp, list("Fail to read due to error",e))
+          
+          #names(cp)[j+1] <- pagenum
+          
+          print(paste("page #", pagenum, "FAIL ", e))
           return(NULL)
         }
       )
     }
     
-    all_cp <-c(all_cp, compname, cp)
+    # gic <-c(gic, compname=list(cp))
+ 
+    gic <-c(gic, list(cp))
+    names(gic)[i] <- compname
     print(cat(compname, "processed "))
   }
-  return(all_cp)
+  return(gic)
 }
 
 
@@ -83,7 +90,10 @@ temp_indexes<-extract_gri_indexes()
 
 
 
-
+get_page_numbers <- function(){
+  
+  
+}
 
 
 
@@ -137,7 +147,12 @@ nested_list <- list(l1 = list(1:5, 5:1 ),
                     l2 = list(100:105, 105:100 ),
                     l3 = list(200:205, 205:200 ))
 nested_list$l1 <- c(nested_list$l1, list(10:20))
+mynames <- c("com1", "com2", "com3")
 
+setNames(nested_list,mynames)
+names(nested_list) <- mynames
+
+nested_list$com1
 
 gic<-c()
 for(i in 1:nrow(gri_list_df)){
@@ -149,11 +164,13 @@ for(i in 1:nrow(gri_list_df)){
   for(j in 0:4){
     
     pagenum  <- gri_list_df$pdf_contents_page[i]+j
-    cp       <- c(cp, list(pagenum,list("pagecont")))
+    cp       <- c(cp, list("pagecont"))
+    names(cp)[j+1] <- pagenum
         
   }
   
   gic <-c(gic, compname=list(cp))
+  names(gic)[i] <- compname
   
 }
 
