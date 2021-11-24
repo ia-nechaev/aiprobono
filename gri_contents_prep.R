@@ -10,6 +10,7 @@ library(tabulizer)
 library(tidyverse)
 library(pdftools)
 library(jsonlite)
+library(rlang)
 
 getwd()
 setwd("../")
@@ -35,32 +36,63 @@ extract_one_cpage <- function(i,j){
 }
 
 
-cp <-c()
-all_cp <-c()
-
-for(i in 1:nrow(gri_list_df)){
-  cp <-c()
-  print(gri_list_df$Organization[i])
-  for(j in 0:4){
-    out <- tryCatch(
-      expr = {
-        cp <- c(cp,extract_one_cpage(i,j))
-        print(cat("page #", gri_list_df$pdf_contents_page[i]+j, "OK "))
-      },
-      error = function(e){ 
-        print(cat("Fail: ",gri_list_df$pdf_contents_page[i]+j))
-        return(NULL)
-      }
-    )
+extract_gri_indexes <- function (){  
+  all_cp <-c()
+  
+  # pages_nl <- list(pn=c(),pc=)
+  
+  for(i in 1:nrow(gri_list_df)){
+    cp <-c()
+    
+    compname <- gri_list_df$Organization[i]
+    print(compname)
+    
+    for(j in 0:4){
+      
+      pagenum  <- gri_list_df$pdf_contents_page[i]+j
+      
+      out <- tryCatch(
+        expr = {
+          
+          
+          pagecont <- extract_one_cpage(i,j)
+          cp       <- c(cp, compname, list(pagenum, list(pagecont)))
+          
+          print(cat("page #", pagenum, "OK "))
+          
+        },
+        error = function(e){ 
+          cp       <- c(cp, compname, list(pagenum, list("Fail to read due to error")))
+          
+          print(cat("Fail: ", pagenum))
+          return(NULL)
+        }
+      )
+    }
+    
+    all_cp <-c(all_cp, compname, cp)
+    print(cat(compname, "processed "))
   }
-  
-  all_cp <-c(all_cp,cp)
-  print(cat(gri_list_df$Organization[i], "processed "))
+  return(all_cp)
 }
-  
+
+
+
+temp_indexes<-extract_gri_indexes()
+
+
+
+
+
+
+
+
+
+
 #_____________________
 
-# proceccing GRI standard
+# prossessing GRI standard
+
 getwd()
 gs_toc <- pdf_toc("reports/standards.pdf")
 gs_toc_j <- toJSON(gs_toc, auto_unbox = T, pretty = T)
@@ -92,5 +124,43 @@ ug4df <-  ug4df[-c(1:19),]
 getwd()
 write.csv(ug4df, "reports/gri_codes.csv")
 
+gs_list <-ug4df
+
 gri_list_df$pdf_contents_page[1]+22
 cp<-bind_rows(extract_one_cpage(1,0))
+
+
+
+### nested list test
+
+nested_list <- list(l1 = list(1:5, 5:1 ),
+                    l2 = list(100:105, 105:100 ),
+                    l3 = list(200:205, 205:200 ))
+nested_list$l1 <- c(nested_list$l1, list(10:20))
+
+
+gic<-c()
+for(i in 1:nrow(gri_list_df)){
+  cp <-c()
+  
+  compname <- gri_list_df$Organization[i]
+  # print(compname)
+  
+  for(j in 0:4){
+    
+    pagenum  <- gri_list_df$pdf_contents_page[i]+j
+    cp       <- c(cp, list(pagenum,list("pagecont")))
+        
+  }
+  
+  gic <-c(gic, compname=list(cp))
+  
+}
+
+deparse(substitute(compname))
+compname
+as.name(compname)
+
+substitute(eval(pagenum)) 
+quote(pagenum) <- list("o here is","pagecont")
+pagenum
