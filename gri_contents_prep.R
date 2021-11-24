@@ -107,12 +107,12 @@ getwd()
 gs_toc <- pdf_toc("reports/standards.pdf")
 gs_toc_j <- toJSON(gs_toc, auto_unbox = T, pretty = T)
 
-
+gs_toc_csv <- read.csv("reports/gri_codes.csv")
 gs_toc_jr <- fromJSON(gs_toc_j,simplifyDataFrame=T,flatten = T)
 
-gs_toc_jr$children$title[[6]] %>% glimpse()
+# gs_toc_jr$children$title[[6]] %>% glimpse()
 
-str(gs_toc_jr[[2]][[2]][[5]], max.level=1, list.len=10)
+# str(gs_toc_jr[[2]][[2]][[5]], max.level=1, list.len=10)
 
 g400<-gs_toc_jr[[2]][[2]][[6]]
 
@@ -181,3 +181,82 @@ as.name(compname)
 substitute(eval(pagenum)) 
 quote(pagenum) <- list("o here is","pagecont")
 pagenum
+
+# testing the page search function
+
+temp_index_table <- temp_indexes[["Euroclear"]][["79"]][[1]]
+
+pn <- parse_number(temp_index_table[4,3])
+pn <- temp_index_table[4,3]
+
+# extracting all the numbers from a string
+numextract <- function(string){
+  num_regex <-regex("\\d{1,3}")
+  #range_case <- regex("\\d{1,3}-\\d{1,3}")
+  
+  return(unlist(regmatches(string,gregexpr(num_regex,string))))
+}
+
+pn1<-numextract(pn)
+pn1
+
+ temp_index_table[1,]
+
+#we assume gri codes are in the first column
+
+filtered_index <- temp_index_table[str_detect(temp_index_table[,1],gri_code),]
+
+str_detect(temp_index_table[,1],gri_code)
+
+choose_column <- function(table_tp){
+  num_regex <-regex("\\d{1,3}")
+  for(i in 2:ncol(table_tp)){
+    # get vector of strings from the column
+    # process the numbers
+    # figure out whether they are integer and lowe than 500 and might be find out the distributions
+    x<-sum(str_detect(table_tp[,i],num_regex),TRUE)
+    z<-nrow(table_tp)
+    #print(x)
+    if((!is.na(x))&&(x/z>0.5)){
+      
+      #for(j in 1:z){
+        
+      #  vector_ofallnumbers<-c(vector_ofallnumbers, numextract(table_tp[z,i]))
+        
+      #}
+      
+      # check whether they are integers
+      # 
+      # col_probability <- c()  
+      
+      return(i)
+    }
+  }
+}
+
+
+num_regex <-regex("\\d{1,3}")
+ncol(temp_index_table)
+tstr<-str_extract_all(temp_index_table[,3],num_regex)
+# if (sum(str_detect(filtered_index[,3],num_regex),TRUE)/nrow(filtered_index)>0.5) print("yes")
+
+k<-choose_column(filtered_index)
+
+doc_gri_index <-c()
+
+combine_codenpage <- function(table_tp){
+  for(j in 1:nrow(table_tp)){
+    
+    doc_gri_index <- c(doc_gri_index, list(numextract(table_tp[j,k])))
+    names(doc_gri_index)[j] <- str_extract(table_tp[j,1], gri_code)
+    # names(doc_gri_index)[j] <- table_tp[j,1]
+    
+  }
+  
+  return(doc_gri_index)
+  
+}
+
+temp_indexes[["Euroclear"]] <- c(temp_indexes[["Euroclear"]],list(gri_index=combine_codenpage(filtered_index)))
+
+
