@@ -1,0 +1,1732 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+<head>
+
+<link rel="preload" as="font" href="/-/media/themes/wolterskluwer/oneweb/www/oneweb/fonts/wk-icons/wk-icons-open.woff" crossorigin />
+<link rel="preload" as="font" href="/-/media/themes/wolterskluwer/oneweb/www/oneweb/fonts/wk-icons/wk-icons-filled.woff" crossorigin />
+
+<script defer src="/-/media/themes/wolterskluwer/oneweb/www/oneweb/scripts/optimized-min.js?rev=c2cdd59dc4c947ababb208798e4972f4?t=20211108T150902Z" type="c77e45d08938488effa5055a-text/javascript"></script>
+
+<link rel="stylesheet" as="style" href="/-/media/feature/experience accelerator/bootstrap 4/bootstrap 4/styles/optimized-min.css?rev=f5110923419c4350a1f002fd8b3e0aec?t=20201210T123146Z" rel="stylesheet" /><link rel="stylesheet" as="style" href="/-/media/base themes/custom oneweb theme/styles/optimized-min.css?rev=945cd85a790449789f941439eb4addad?t=20200930T144944Z" rel="stylesheet" /><link rel="stylesheet" as="style" href="/-/media/themes/wolterskluwer/oneweb/www/oneweb/styles/optimized-min.css?rev=acaddcd7e1644a739e23fcb52634cf41?t=20211108T150814Z" rel="stylesheet" />
+<title>Wolters Kluwer Investors | Wolters Kluwer</title>
+<link href="/-/media/project/wolterskluwer/oneweb/www/images/logo/favicon.png?rev=939e1a5cbc2d4c8ca7d3dfda28250865" rel="shortcut icon" />
+<meta content="Investors" property="og:description" /><meta content="https://production-euw.wolterskluwer.com/-/media/feature/wolterskluwer/oneweb/cards/fallback image/wklogo_defaultcardimage.jpg?rev=9516134538da4cb6b7b55e6b9742fa00" property="og:image" /><meta content="Investors" property="og:title" /><meta content="https://www.wolterskluwer.com/en/investors" property="og:url" />
+<meta content="Information and tools for investors including share and dividend information, share price analysis, and latest investors news. " name="description" /><meta http-equiv="content-language" content="en" />
+<meta content="https://production-euw.wolterskluwer.com/-/media/feature/wolterskluwer/oneweb/cards/fallback image/wklogo_defaultcardimage.jpg?rev=9516134538da4cb6b7b55e6b9742fa00" property="twitter:image" /><meta content="Investors" property="twitter:description" /><meta content="Investors" property="twitter:title" /><meta content="summary_large_image" property="twitter:card" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+<script type="c77e45d08938488effa5055a-text/javascript">
+    var wkPageData = window.wkPageData || {}; 
+    wkPageData.page = {
+          pageInfo:
+          {
+                  pageID: "{0C5D247F-6912-4C4E-A69F-321C4C1793F8}",
+                  pageTitle: "Investors",
+                  pageCreationDate: "2021-11-03",
+                  contentUpdateDate: "2021-11-03",
+                  daysSincelLastEdit: "16"
+          },
+
+          category:
+          {
+                 businessUnit: "IR" ,
+                 division: "IR" ,
+                 siteSection: "Investors" 
+          },
+
+         attributes:
+         {
+                 pageTemplate: "No Nav Page",
+                 pageLanguage: "en",
+                 areaOfInterest: "Investor Relations",
+                 umbrellaTopics: "Financial related news",
+                 geoAvailability: "Global"
+         }
+    };
+</script> <link rel="alternate" hreflang="en" href="https://www.wolterskluwer.com/en/investors" />
+<link rel="alternate" hreflang="x-default" href="https://www.wolterskluwer.com/en/investors" />
+<link rel="canonical" href="https://www.wolterskluwer.com/en/investors" />
+<script data-xp-off type="c77e45d08938488effa5055a-text/javascript">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-53VFLLN');</script>
+<script data-xp-off src="https://cdn.userdatatrust.com/H23515905S.js" type="c77e45d08938488effa5055a-text/javascript"></script>
+<link rel="preconnect" href="https://www.gstatic.com" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" />
+<link rel="preconnect" href="https://www.google-analytics.com" />
+<link rel="preconnect" href="https://ssl.google-analytics.com" />
+<link rel="preconnect" href="https://www.googletagmanager.com" />
+<div class="row">
+</div>
+</head>
+<body class="default-device bodyclass" data-grecaptcha="6Lf6x-MUAAAAAATFy_Zy7Y9FezDcp0kmycrG1taQ">
+<noscript data-xp-off><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-53VFLLN" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script data-xp-off type="c77e45d08938488effa5055a-text/javascript">
+            // Get cookie function to check existing cookie name
+            var getCookie = function(name) {
+                var value = "; " + document.cookie;
+                var parts = value.split("; " + name + "=");
+                if (parts.length == 2) return parts.pop().split(";").shift();
+            };
+        	
+          var urlComposer = function(lang) {
+                var u = window.location;
+                var path = u.pathname.replace(/(\/[a-z]{2}[-][a-zA-Z]{2})|(\/en$)|(en\/)/g, '');
+                path = path.substr(0, 1) !== "/" ? "/"+path : path;
+               return u.origin+lang+path;
+            }
+            
+        
+            function udtCookieboxClosed() {
+                if (typeof udt !== "undefined") {
+                    var consent = udt.Choices;
+                    // Check for cookie presence
+                    var cookieVal = getCookie('UserDataTrustConsent');        
+                    
+                }
+            }
+    </script>
+
+<div id="wrapper">
+
+<header>
+<div id="header" class="container-fluid">
+<div class="row">
+<div class="row"> <div id="alert-bar" class="alert-wrapper hide">
+<div>
+<div class="row"></div>
+</div>
+<div class="alert-bar language-alert false" role="alert">
+<div class="alert-bar-wrapper">
+<img alt="alert-icon" src="https://assets.contenthub.wolterskluwer.com/api/public/content/f3d6188f99544aa9b6ed8cd95f76ffc4" />
+<div class="alert-title">
+Only limited material is available in the selected language.&nbsp;<a href="/en">All content is available on the global site.</a>
+</div>
+<button title="Close Button" class="close-alert" data-action="language">
+<span class="sr-only">Close</span>
+</button>
+</div>
+</div>
+<div>
+<div class="row"></div>
+</div>
+</div>
+<div class="component row-splitter">
+<div class="container-fluid">
+<div>
+<div class="row"> <div class="ow-corp-hat">
+<nav class="ow-corp-hat-nav" aria-labelledby="corporate-nav">
+<h5 id="corporate-nav" class="sr-only">Wolters Kluwer Navigation</h5>
+<div class="ow-corp-hat-background">
+<div class="ow-corp-hat-header">
+<button type="button" aria-controls="ow-hat-drawer-2" class="ow-corp-button-toggle ow-corp-hat-button">
+<span class="ow-button-text">About Wolters Kluwer</span>
+<span aria-hidden="true" class="ow-button-icon wk-icon-chevron-down"></span>
+</button>
+<ul class="ow-corp-hat-quick-links ow-header-links">
+<li class="ow-corp-hat-quick-link-list">
+<a href="/en/news/one-wolters-kluwer-one-global-website" target="" class="ow-corp-hat-quick-link">Welcome to the New WoltersKluwer.com</a>
+</li>
+<li class="ow-corp-hat-quick-link-list">
+<a href="/en/solutions" target="" class="ow-corp-hat-quick-link">Solutions Directory</a>
+</li>
+<li class="ow-corp-hat-quick-link-list">
+<a href="https://careers.wolterskluwer.com/en" target="_blank" class="ow-corp-hat-quick-link">Careers</a>
+</li>
+<li class="ow-corp-hat-quick-link-list">
+<a href="/en/investors" target="" class="ow-corp-hat-quick-link">Investors</a>
+</li>
+<li class="ow-corp-hat-quick-link-list">
+<button type="button" aria-label="Select language" class="ow-corp-language-button">
+<span class="wk-icon-globe"></span>
+<span class="wk-tag-text">Select Language</span>
+</button>
+</li>
+</ul>
+</div>
+</div>
+<div id="ow-hat-drawer-2" class="ow-corp-hat-drawer" aria-expanded="true">
+<button aria-label="Close drawer." type="button" aria-controls="ow-hat-drawer-2" tabindex="0" class="ow-corp-hat-drawer-close ow-corp-hat-button"><span aria-hidden="true" class="wk-icon-close"></span></button>
+<div id="ow-hat-drawer-container-2" class="ow-corp-hat-drawer-container">
+<div class="ow-corp-hat-drawer-col">
+<p class="ow-corp-hat-heading-about">
+About Wolters Kluwer
+</p>
+<p class="ow-corp-hat-text">
+Wolters Kluwer is a global provider of professional information, software solutions, and services for clinicians, nurses, accountants, lawyers, and tax, finance, audit, risk, compliance, and regulatory sectors.
+</p>
+</div>
+<div class="ow-divider"></div>
+<div class="ow-corp-hat-drawer-col">
+<h6 class="ow-corp-hat-heading">
+<span class="ow-corp-hat-heading-text">About Us</span>
+<span aria-hidden="true" class="wk-icon-chevron-down"></span>
+</h6>
+<ul class="ow-corp-hat-list">
+<li class="ow-corp-hat-list-item">
+<a href="/en/about-us" target="" tabindex="0" class="ow-corp-hat-list-link">About Wolters Kluwer</a>
+</li>
+<li class="ow-corp-hat-list-item">
+<a href="/en/about-us/strategy" target="" tabindex="0" class="ow-corp-hat-list-link">Strategy</a>
+</li>
+<li class="ow-corp-hat-list-item">
+<a href="/en/about-us/organization" target="" tabindex="0" class="ow-corp-hat-list-link">Our Organization</a>
+</li>
+<li class="ow-corp-hat-list-item">
+<a href="/en/about-us/management" target="" tabindex="0" class="ow-corp-hat-list-link">Management</a>
+</li>
+<li class="ow-corp-hat-list-item">
+<a href="/en/about-us/supervisory-board" target="" tabindex="0" class="ow-corp-hat-list-link">Supervisory Board</a>
+</li>
+<li class="ow-corp-hat-list-item">
+<a href="/en/about-us/value-creation" target="" tabindex="0" class="ow-corp-hat-list-link">Value Creation</a>
+</li>
+<li class="ow-corp-hat-list-item">
+<a href="/en/news" target="" tabindex="0" class="ow-corp-hat-list-link">News &amp; Press Releases</a>
+</li>
+<li class="ow-corp-hat-list-item">
+<a href="/en/events" target="" tabindex="0" class="ow-corp-hat-list-link">Events</a>
+</li>
+</ul>
+</div>
+<div class="ow-corp-hat-drawer-col">
+<h6 class="ow-corp-hat-heading">
+<span class="ow-corp-hat-heading-text">Expert Insights</span>
+<span aria-hidden="true" class="wk-icon-chevron-down"></span>
+</h6>
+<ul class="ow-corp-hat-list">
+<li class="ow-corp-hat-list-item">
+<a href="/en/expert-insights" target="" tabindex="0" class="ow-corp-hat-list-link">All Expert Insights</a>
+</li>
+<li class="ow-corp-hat-list-item">
+<a href="/en/expert-insights/health" target="" tabindex="0" class="ow-corp-hat-list-link">Health</a>
+</li>
+<li class="ow-corp-hat-list-item">
+<a href="/en/expert-insights/tax-and-accounting" target="" tabindex="0" class="ow-corp-hat-list-link">Tax &amp; Accounting</a>
+</li>
+<li class="ow-corp-hat-list-item">
+<a href="/en/expert-insights/finance" target="" tabindex="0" class="ow-corp-hat-list-link">Finance</a>
+</li>
+<li class="ow-corp-hat-list-item">
+<a href="/en/expert-insights/compliance" target="" tabindex="0" class="ow-corp-hat-list-link">Compliance</a>
+</li>
+<li class="ow-corp-hat-list-item">
+<a href="/en/expert-insights/legal" target="" tabindex="0" class="ow-corp-hat-list-link">Legal</a>
+</li>
+</ul>
+</div>
+<div class="ow-corp-hat-drawer-col">
+<h6 class="ow-corp-hat-heading">
+<span class="ow-corp-hat-heading-text">Get Help</span>
+<span aria-hidden="true" class="wk-icon-chevron-down"></span>
+</h6>
+ <ul class="ow-corp-hat-list">
+<li class="ow-corp-hat-list-item">
+<a href="/en/contact-us" target="" tabindex="0" class="ow-corp-hat-list-link">Contact Us</a>
+</li>
+<li class="ow-corp-hat-list-item">
+<a href="/en/solutions" target="" tabindex="0" class="ow-corp-hat-list-link">View Solution List</a>
+</li>
+<li class="ow-corp-hat-list-item">
+<a href="/en/know/bookstores" target="" tabindex="0" class="ow-corp-hat-list-link">Bookstores</a>
+</li>
+</ul>
+</div>
+<div class="ow-divider"></div>
+<ul class="ow-corp-hat-quick-links ow-drawer-links">
+<li class="ow-corp-hat-quick-link-list">
+<a href="/en/news/one-wolters-kluwer-one-global-website" target="" class="ow-corp-hat-quick-link">Welcome to the New WoltersKluwer.com</a>
+</li>
+<li class="ow-corp-hat-quick-link-list">
+<a href="/en/solutions" target="" class="ow-corp-hat-quick-link">Solutions Directory</a>
+</li>
+<li class="ow-corp-hat-quick-link-list">
+<a href="https://careers.wolterskluwer.com/en" target="_blank" class="ow-corp-hat-quick-link">Careers</a>
+</li>
+<li class="ow-corp-hat-quick-link-list">
+<a href="/en/investors" target="" class="ow-corp-hat-quick-link">Investors</a>
+</li>
+<li class="ow-corp-hat-quick-link-list">
+<button type="button" aria-label="Select language" class="ow-corp-language-button">
+<span class="wk-icon-globe"></span>
+<p class="ow-corp-hat-quick-link">Select Language</p>
+</button>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+</div>
+</div>
+</div>
+</div>
+<div class=" header header-minimal container-fluid">
+<div>
+<div class="row">
+<div class="row component column-splitter">
+<div class="col-1 d-lg-none">
+<div class="row">
+<div class="component link">
+<div class="component-content">
+<div class="field-link"><a href="#" data-variantitemid="{BF9E4C5B-F661-46B3-88A9-AD160DB5285C}" data-variantfieldname="Link" class="primary-nav-toggle">PrimaryNav Button</a></div> </div>
+</div></div>
+</div>
+<div class="col col-lg-6">
+<div class="row">
+<div class="component image file-type-icon-media-link col-12 header-logo">
+<div class="component-content">
+<a title="Logo" href="/en"><picture title="Wolters Kluwer Logo"><source srcset="https://cdn.wolterskluwer.io/wk/fundamentals/1.15.2/logo/assets/small.svg" media="(max-width:767px)"></source><source srcset="https://cdn.wolterskluwer.io/wk/fundamentals/1.15.2/logo/assets/medium.svg" media="(max-width:991px)"></source><source srcset="https://cdn.wolterskluwer.io/wk/fundamentals/1.15.2/logo/assets/medium.svg" media="(max-width:1199px)"></source><img src="https://cdn.wolterskluwer.io/wk/fundamentals/1.15.2/logo/assets/medium.svg" alt="Wolters Kluwer Logo"></img></picture></a> </div>
+</div>
+</div>
+</div>
+<div class="col-1 col-lg-6">
+ <div class="row">
+<div class="component search-header">
+<span class="search-header__placeholder-text">Search Wolters Kluwer</span>
+<div class="search-header__wrapper">
+<label class="sr-only" for="search-input">/Feature/WoltersKluwer/OneWeb/SearchHeader/Search</label>
+<input id="search-input" data-redirection-url="/en/search-results" class="search-header__input" type="search" placeholder="Search Wolters Kluwer">
+<button class="search-header__button" type="submit"><span class="sr-only">/Feature/WoltersKluwer/OneWeb/SearchHeader/Search</span></button>
+<div class="search-header__suggestions" data-delay="500">
+<ul class="search-header__suggestions-items"></ul>
+<div class="search-header__no-suggestions">No Suggestion</div>
+<div class="search-header__suggestions-footer">
+<a href="#" class="search-header__suggestions-footer-link" data-template="Show all results for &quot;${q}&quot;"></a>
+</div>
+</div>
+</div>
+<button class="search-header__toggle" type="button"><span class="sr-only">Expand Search</span></button>
+</div>
+</div>
+</div>
+</div></div>
+</div>
+</div>
+<div class="container-fluid">
+<div>
+<div class="row"><div class="component hero-full hero-full--dark-overlay">
+<div class="component-content full-bleed">
+<div class="hero-full__image field-image"><img mediaid="" stylelabs-content-id="245022" thumbnailsrc="https://contenthub.wolterskluwer.com/api/gateway/245022/thumbnail" src="https://assets.contenthub.wolterskluwer.com/api/public/content/124e0ff7fa7146d8a343d938ea08e4b2" stylelabs-content-type="Image" alt="sea bridge coast city sunset dusk lighting skyscraper building cloud Korea skyline" height="1440" width="3840" srcset="https://assets.contenthub.wolterskluwer.com/api/public/content/124e0ff7fa7146d8a343d938ea08e4b2?t=w320l 320w,https://assets.contenthub.wolterskluwer.com/api/public/content/124e0ff7fa7146d8a343d938ea08e4b2?t=w480l 480w,https://assets.contenthub.wolterskluwer.com/api/public/content/124e0ff7fa7146d8a343d938ea08e4b2?t=w800l 800w,https://assets.contenthub.wolterskluwer.com/api/public/content/124e0ff7fa7146d8a343d938ea08e4b2?t=w1200l 1200w,https://assets.contenthub.wolterskluwer.com/api/public/content/124e0ff7fa7146d8a343d938ea08e4b2?t=Original Image 3000w" sizes="(max-width:539px)539px, (max-width:767px)767px, (max-width:991px)991px,(max-width:1199px)1199px,(max-width:1440px)1440px,1920px" format="" data-variantfieldname="Image" data-variantitemid="{900034AB-E7DB-4CA3-ADBF-6154871AC664}" /></div><div class="hero-full__wrapper hero-full__wrapper--with-ticker"><div class="hero-full__text"><div class="hero-full__eyebrow field-eyebrow"></div><h1 class="hero-full__title field-currentpagetitle"><span>Investors</span></h1><div class="hero-full__description field-description"><p>Wolters Kluwer (AEX: WKL) is a leading global provider of information, software, and services for professionals. We serve customers in more than 180 countries, operating through four divisions: Health; Tax &amp; Accounting; Governance, Risk &amp; Compliance; and Legal &amp; Regulatory. Wolters Kluwer NV shares are traded on the Amsterdam stock exchange and are a constituent of the AEX and STOXX Europe 600 indices. The company employs over 19,000 people worldwide.</p></div><div class="hero-full__cta-group"><div class="row"></div></div></div><div class="stock-ticker" data-url="https://ir.q4europe.com/ServiceEngine/api/json/reply/RequestStockDataBundle" data-properties="{apiversion:1, solutionID:3322, customerKey:wolterskluwer, instrumentTypes:Listing}"><div class="stock-ticker__data-wrapper"><div class="stock-ticker__price-wrapper"><div class="stock-ticker__title field-ticker-title">Share price</div><div class="stock-ticker__price"></div></div><div class="stock-ticker__date"><div>Updated</div><div class="stock-ticker__date__value"></div></div></div><div class="stock-ticker__cta field-cta-link"><a href="/en/investors/equity-and-debt-information/interactive-share-price-chart" data-variantitemid="{900034AB-E7DB-4CA3-ADBF-6154871AC664}" title="View share price tool" data-variantfieldname="CTA Link">Share Price Tool</a></div></div></div> </div>
+</div>
+<div id="secondary-nav-anchor"></div>
+<nav class="ow-secondary-nav" aria-labelledby="secondary-nav">
+<h5 id="secondary-nav" class="sr-only">Secondary Navigation</h5>
+<div class="ow-nav-container">
+<div class="ow-nav-wrapper">
+<div class="ow-nav-main">
+<div class="ow-solution-container">
+<a class="" href="/en/investors" target="">
+<div class="ow-solution-name">Investors</div>
+</a>
+<button class="ow-solution-menu-button" type="button" aria-haspopup="true" aria-expanded="false">
+<span class="sr-only">Investors</span>
+<span aria-hidden="true" class="ow-dropdown-icon wk-icon-chevron-down"></span>
+</button>
+</div>
+</div>
+<div class="ow-nav-solution-menu">
+<div class="ow-nav-solution-menu-container">
+<span class="secondary-nav-overlay-mobile"></span>
+<ul class="ow-nav-list">
+<li class="ow-nav-list-item ow-has-sub-nav">
+<button class="ow-nav-link" type="button" aria-haspopup="true" aria-expanded="false">
+Investor News
+<span class="wk-icon-chevron-down" aria-hidden="true"></span>
+</button>
+<div class="ow-sub-nav xxx">
+<span class="secondary-nav-overlay-desktop"></span>
+<div class="ow-solution-about">
+<p class="ow-solution-heading"></p>
+<p class="ow-solution-body"></p>
+</div>
+<div class="ow-sub-nav-list-container">
+<div class="ow-sub-nav-column">
+<h6 class="ow-sub-nav-list-heading">Investor News</h6>
+<ul class="ow-sub-nav-list">
+<li class="ow-sub-nav-list-item">
+<a class="ow-sub-nav-link" href="/en/investors/news?f:contenttype=News Page|Press Release Page&amp;f:newstype=Investor News" target="">Investor News</a>
+</li>
+<li class="ow-sub-nav-list-item">
+<a class="ow-sub-nav-link" href="/en/investors/share-buyback-transactions" target="">Buyback Transactions</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</li>
+<li class="ow-nav-list-item ow-has-sub-nav">
+<button class="ow-nav-link" type="button" aria-haspopup="true" aria-expanded="false">
+Financials
+<span class="wk-icon-chevron-down" aria-hidden="true"></span>
+</button>
+<div class="ow-sub-nav xxx">
+<span class="secondary-nav-overlay-desktop"></span>
+<div class="ow-solution-about">
+<p class="ow-solution-heading"></p>
+<p class="ow-solution-body"></p>
+</div>
+<div class="ow-sub-nav-list-container">
+<div class="ow-sub-nav-column">
+<h6 class="ow-sub-nav-list-heading">Financials</h6>
+<ul class="ow-sub-nav-list">
+<li class="ow-sub-nav-list-item">
+<a class="ow-sub-nav-link" href="/en/investors/financials/results" target="">Results</a>
+</li>
+<li class="ow-sub-nav-list-item">
+<a class="ow-sub-nav-link" href="/en/investors/financials/guidance" target="">Guidance</a>
+</li>
+<li class="ow-sub-nav-list-item">
+<a class="ow-sub-nav-link" href="/en/investors/financials/5-year-key-figures" target="">5-Year Key Figures</a>
+</li>
+<li class="ow-sub-nav-list-item">
+<a class="ow-sub-nav-link" href="/en/investors/financials/annual-reports" target="">Annual Reports</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</li>
+<li class="ow-nav-list-item">
+<a class="ow-nav-link" href="/en/investors/presentations/past-presentations" target="">Presentations</a>
+</li>
+<li class="ow-nav-list-item">
+<a class="ow-nav-link" href="/en/investors/strategy/our-strategy" target="">Strategy</a>
+</li>
+<li class="ow-nav-list-item ow-has-sub-nav">
+<button class="ow-nav-link" type="button" aria-haspopup="true" aria-expanded="false">
+Governance
+<span class="wk-icon-chevron-down" aria-hidden="true"></span>
+</button>
+<div class="ow-sub-nav xxx">
+<span class="secondary-nav-overlay-desktop"></span>
+<div class="ow-solution-about">
+ <p class="ow-solution-heading"></p>
+<p class="ow-solution-body"></p>
+</div>
+<div class="ow-sub-nav-list-container">
+<div class="ow-sub-nav-column">
+<h6 class="ow-sub-nav-list-heading">Governance at Wolters Kluwer</h6>
+<ul class="ow-sub-nav-list">
+<li class="ow-sub-nav-list-item">
+<a class="ow-sub-nav-link" href="/en/investors/governance/overview" target="">Overview</a>
+</li>
+<li class="ow-sub-nav-list-item">
+<a class="ow-sub-nav-link" href="/en/investors/governance/supervisory-board-committees" target="">Supervisory Board &amp; Committees</a>
+</li>
+<li class="ow-sub-nav-list-item">
+<a class="ow-sub-nav-link" href="/en/investors/governance/executive-board" target="">Executive Board</a>
+</li>
+<li class="ow-sub-nav-list-item">
+<a class="ow-sub-nav-link" href="/en/investors/governance/audit-functions" target="">Audit Functions</a>
+</li>
+</ul>
+</div>
+<div class="ow-sub-nav-column">
+<h6 class="ow-sub-nav-list-heading">Risk</h6>
+<ul class="ow-sub-nav-list">
+<li class="ow-sub-nav-list-item">
+<a class="ow-sub-nav-link" href="/en/investors/governance/risk-management" target="">Risk Management</a>
+</li>
+</ul>
+</div>
+<div class="ow-sub-nav-column">
+<h6 class="ow-sub-nav-list-heading">Policies</h6>
+<ul class="ow-sub-nav-list">
+<li class="ow-sub-nav-list-item">
+<a class="ow-sub-nav-link" href="/en/investors/governance/policies-and-articles" target="">Policies &amp; Articles of Association</a>
+</li>
+</ul>
+</div>
+<div class="ow-sub-nav-column">
+<h6 class="ow-sub-nav-list-heading">Shareholder Meetings</h6>
+<ul class="ow-sub-nav-list">
+<li class="ow-sub-nav-list-item">
+<a class="ow-sub-nav-link" href="/en/investors/governance/agms" target="">AGMs</a>
+</li>
+<li class="ow-sub-nav-list-item">
+<a class="ow-sub-nav-link" href="/en/investors/governance/agms/general-information" target="">General Information</a>
+</li>
+<li class="ow-sub-nav-list-item">
+<a class="ow-sub-nav-link" href="/en/investors/governance/agms/previously-held-agms" target="">Previous AGMs</a>
+</li>
+<li class="ow-sub-nav-list-item">
+<a class="ow-sub-nav-link" href="/en/investors/governance/agms/share-capital" target="">Share Capital</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</li>
+<li class="ow-nav-list-item ow-has-sub-nav">
+<button class="ow-nav-link" type="button" aria-haspopup="true" aria-expanded="false">
+Equity and Debt Information
+<span class="wk-icon-chevron-down" aria-hidden="true"></span>
+</button>
+<div class="ow-sub-nav xxx">
+<span class="secondary-nav-overlay-desktop"></span>
+<div class="ow-solution-about">
+<p class="ow-solution-heading"></p>
+<p class="ow-solution-body"></p>
+</div>
+<div class="ow-sub-nav-list-container">
+<div class="ow-sub-nav-column">
+<h6 class="ow-sub-nav-list-heading">Share Information</h6>
+<ul class="ow-sub-nav-list">
+<li class="ow-sub-nav-list-item">
+<a class="ow-sub-nav-link" href="/en/investors/equity-and-debt-information/ordinary-shares" target="">Ordinary Shares</a>
+</li>
+<li class="ow-sub-nav-list-item">
+<a class="ow-sub-nav-link" href="/en/investors/equity-and-debt-information/adrs" target="">ADRs</a>
+</li>
+<li class="ow-sub-nav-list-item">
+<a class="ow-sub-nav-link" href="/en/investors/equity-and-debt-information/dividend-policy" target="">Dividend</a>
+</li>
+<li class="ow-sub-nav-list-item">
+<a class="ow-sub-nav-link" href="/en/investors/equity-and-debt-information/share-buybacks" target="">Share Buybacks</a>
+</li>
+<li class="ow-sub-nav-list-item">
+<a class="ow-sub-nav-link" href="/en/investors/equity-and-debt-information/shareholders" target="">Shareholders</a>
+</li>
+</ul>
+</div>
+<div class="ow-sub-nav-column">
+<h6 class="ow-sub-nav-list-heading">Share Price Tools</h6>
+<ul class="ow-sub-nav-list">
+<li class="ow-sub-nav-list-item">
+<a class="ow-sub-nav-link" href="/en/investors/equity-and-debt-information/interactive-share-price-chart" target="">Interactive Chart</a>
+</li>
+<li class="ow-sub-nav-list-item">
+<a class="ow-sub-nav-link" href="/en/investors/equity-and-debt-information/investment-calculator" target="">Calculator Tool</a>
+</li>
+</ul>
+</div>
+<div class="ow-sub-nav-column">
+<h6 class="ow-sub-nav-list-heading">Debt Information</h6>
+<ul class="ow-sub-nav-list">
+<li class="ow-sub-nav-list-item">
+<a class="ow-sub-nav-link" href="/en/investors/equity-and-debt-information/debt-facilities" target="">Debt Facilities</a>
+</li>
+<li class="ow-sub-nav-list-item">
+<a class="ow-sub-nav-link" href="/en/investors/equity-and-debt-information/debt-maturity-schedule" target="">Debt Maturity</a>
+</li>
+<li class="ow-sub-nav-list-item">
+<a class="ow-sub-nav-link" href="/en/investors/equity-and-debt-information/credit-ratings" target="">Credit Ratings</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</li>
+ <li class="ow-nav-list-item">
+<a class="ow-nav-link" href="/en/investors/analysts/analyst-coverage" target="">Analysts</a>
+</li>
+<li class="ow-nav-list-item ow-has-sub-nav">
+<button class="ow-nav-link" type="button" aria-haspopup="true" aria-expanded="false">
+Calendar &amp; FAQ
+<span class="wk-icon-chevron-down" aria-hidden="true"></span>
+</button>
+<div class="ow-sub-nav xxx">
+<span class="secondary-nav-overlay-desktop"></span>
+<div class="ow-solution-about">
+<p class="ow-solution-heading"></p>
+<p class="ow-solution-body"></p>
+</div>
+<div class="ow-sub-nav-list-container">
+<div class="ow-sub-nav-column">
+<h6 class="ow-sub-nav-list-heading">Calendar</h6>
+<ul class="ow-sub-nav-list">
+<li class="ow-sub-nav-list-item">
+<a class="ow-sub-nav-link" href="/en/investors/calendar-faq/investor-calendar" target="">Investor Calendar</a>
+</li>
+</ul>
+</div>
+<div class="ow-sub-nav-column">
+<h6 class="ow-sub-nav-list-heading">Frequently Asked Questions</h6>
+<ul class="ow-sub-nav-list">
+<li class="ow-sub-nav-list-item">
+<a class="ow-sub-nav-link" href="/en/investors/calendar-faq/faqs" target="">FAQ</a>
+</li>
+<li class="ow-sub-nav-list-item">
+<a class="ow-sub-nav-link" href="/en/investors/calendar-faq/glossary" target="">Glossary</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</li>
+</ul>
+</div>
+<div class="ow-nav-optional">
+<ul class="ow-nav-optional-list">
+</ul>
+<div class="ow-nav-cta">
+<a class="ow-cta-button" href="/en/investors/ir-contacts/contact-ir" target="">
+Contact Us
+</a>
+</div>
+<div class="row"></div>
+</div>
+</div>
+</div>
+</div>
+</nav>
+</div>
+</div>
+</div>
+</div> <div class="component modal" id="modal-language-selector" tabindex="-1" role="dialog" aria-hidden="true">
+<button type="button" class="modal-close" data-dismiss="modal" aria-label="Close">
+<span class="wk-icon-close"></span>
+</button>
+<div class="modal-content">
+<div class="modal-content"><div class="row">
+<div class="component image file-type-icon-media-link position-center">
+<div class="component-content">
+<a title="Image 1" href="#"><div><img mediaid="" stylelabs-content-id="209968" thumbnailsrc="https://contenthub.wolterskluwer.com/api/gateway/209968/thumbnail" src="https://assets.contenthub.wolterskluwer.com/api/public/content/d09674905ed3409ab4ddab80d6b48268" stylelabs-content-type="Image" alt="WK logo" height="31" width="190" srcset="https://assets.contenthub.wolterskluwer.com/api/public/content/d09674905ed3409ab4ddab80d6b48268?t=w320l 320w,https://assets.contenthub.wolterskluwer.com/api/public/content/d09674905ed3409ab4ddab80d6b48268?t=w480l 480w,https://assets.contenthub.wolterskluwer.com/api/public/content/d09674905ed3409ab4ddab80d6b48268?t=w800l 800w,https://assets.contenthub.wolterskluwer.com/api/public/content/d09674905ed3409ab4ddab80d6b48268?t=w1200l 1200w,https://assets.contenthub.wolterskluwer.com/api/public/content/d09674905ed3409ab4ddab80d6b48268?t=Original Image 3000w" sizes="(max-width:539px)507px,(max-width:767px)735px,(max-width:991px)634px,(max-width:1199px)628px,(max-width:1440px)768px,768px" format="" data-variantfieldname="Image" data-variantitemid="{C9D92AB5-D75F-41FF-A471-291D5EDBD11C}" /></div></a><span class="image-caption field-imagecaption"></span> </div>
+</div>
+<div class="component mission bg-image bg-transparent" style="background-image: url()">
+<div class="component-content">
+<div data-dm-wk="component.missiontext"><h5 class="mission--title field-title"></h5><div class="mission--description--small field-description"><p>Visit our <a href="https://www.wolterskluwer.com/en">global site</a>, or select a location</p></div></div> </div>
+</div>
+<div class="component language-selector-component">
+<div class="component-content">
+<div class="component tabs language-selector-modal">
+<div class="component-content">
+<div class="tabs-inner">
+<ul class="tabs-heading">
+<li tabindex="0">
+<div>
+<div class="row">
+<div class="component content">
+<div class="component-content">
+<div class="field-heading" data-dm-wk="tabshorizontal.button">
+Americas
+</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li tabindex="0">
+<div>
+<div class="row">
+<div class="component content">
+<div class="component-content">
+<div class="field-heading" data-dm-wk="tabshorizontal.button">
+Europe
+</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+ <li tabindex="0">
+<div>
+<div class="row">
+<div class="component content">
+<div class="component-content">
+<div class="field-heading" data-dm-wk="tabshorizontal.button">
+Asia &amp; Pacific
+</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+</ul>
+<div class="tabs-container">
+<div class="tab">
+<div class="row">
+<div class="row component column-splitter">
+<div class="col-12 col-md-3">
+<div class="row">
+<div class="component link-list">
+<div class="component-content">
+<h6 class="language-selector-modal__country-name">Brazil</h6>
+<div class="language-selector-modal__page">
+<span class="language-selector-modal__page-name">Home page:</span>
+<ul>
+<li>
+<div class="field-link">
+<a href="/pt-br" data-variantfieldname="Link">Portuguese</a>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-12 col-md-3">
+<div class="row">
+<div class="component link-list">
+<div class="component-content">
+<h6 class="language-selector-modal__country-name">Canada</h6>
+<div class="language-selector-modal__page">
+<span class="language-selector-modal__page-name">Home page:</span>
+<ul>
+<li>
+<div class="field-link">
+<a href="/en-ca" data-variantfieldname="Link">English</a>
+</div>
+</li>
+<li>
+<div class="field-link">
+<a href="/fr-ca" data-variantfieldname="Link">French</a>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-12 col-md-3">
+<div class="row">
+<div class="component link-list">
+<div class="component-content">
+<h6 class="language-selector-modal__country-name">Latin America</h6>
+<div class="language-selector-modal__page">
+<span class="language-selector-modal__page-name">Home page:</span>
+<ul>
+<li>
+<div class="field-link">
+<a href="/es" data-variantfieldname="Link">Spanish</a>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+ <div class="col-12 col-md-3">
+<div class="row">
+<div class="component link-list">
+<div class="component-content">
+<h6 class="language-selector-modal__country-name">United States</h6>
+<div class="language-selector-modal__page">
+<span class="language-selector-modal__page-name">Home page:</span>
+<ul>
+<li>
+<div class="field-link">
+<a href="/en" data-variantfieldname="Link">English</a>
+</div>
+</li>
+</ul>
+</div>
+<div class="language-selector-modal__page">
+<span class="language-selector-modal__page-name">Current Page:</span>
+<ul>
+<li>
+<div class="field-link">
+<a href="/en/investors" data-variantfieldname="Link">English</a>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="tab">
+<div class="row">
+<div class="row component column-splitter">
+<div class="col-12 col-md-3">
+<div class="row">
+<div class="component link-list">
+<div class="component-content">
+<h6 class="language-selector-modal__country-name">Belgium</h6>
+<div class="language-selector-modal__page">
+<span class="language-selector-modal__page-name">Home page:</span>
+<ul>
+<li>
+<div class="field-link">
+<a href="/nl-be" data-variantfieldname="Link">Dutch</a>
+</div>
+</li>
+<li>
+<div class="field-link">
+<a href="/fr-be" data-variantfieldname="Link">French</a>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-12 col-md-3">
+<div class="row">
+<div class="component link-list">
+<div class="component-content">
+<h6 class="language-selector-modal__country-name">Czech Republic</h6>
+<div class="language-selector-modal__page">
+<span class="language-selector-modal__page-name">Home page:</span>
+<ul>
+<li>
+<div class="field-link">
+<a href="/cs-cz" data-variantfieldname="Link">Czech</a>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-12 col-md-3">
+<div class="row">
+<div class="component link-list">
+<div class="component-content">
+<h6 class="language-selector-modal__country-name">Denmark</h6>
+<div class="language-selector-modal__page">
+<span class="language-selector-modal__page-name">Home page:</span>
+<ul>
+<li>
+<div class="field-link">
+<a href="/da-dk" data-variantfieldname="Link">Denmark</a>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-12 col-md-3">
+<div class="row">
+<div class="component link-list">
+<div class="component-content">
+<h6 class="language-selector-modal__country-name">France</h6>
+<div class="language-selector-modal__page">
+<span class="language-selector-modal__page-name">Home page:</span>
+<ul>
+<li>
+<div class="field-link">
+<a href="/fr-fr" data-variantfieldname="Link">French</a>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-12 col-md-3">
+<div class="row">
+<div class="component link-list">
+<div class="component-content">
+<h6 class="language-selector-modal__country-name">Germany</h6>
+<div class="language-selector-modal__page">
+<span class="language-selector-modal__page-name">Home page:</span>
+<ul>
+<li>
+<div class="field-link">
+<a href="/de-de" data-variantfieldname="Link">German</a>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-12 col-md-3">
+<div class="row">
+<div class="component link-list">
+<div class="component-content">
+<h6 class="language-selector-modal__country-name">Hungary</h6>
+<div class="language-selector-modal__page">
+<span class="language-selector-modal__page-name">Home page:</span>
+<ul>
+<li>
+<div class="field-link">
+<a href="/hu-hu" data-variantfieldname="Link">Hungarian</a>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-12 col-md-3">
+<div class="row">
+<div class="component link-list">
+<div class="component-content">
+<h6 class="language-selector-modal__country-name">Italy</h6>
+<div class="language-selector-modal__page">
+<span class="language-selector-modal__page-name">Home page:</span>
+<ul>
+<li>
+<div class="field-link">
+<a href="/it-it" data-variantfieldname="Link">Italian</a>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-12 col-md-3">
+<div class="row">
+<div class="component link-list">
+<div class="component-content">
+<h6 class="language-selector-modal__country-name">Netherlands</h6>
+<div class="language-selector-modal__page">
+<span class="language-selector-modal__page-name">Home page:</span>
+<ul>
+<li>
+<div class="field-link">
+<a href="/nl-nl" data-variantfieldname="Link">Dutch</a>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-12 col-md-3">
+<div class="row">
+<div class="component link-list">
+<div class="component-content">
+<h6 class="language-selector-modal__country-name">Norway</h6>
+<div class="language-selector-modal__page">
+<span class="language-selector-modal__page-name">Home page:</span>
+<ul>
+<li>
+<div class="field-link">
+<a href="/nb-no" data-variantfieldname="Link">Norwegian</a>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-12 col-md-3">
+<div class="row">
+<div class="component link-list">
+<div class="component-content">
+<h6 class="language-selector-modal__country-name">Poland</h6>
+<div class="language-selector-modal__page">
+<span class="language-selector-modal__page-name">Home page:</span>
+<ul>
+<li>
+<div class="field-link">
+<a href="/pl-pl" data-variantfieldname="Link">Polish</a>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-12 col-md-3">
+<div class="row">
+<div class="component link-list">
+<div class="component-content">
+<h6 class="language-selector-modal__country-name">Romania</h6>
+<div class="language-selector-modal__page">
+<span class="language-selector-modal__page-name">Home page:</span>
+<ul>
+<li>
+<div class="field-link">
+<a href="/ro-ro" data-variantfieldname="Link">Romanian</a>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-12 col-md-3">
+<div class="row">
+<div class="component link-list">
+<div class="component-content">
+<h6 class="language-selector-modal__country-name">Slovakia</h6>
+<div class="language-selector-modal__page">
+<span class="language-selector-modal__page-name">Home page:</span>
+<ul>
+<li>
+<div class="field-link">
+<a href="/sk-sk" data-variantfieldname="Link">Slovak</a>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-12 col-md-3">
+<div class="row">
+<div class="component link-list">
+<div class="component-content">
+<h6 class="language-selector-modal__country-name">Spain</h6>
+<div class="language-selector-modal__page">
+<span class="language-selector-modal__page-name">Home page:</span>
+<ul>
+<li>
+<div class="field-link">
+<a href="/es-es" data-variantfieldname="Link">Spanish</a>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-12 col-md-3">
+<div class="row">
+<div class="component link-list">
+<div class="component-content">
+<h6 class="language-selector-modal__country-name">Sweden</h6>
+<div class="language-selector-modal__page">
+<span class="language-selector-modal__page-name">Home page:</span>
+<ul>
+<li>
+<div class="field-link">
+<a href="/sv-se" data-variantfieldname="Link">Swedish</a>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-12 col-md-3">
+<div class="row">
+<div class="component link-list">
+<div class="component-content">
+<h6 class="language-selector-modal__country-name">United Kingdom</h6>
+<div class="language-selector-modal__page">
+<span class="language-selector-modal__page-name">Home page:</span>
+<ul>
+<li>
+<div class="field-link">
+<a href="/en-gb" data-variantfieldname="Link">English</a>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="tab">
+<div class="row">
+<div class="row component column-splitter">
+<div class="col-12 col-md-3">
+<div class="row">
+<div class="component link-list">
+<div class="component-content">
+<h6 class="language-selector-modal__country-name">Australia</h6>
+<div class="language-selector-modal__page">
+<span class="language-selector-modal__page-name">Home page:</span>
+<ul>
+<li>
+<div class="field-link">
+ <a href="/en-au" data-variantfieldname="Link">English</a>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-12 col-md-3">
+<div class="row">
+<div class="component link-list">
+<div class="component-content">
+<h6 class="language-selector-modal__country-name">China</h6>
+<div class="language-selector-modal__page">
+<span class="language-selector-modal__page-name">Home page:</span>
+<ul>
+<li>
+<div class="field-link">
+<a href="/zh-cn" data-variantfieldname="Link">Simplified Chinese</a>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-12 col-md-3">
+<div class="row">
+<div class="component link-list">
+<div class="component-content">
+<h6 class="language-selector-modal__country-name">Hong Kong</h6>
+<div class="language-selector-modal__page">
+<span class="language-selector-modal__page-name">Home page:</span>
+<ul>
+<li>
+<div class="field-link">
+<a href="/en-hk" data-variantfieldname="Link">English</a>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-12 col-md-3">
+<div class="row">
+<div class="component link-list">
+<div class="component-content">
+<h6 class="language-selector-modal__country-name">India</h6>
+<div class="language-selector-modal__page">
+<span class="language-selector-modal__page-name">Home page:</span>
+<ul>
+<li>
+<div class="field-link">
+<a href="/en-in" data-variantfieldname="Link">English</a>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-12 col-md-3">
+<div class="row">
+<div class="component link-list">
+<div class="component-content">
+<h6 class="language-selector-modal__country-name">Japan</h6>
+<div class="language-selector-modal__page">
+<span class="language-selector-modal__page-name">Home page:</span>
+<ul>
+<li>
+<div class="field-link">
+<a href="/ja-jp" data-variantfieldname="Link">Japanese</a>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-12 col-md-3">
+ <div class="row">
+<div class="component link-list">
+<div class="component-content">
+<h6 class="language-selector-modal__country-name">Malaysia</h6>
+<div class="language-selector-modal__page">
+<span class="language-selector-modal__page-name">Home page:</span>
+<ul>
+<li>
+<div class="field-link">
+<a href="/en-my" data-variantfieldname="Link">English</a>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-12 col-md-3">
+<div class="row">
+<div class="component link-list">
+<div class="component-content">
+<h6 class="language-selector-modal__country-name">New Zealand</h6>
+<div class="language-selector-modal__page">
+<span class="language-selector-modal__page-name">Home page:</span>
+<ul>
+<li>
+<div class="field-link">
+<a href="/en-nz" data-variantfieldname="Link">English</a>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-12 col-md-3">
+<div class="row">
+<div class="component link-list">
+<div class="component-content">
+<h6 class="language-selector-modal__country-name">Philippines</h6>
+<div class="language-selector-modal__page">
+<span class="language-selector-modal__page-name">Home page:</span>
+<ul>
+<li>
+<div class="field-link">
+<a href="/en-ph" data-variantfieldname="Link">English</a>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-12 col-md-3">
+<div class="row">
+<div class="component link-list">
+<div class="component-content">
+<h6 class="language-selector-modal__country-name">Singapore</h6>
+<div class="language-selector-modal__page">
+<span class="language-selector-modal__page-name">Home page:</span>
+<ul>
+<li>
+<div class="field-link">
+<a href="/en-sg" data-variantfieldname="Link">English</a>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-12 col-md-3">
+<div class="row">
+<div class="component link-list">
+<div class="component-content">
+<h6 class="language-selector-modal__country-name">Taiwan</h6>
+<div class="language-selector-modal__page">
+<span class="language-selector-modal__page-name">Home page:</span>
+<ul>
+<li>
+<div class="field-link">
+<a href="/zh-tw" data-variantfieldname="Link">English</a>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-12 col-md-3">
+<div class="row">
+<div class="component link-list">
+<div class="component-content">
+<h6 class="language-selector-modal__country-name">Thailand</h6>
+<div class="language-selector-modal__page">
+<span class="language-selector-modal__page-name">Home page:</span>
+<ul>
+<li>
+<div class="field-link">
+<a href="/th-th" data-variantfieldname="Link">English</a>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-12 col-md-3">
+<div class="row">
+<div class="component link-list">
+<div class="component-content">
+<h6 class="language-selector-modal__country-name">Vietnam</h6>
+<div class="language-selector-modal__page">
+<span class="language-selector-modal__page-name">Home page:</span>
+<ul>
+<li>
+<div class="field-link">
+<a href="/vi-vn" data-variantfieldname="Link">English</a>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></div> </div>
+</div>
+</div></div>
+</div>
+</header>
+
+
+<main>
+<div id="content" class="container">
+<div class="row"> <div class="component callout-ribbon">
+<div class="component-content">
+<a title="View the webcast" href="https://assets.contenthub.wolterskluwer.com/api/public/content/46defbdac6f04aa1b4a41ad9c4d5311b?v=aa8a1b16"><div class="link-section"><div class="text-wrapper"><div class="text-bold field-text-bold">Nine-Month 2021 Trading Update: November 3, 2021</div><div class="text-regular field-text-regular">&#160;&#160;</div></div><div class="icon-wrapper"></div><div class="icon-wrapper"><span title="wk-icon-arrow-right" class="wkbutton-icon wk-icon-arrow-right"></span></div></div></a> </div>
+</div>
+<div class="component productpromo blue-bg">
+<div class="component-content">
+<div class="product-wrapper"><div class="productpromo-name field-name"><p><span style="font-size: 24px;"> Nine-Month 2021 Trading Update</span></p>
+<span style="font-size: 24px;">Wednesday, November 3, 2021</span></div><div class="productpromo-description field-description"><p><span style="font-size: 18px;">&nbsp;</span></p>
+<p><span style="font-size: 24px;">Results Release 8:00 CET/ 7:00GMT</span></p></div><div class="productpromo-link field-link"><a href="https://assets.contenthub.wolterskluwer.com/api/public/content/46defbdac6f04aa1b4a41ad9c4d5311b?v=aa8a1b16" data-dm-wk="productpromotion.button" data-variantitemid="{4706A2B9-650B-46D5-A057-465EC63A01C4}" data-variantfieldname="Link">Download the Press Release</a></div></div><div class="details-wrapper"><div class="productpromo-fulldescription field-full-description"><p><strong><span style="font-size: 24px;">August 4, Half-Year 2021 Results</span></strong></p></div><div class="productpromo-cta-wrapper"><div class="productpromo-cta field-cta1"><a href="/-/media/project/wolterskluwer/oneweb/www/investors/files/pdf-and-excel/2021/20210804-wolters-kluwer-2021-half-year-results.pdf?rev=9b639cc12ee14551a79cbb5475b47e6f&amp;hash=706915CC9249AC27138C40E8876726CD" data-dm-wk="productpromotion.button" data-variantitemid="{4706A2B9-650B-46D5-A057-465EC63A01C4}" title="Download  Press Release" data-variantfieldname="CTA1">Download Press Release</a></div><div class="productpromo-cta field-cta2"><a href="/-/media/project/wolterskluwer/oneweb/www/investors/files/pdf-and-excel/2021/20210804-wolters-kluwer-2021-half-year-results-presentation.pdf?rev=00550def4fec4281998272201f90db19&amp;hash=494AD9C39C048968C367D3C7445150E8" data-dm-wk="productpromotion.button" data-variantitemid="{4706A2B9-650B-46D5-A057-465EC63A01C4}" title="Download Presentation" data-variantfieldname="CTA2">Download Presentation</a></div><div class="productpromo-cta field-cta3"><a href="https://channel.royalcast.com/wolterskluwer/#!/wolterskluwer/20210804_1" data-dm-wk="productpromotion.button" data-variantitemid="{4706A2B9-650B-46D5-A057-465EC63A01C4}" data-variantfieldname="CTA3">View the webcast</a></div></div></div> </div>
+</div>
+<div class="component wk-container container-with-cards">
+<div class="component-content">
+<div class="row">
+<div class="component row-splitter">
+<div class=" container-gray-background container-fluid">
+<div>
+<div class="row">
+<div class="row component column-splitter">
+<div class="col-10 col-sm-6 col-md-6 col-lg-6 col-xl-3 offset-1 offset-sm-0 offset-md-0 offset-lg-0 offset-xl-0 full-height-card indent-bottom indent-top">
+<div class="row"> <div class="component cards">
+<div class="component-content">
+<a title="Results" href="/en/investors/financials/results"><div class="link-wrapper"><div class="card-image field-cardimage"><img mediaid="" stylelabs-content-id="82207" thumbnailsrc="https://contenthub.wolterskluwer.com/api/gateway/82207/thumbnail" src="https://assets.contenthub.wolterskluwer.com/api/public/content/086609f8711747a887275db9a1139b13" stylelabs-content-type="Image" alt="Glass office building at night" height="1024" width="1536" srcset="https://assets.contenthub.wolterskluwer.com/api/public/content/086609f8711747a887275db9a1139b13?t=w320l 320w,https://assets.contenthub.wolterskluwer.com/api/public/content/086609f8711747a887275db9a1139b13?t=w480l 480w,https://assets.contenthub.wolterskluwer.com/api/public/content/086609f8711747a887275db9a1139b13?t=w800l 800w,https://assets.contenthub.wolterskluwer.com/api/public/content/086609f8711747a887275db9a1139b13?t=w1200l 1200w,https://assets.contenthub.wolterskluwer.com/api/public/content/086609f8711747a887275db9a1139b13?t=Original Image 3000w" sizes="(max-width:539px) 505px, (max-width:767px) 733px, (max-width:991px) 479px, (max-width:1199px) 543px, (max-width:1440px) 672px, 672px" format="" data-variantfieldname="CardImage" data-variantitemid="{5478041E-CC1F-4E82-A7FA-94276856F8BC}" /></div><div class="card-content"><div class="text-wrapper"><div class="card-title field-cardtitle">Results&nbsp;<span title="arrow-right" class="wk-icon-arrow-right"></span></div></div></div></div></a> </div>
+</div>
+</div>
+</div>
+<div class="col-10 col-sm-6 col-md-6 col-lg-6 col-xl-3 offset-1 offset-sm-0 offset-md-0 offset-lg-0 offset-xl-0 full-height-card indent-bottom indent-top">
+<div class="row"> <div class="component cards">
+<div class="component-content">
+<a title="Presentations" href="/en/investors/presentations/past-presentations"><div class="link-wrapper"><div class="card-image field-cardimage"><img mediaid="" stylelabs-content-id="173941" thumbnailsrc="https://contenthub.wolterskluwer.com/api/gateway/173941/thumbnail" src="https://assets.contenthub.wolterskluwer.com/api/public/content/1d7ce02fdd1143d5b7416c92fd9c8775" stylelabs-content-type="Image" alt="Wolters Kluwer Investors Presentations" height="433" width="577" srcset="https://assets.contenthub.wolterskluwer.com/api/public/content/1d7ce02fdd1143d5b7416c92fd9c8775?t=w320l 320w,https://assets.contenthub.wolterskluwer.com/api/public/content/1d7ce02fdd1143d5b7416c92fd9c8775?t=w480l 480w,https://assets.contenthub.wolterskluwer.com/api/public/content/1d7ce02fdd1143d5b7416c92fd9c8775?t=w800l 800w,https://assets.contenthub.wolterskluwer.com/api/public/content/1d7ce02fdd1143d5b7416c92fd9c8775?t=w1200l 1200w,https://assets.contenthub.wolterskluwer.com/api/public/content/1d7ce02fdd1143d5b7416c92fd9c8775?t=Original Image 3000w" sizes="(max-width:539px) 505px, (max-width:767px) 733px, (max-width:991px) 479px, (max-width:1199px) 543px, (max-width:1440px) 672px, 672px" format="" data-variantfieldname="CardImage" data-variantitemid="{244FE822-49E8-4723-9032-84C07F8FB986}" /></div><div class="card-content"><div class="text-wrapper"><div class="card-title field-cardtitle">Presentations&nbsp;<span title="arrow-right" class="wk-icon-arrow-right"></span></div></div></div></div></a> </div>
+</div>
+</div>
+</div>
+<div class="col-10 col-sm-6 col-md-6 col-lg-6 col-xl-3 offset-1 offset-sm-0 offset-md-0 offset-lg-0 offset-xl-0 full-height-card indent-bottom indent-top">
+<div class="row"> <div class="component cards">
+<div class="component-content">
+<a href="/en/investors/strategy/our-strategy"><div class="link-wrapper"><div class="card-image field-cardimage"><img mediaid="" stylelabs-content-id="241276" thumbnailsrc="https://contenthub.wolterskluwer.com/api/gateway/241276/thumbnail" src="https://assets.contenthub.wolterskluwer.com/api/public/content/c91f0886ed1a45e78614720e784f7ff3" stylelabs-content-type="Image" alt="Wolters Kluwer Investors Strategy" height="408" width="612" srcset="https://assets.contenthub.wolterskluwer.com/api/public/content/c91f0886ed1a45e78614720e784f7ff3?t=w320l 320w,https://assets.contenthub.wolterskluwer.com/api/public/content/c91f0886ed1a45e78614720e784f7ff3?t=w480l 480w,https://assets.contenthub.wolterskluwer.com/api/public/content/c91f0886ed1a45e78614720e784f7ff3?t=w800l 800w,https://assets.contenthub.wolterskluwer.com/api/public/content/c91f0886ed1a45e78614720e784f7ff3?t=w1200l 1200w,https://assets.contenthub.wolterskluwer.com/api/public/content/c91f0886ed1a45e78614720e784f7ff3?t=Original Image 3000w" sizes="(max-width:539px) 505px, (max-width:767px) 733px, (max-width:991px) 479px, (max-width:1199px) 543px, (max-width:1440px) 672px, 672px" format="" data-variantfieldname="CardImage" data-variantitemid="{D5F51E6D-0127-4A7F-9875-0EC5E0F19DE5}" /></div><div class="card-content"><div class="text-wrapper"><div class="card-title field-cardtitle">Strategy&nbsp;<span title="arrow-right" class="wk-icon-arrow-right"></span></div></div></div></div></a> </div>
+</div>
+</div>
+</div>
+<div class="col-10 col-sm-6 col-md-6 col-lg-6 col-xl-3 offset-1 offset-sm-0 offset-md-0 offset-lg-0 offset-xl-0 full-height-card indent-bottom indent-top">
+<div class="row"> <div class="component cards">
+<div class="component-content">
+<a title="Dividend Policy" href="/en/investors/equity-and-debt-information/dividend-policy"><div class="link-wrapper"><div class="card-image field-cardimage"><img mediaid="" stylelabs-content-id="301009" thumbnailsrc="https://contenthub.wolterskluwer.com/api/gateway/301009/thumbnail" src="https://assets.contenthub.wolterskluwer.com/api/public/content/14b303721a1142b5b6c8d25cef209cee" stylelabs-content-type="Image" alt="Wolters Kluwer Investors Dividend" height="408" width="612" srcset="https://assets.contenthub.wolterskluwer.com/api/public/content/14b303721a1142b5b6c8d25cef209cee?t=w320l 320w,https://assets.contenthub.wolterskluwer.com/api/public/content/14b303721a1142b5b6c8d25cef209cee?t=w480l 480w,https://assets.contenthub.wolterskluwer.com/api/public/content/14b303721a1142b5b6c8d25cef209cee?t=w800l 800w,https://assets.contenthub.wolterskluwer.com/api/public/content/14b303721a1142b5b6c8d25cef209cee?t=w1200l 1200w,https://assets.contenthub.wolterskluwer.com/api/public/content/14b303721a1142b5b6c8d25cef209cee?t=Original Image 3000w" sizes="(max-width:539px) 505px, (max-width:767px) 733px, (max-width:991px) 479px, (max-width:1199px) 543px, (max-width:1440px) 672px, 672px" format="" data-variantfieldname="CardImage" data-variantitemid="{EC1D478F-36C1-440D-848E-D64726A4F9F5}" /></div><div class="card-content"><div class="text-wrapper"><div class="card-title field-cardtitle">Dividend Policy&nbsp;<span title="arrow-right" class="wk-icon-arrow-right"></span></div></div></div></div></a> </div>
+</div>
+</div>
+</div>
+<div class="col-10 col-sm-6 col-md-6 col-lg-6 col-xl-3 offset-1 offset-sm-0 offset-md-0 offset-lg-0 offset-xl-0 full-height-card indent-bottom">
+<div class="row"> <div class="component cards">
+<div class="component-content">
+<a title="Overview" href="/en/investors/governance/overview"><div class="link-wrapper"><div class="card-image field-cardimage"><img mediaid="" stylelabs-content-id="116112" thumbnailsrc="https://contenthub.wolterskluwer.com/api/gateway/116112/thumbnail" src="https://assets.contenthub.wolterskluwer.com/api/public/content/2eb9e86cf57140bf94c112fbc0e5f511" stylelabs-content-type="Image" alt="Wolters Kluwer Investors Governance" height="408" width="612" srcset="https://assets.contenthub.wolterskluwer.com/api/public/content/2eb9e86cf57140bf94c112fbc0e5f511?t=w320l 320w,https://assets.contenthub.wolterskluwer.com/api/public/content/2eb9e86cf57140bf94c112fbc0e5f511?t=w480l 480w,https://assets.contenthub.wolterskluwer.com/api/public/content/2eb9e86cf57140bf94c112fbc0e5f511?t=w800l 800w,https://assets.contenthub.wolterskluwer.com/api/public/content/2eb9e86cf57140bf94c112fbc0e5f511?t=w1200l 1200w,https://assets.contenthub.wolterskluwer.com/api/public/content/2eb9e86cf57140bf94c112fbc0e5f511?t=Original Image 3000w" sizes="(max-width:539px) 505px, (max-width:767px) 733px, (max-width:991px) 479px, (max-width:1199px) 543px, (max-width:1440px) 672px, 672px" format="" data-variantfieldname="CardImage" data-variantitemid="{A225F8FA-0FF9-494B-90D0-B3FB90F53694}" /></div><div class="card-content"><div class="text-wrapper"><div class="card-title field-cardtitle">Governance&nbsp;<span title="arrow-right" class="wk-icon-arrow-right"></span></div></div></div></div></a> </div>
+</div>
+</div>
+</div>
+<div class="col-10 col-sm-6 col-md-6 col-lg-6 col-xl-3 offset-1 offset-sm-0 offset-md-0 offset-lg-0 offset-xl-0 full-height-card indent-bottom">
+<div class="row"> <div class="component cards">
+<div class="component-content">
+<a title="AGMs" href="/en/investors/governance/agms"><div class="link-wrapper"><div class="card-image field-cardimage"><img mediaid="" stylelabs-content-id="156647" thumbnailsrc="https://contenthub.wolterskluwer.com/api/gateway/156647/thumbnail" src="https://assets.contenthub.wolterskluwer.com/api/public/content/8794ba44da1b4f1fbe55d1aca7ad642b" stylelabs-content-type="Image" alt="Wolters Kluwer Investors AGMs" height="1667" width="2500" srcset="https://assets.contenthub.wolterskluwer.com/api/public/content/8794ba44da1b4f1fbe55d1aca7ad642b?t=w320l 320w,https://assets.contenthub.wolterskluwer.com/api/public/content/8794ba44da1b4f1fbe55d1aca7ad642b?t=w480l 480w,https://assets.contenthub.wolterskluwer.com/api/public/content/8794ba44da1b4f1fbe55d1aca7ad642b?t=w800l 800w,https://assets.contenthub.wolterskluwer.com/api/public/content/8794ba44da1b4f1fbe55d1aca7ad642b?t=w1200l 1200w,https://assets.contenthub.wolterskluwer.com/api/public/content/8794ba44da1b4f1fbe55d1aca7ad642b?t=Original Image 3000w" sizes="(max-width:539px) 505px, (max-width:767px) 733px, (max-width:991px) 479px, (max-width:1199px) 543px, (max-width:1440px) 672px, 672px" format="" data-variantfieldname="CardImage" data-variantitemid="{5A648D93-8C4B-4D2C-A285-47EC5BC5FB43}" /></div><div class="card-content"><div class="text-wrapper"><div class="card-title field-cardtitle">AGMs&nbsp;<span title="arrow-right" class="wk-icon-arrow-right"></span></div></div></div></div></a> </div>
+</div>
+</div>
+</div>
+<div class="col-10 col-sm-6 col-md-6 col-lg-6 col-xl-3 offset-1 offset-sm-0 offset-md-0 offset-lg-0 offset-xl-0 full-height-card indent-bottom">
+<div class="row"> <div class="component cards">
+<div class="component-content">
+<a title="Credit Ratings" href="/en/investors/equity-and-debt-information/credit-ratings"><div class="link-wrapper"><div class="card-image field-cardimage"><img mediaid="" stylelabs-content-id="280082" thumbnailsrc="https://contenthub.wolterskluwer.com/api/gateway/280082/thumbnail" src="https://assets.contenthub.wolterskluwer.com/api/public/content/e58ade1fdf29436eb030abb38a4804a3" stylelabs-content-type="Image" alt="Credit ratings" height="408" width="612" srcset="https://assets.contenthub.wolterskluwer.com/api/public/content/e58ade1fdf29436eb030abb38a4804a3?t=w320l 320w,https://assets.contenthub.wolterskluwer.com/api/public/content/e58ade1fdf29436eb030abb38a4804a3?t=w480l 480w,https://assets.contenthub.wolterskluwer.com/api/public/content/e58ade1fdf29436eb030abb38a4804a3?t=w800l 800w,https://assets.contenthub.wolterskluwer.com/api/public/content/e58ade1fdf29436eb030abb38a4804a3?t=w1200l 1200w,https://assets.contenthub.wolterskluwer.com/api/public/content/e58ade1fdf29436eb030abb38a4804a3?t=Original Image 3000w" sizes="(max-width:539px) 505px, (max-width:767px) 733px, (max-width:991px) 479px, (max-width:1199px) 543px, (max-width:1440px) 672px, 672px" format="" data-variantfieldname="CardImage" data-variantitemid="{F2E370AD-40AA-414F-AF88-79CF59006BCD}" /></div><div class="card-content"><div class="text-wrapper"><div class="card-title field-cardtitle">Credit Ratings&nbsp;<span title="arrow-right" class="wk-icon-arrow-right"></span></div></div></div></div></a> </div>
+</div>
+</div>
+</div>
+<div class="col-10 col-sm-6 col-md-6 col-lg-6 col-xl-3 offset-1 offset-sm-0 offset-md-0 offset-lg-0 offset-xl-0 full-height-card indent-bottom">
+<div class="row"> <div class="component cards">
+<div class="component-content">
+<a title="Interactive Price &amp; Performance Chart" href="/en/investors/equity-and-debt-information/interactive-share-price-chart"><div class="link-wrapper"><div class="card-image field-cardimage"><img mediaid="" stylelabs-content-id="147704" thumbnailsrc="https://contenthub.wolterskluwer.com/api/gateway/147704/thumbnail" src="https://assets.contenthub.wolterskluwer.com/api/public/content/2672539697974aadbd4c18663ce6735c" stylelabs-content-type="Image" alt="Wolters Kluwer Investors Share Price Chart" height="408" width="611" srcset="https://assets.contenthub.wolterskluwer.com/api/public/content/2672539697974aadbd4c18663ce6735c?t=w320l 320w,https://assets.contenthub.wolterskluwer.com/api/public/content/2672539697974aadbd4c18663ce6735c?t=w480l 480w,https://assets.contenthub.wolterskluwer.com/api/public/content/2672539697974aadbd4c18663ce6735c?t=w800l 800w,https://assets.contenthub.wolterskluwer.com/api/public/content/2672539697974aadbd4c18663ce6735c?t=w1200l 1200w,https://assets.contenthub.wolterskluwer.com/api/public/content/2672539697974aadbd4c18663ce6735c?t=Original Image 3000w" sizes="(max-width:539px) 505px, (max-width:767px) 733px, (max-width:991px) 479px, (max-width:1199px) 543px, (max-width:1440px) 672px, 672px" format="" data-variantfieldname="CardImage" data-variantitemid="{BAEC2A9B-1C12-4A93-90B4-328424F38402}" /></div><div class="card-content"><div class="text-wrapper"><div class="card-title field-cardtitle">Share Price Chart&nbsp;<span title="arrow-right" class="wk-icon-arrow-right"></span></div></div></div></div></a> </div>
+</div>
+</div>
+</div>
+</div></div>
+</div>
+</div>
+</div></div> </div>
+</div>
+<div class="row component column-splitter">
+<div class="col-12 col-lg-6 col-xl-6 full-height-card">
+<div class="row"> <div class="component table">
+<div class="component-content">
+<div class="table__header"><h2 class="table__title field-title">Upcoming Events</h2><div class="table__cta"><div class="table__cta-icon field-cta-icon"><img mediaid="" stylelabs-content-id="265049" thumbnailsrc="https://contenthub.wolterskluwer.com/api/gateway/265049/thumbnail" src="https://assets.contenthub.wolterskluwer.com/api/public/content/bfb91572a7494d5a9be1d1ac03a58263" stylelabs-content-type="Image" alt="Forward" height="18" width="24" data-variantitemid="{AC70AEB0-097A-4737-BB63-4355AC02F1FF}" format="" data-variantfieldname="CTA Icon" /></div><div class="table__cta-link field-cta"><a href="/en/investors/calendar-faq/investor-calendar" data-dm-wk="thoughtleadership.link" data-variantitemid="{AC70AEB0-097A-4737-BB63-4355AC02F1FF}" title="View all events" data-variantfieldname="CTA">View All Events</a></div></div></div><div class="table__content"><div class="field-content"><table style="width: 600px; height: 71px;">
+<tbody>
+<tr>
+<td class="table-light-blue"><strong>18 Nov</strong></td>
+<td><span style="background: white; margin: 0px; padding: 0px; border: 0px; color: #353535;">Virtual &ndash; Conference &ndash;&nbsp;</span><span style="background: white; margin: 0px; padding: 0in; border: 1pt none windowtext; color: #353535;">Morgan Stanley TMT Conf.</span><br />
+</td>
+</tr>
+<tr>
+<td class="table-light-blue"><strong>9 Dec</strong></td>
+<td><span style="background-color: #ffffff; color: #353535;">Virtual Teach-In: Health &amp; Technology</span><br />
+</td>
+</tr>
+<tr>
+<td class="table-light-blue"><strong>23 Feb</strong></td>
+<td><span style="background-color: #ffffff; color: #353535;">Full-Year 2021 Results</span>&nbsp;</td>
+</tr>
+</tbody>
+</table></div></div> </div>
+</div>
+</div>
+</div>
+<div class="col-12 col-lg-6 col-xl-6 full-height-card">
+<div class="row"> <div class="component productpromo blue-bg">
+<div class="component-content">
+<div class="product-wrapper"><div class="productpromo-name field-name"><p><span style="font-size: 32px;"><br />
+2020 Annual Report</span></p></div><div class="productpromo-description field-description"><br /></div><div class="productpromo-link field-link"><a href="/-/media/project/wolterskluwer/oneweb/www/investors/files/pdf-and-excel/2021/annual-report/wolters-kluwer-2020-annual-report-portrait.pdf?rev=f425804ec0664f66815ddd5b7ef85bbe&amp;hash=FE4BCFD333DD2753F63C7A6B42474D75" data-dm-wk="productpromotion.button" data-variantitemid="{B204AE24-FD3E-4D31-A5CE-45948BA785D8}" data-variantfieldname="Link">Download report</a></div></div><div class="details-wrapper"><div class="productpromo-cta-wrapper"></div></div> </div>
+</div>
+</div>
+</div>
+</div> <div class="component wk-container">
+<div class="component-content">
+<div class="title field-title"><p>Latest Investor News</p></div><div class="wk-container--cta field-cta"><a href="/en/investors/news?f:contenttype=News%20Page%7CPress%20Release%20Page&amp;f:newstype=Investor%20News&amp;sortBy=editorialpublishdate_dt%7CDescending" data-variantitemid="{BB4A0798-D607-494A-9DD9-D7E5EDDC54DA}" title="View all investor news" data-variantfieldname="CTA">View All Investor News</a></div><div class="row">
+<div class="query-card">
+<div class="component carousel col-12 mobile-card" data-properties='{"timeout":2147483647,"isPauseEnabled":true,"transition":"BasicTransition"}'>
+<div class="component-content">
+<h2 class="query-card--title"></h2>
+<div data-id="divCarousel_77dbce3d-5a8f-468a-ae0e-a1cbed780c4a" class="carousel-inner">
+<ul class="slides">
+<li class="slide">
+<div class="row">
+<div class="component cards ">
+ <div class="component-content">
+<a title="Wolters Kluwer completes capital reduction" href="/en/news/wolters-kluwer-completes-capital-reduction-2021-09">
+<div class="link-wrapper link-wrapper--left">
+<div class="card-image field-image">
+<img src="/-/media/feature/wolterskluwer/oneweb/cards/fallback image/wklogo_defaultcardimage.jpg?rev=9516134538da4cb6b7b55e6b9742fa00" srcset="/-/media/feature/wolterskluwer/oneweb/cards/fallback%20image/wklogo_defaultcardimage.jpg?rev=9516134538da4cb6b7b55e6b9742fa00&w=679&hash=282C854B9E1294930237A34FFED1C657 679w,/-/media/feature/wolterskluwer/oneweb/cards/fallback%20image/wklogo_defaultcardimage.jpg?rev=9516134538da4cb6b7b55e6b9742fa00&w=638&hash=660843CC78BDFEE686B92A05D17335E8 638w" sizes="(Max-Width: 767px) 679px, 638px" alt="Wolters Kluwer completes capital reduction" />
+</div>
+<div class="card-content">
+<div class="card-label">
+<span>
+<span class="wk-icon-clipboard-text">
+</span> Press Release
+</span>
+</div>
+<div class="text-wrapper">
+<div class="card-eyebrow">
+<div class="interest-area field-name">Corporate</div>
+<div class="interest-area field-name">Investors</div>
+<div class="date field-editorial-publish-date">September 10, 2021</div>
+</div>
+<div class="card-title field-title">Wolters Kluwer completes capital reduction</div>
+<div class="card-description field-abstract">Wolters Kluwer announces that it has now completed the reduction in share capital approved by shareholders at the Annual General Meeting of Shareholders held on April 22, 2021.</div>
+</div>
+<div class="card-cta"><span>Learn More</span></div>
+</div>
+</div>
+</a>
+</div>
+</div>
+</div>
+</li>
+<li class="slide">
+<div class="row">
+<div class="component cards ">
+<div class="component-content">
+<a title="Wolters Kluwer 2020 Full-Year Report" href="/en/news/wolters-kluwer-2020-full-year-report">
+<div class="link-wrapper link-wrapper--left">
+<div class="card-image field-image">
+<img src="/-/media/feature/wolterskluwer/oneweb/cards/fallback image/wklogo_defaultcardimage.jpg?rev=9516134538da4cb6b7b55e6b9742fa00" srcset="/-/media/feature/wolterskluwer/oneweb/cards/fallback%20image/wklogo_defaultcardimage.jpg?rev=9516134538da4cb6b7b55e6b9742fa00&w=679&hash=282C854B9E1294930237A34FFED1C657 679w,/-/media/feature/wolterskluwer/oneweb/cards/fallback%20image/wklogo_defaultcardimage.jpg?rev=9516134538da4cb6b7b55e6b9742fa00&w=638&hash=660843CC78BDFEE686B92A05D17335E8 638w" sizes="(Max-Width: 767px) 679px, 638px" alt="Wolters Kluwer 2020 Full-Year Report" />
+</div>
+<div class="card-content">
+<div class="card-label">
+<span>
+ <span class="wk-icon-clipboard-text">
+</span> Press Release
+</span>
+</div>
+<div class="text-wrapper">
+<div class="card-eyebrow">
+<div class="interest-area field-name">Corporate</div>
+<div class="interest-area field-name">Investors</div>
+<div class="date field-editorial-publish-date">February 24, 2021</div>
+</div>
+<div class="card-title field-title">Wolters Kluwer 2020 Full-Year Report</div>
+<div class="card-description field-abstract">Wolters Kluwer releases its full-year 2020 results.
+</div>
+</div>
+<div class="card-cta"><span>Learn More</span></div>
+</div>
+</div>
+</a>
+</div>
+</div>
+</div>
+</li>
+<li class="slide">
+<div class="row">
+<div class="component cards ">
+<div class="component-content">
+<a title="Wolters Kluwer to acquire XCM Solutions" href="/en/news/wolters-kluwer-to-acquire-xcm-solutions">
+<div class="link-wrapper link-wrapper--left">
+<div class="card-image field-image">
+<img src="/-/media/feature/wolterskluwer/oneweb/cards/fallback image/wklogo_defaultcardimage.jpg?rev=9516134538da4cb6b7b55e6b9742fa00" srcset="/-/media/feature/wolterskluwer/oneweb/cards/fallback%20image/wklogo_defaultcardimage.jpg?rev=9516134538da4cb6b7b55e6b9742fa00&w=679&hash=282C854B9E1294930237A34FFED1C657 679w,/-/media/feature/wolterskluwer/oneweb/cards/fallback%20image/wklogo_defaultcardimage.jpg?rev=9516134538da4cb6b7b55e6b9742fa00&w=638&hash=660843CC78BDFEE686B92A05D17335E8 638w" sizes="(Max-Width: 767px) 679px, 638px" alt="Wolters Kluwer to acquire XCM Solutions" />
+</div>
+<div class="card-content">
+<div class="card-label">
+<span>
+<span class="wk-icon-clipboard-text">
+</span> Press Release
+</span>
+</div>
+<div class="text-wrapper">
+<div class="card-eyebrow">
+<div class="interest-area field-name">Corporate</div>
+<div class="interest-area field-name">Investors</div>
+<div class="interest-area field-name">Tax &amp; Accounting</div>
+<div class="date field-editorial-publish-date">September 14, 2020</div>
+</div>
+<div class="card-title field-title">Wolters Kluwer to acquire XCM Solutions</div>
+<div class="card-description field-abstract">Wolters Kluwer announces today that it has signed and completed the acquisition of XCM Solutions. The acquisition offers integration opportunities with CCH&#174; Axcess™, our cloud-based software suite for professional firms in North America.</div>
+</div>
+<div class="card-cta"><span>Learn More</span></div>
+</div>
+</div>
+</a>
+</div>
+</div>
+</div>
+</li>
+<li class="slide">
+<div class="row">
+<div class="component cards ">
+<div class="component-content">
+<a title="Wolters Kluwer update on shares held in treasury" href="/en/news/wolters-kluwer-update-on-shares-held-in-treasury">
+<div class="link-wrapper link-wrapper--left">
+<div class="card-image field-image">
+<img src="/-/media/feature/wolterskluwer/oneweb/cards/fallback image/wklogo_defaultcardimage.jpg?rev=9516134538da4cb6b7b55e6b9742fa00" srcset="/-/media/feature/wolterskluwer/oneweb/cards/fallback%20image/wklogo_defaultcardimage.jpg?rev=9516134538da4cb6b7b55e6b9742fa00&w=679&hash=282C854B9E1294930237A34FFED1C657 679w,/-/media/feature/wolterskluwer/oneweb/cards/fallback%20image/wklogo_defaultcardimage.jpg?rev=9516134538da4cb6b7b55e6b9742fa00&w=638&hash=660843CC78BDFEE686B92A05D17335E8 638w" sizes="(Max-Width: 767px) 679px, 638px" alt="Wolters Kluwer update on shares held in treasury" />
+</div>
+<div class="card-content">
+<div class="card-label">
+<span>
+<span class="wk-icon-clipboard-text">
+</span> Press Release
+</span>
+</div>
+<div class="text-wrapper">
+<div class="card-eyebrow">
+<div class="interest-area field-name">Corporate</div>
+<div class="date field-editorial-publish-date">August 12, 2020</div>
+</div>
+<div class="card-title field-title">Wolters Kluwer update on shares held in treasury</div>
+<div class="card-description field-abstract">Wolters Kluwer announces that, in the course of executing on its share buyback program, the number of shares held in treasury has reached 8.2 million, or 3.01% of total issued ordinary shares (273.0 million). In accordance with regulatory requirements, the company has notified the Dutch Authority for the Financial Markets (AFM).</div>
+</div>
+<div class="card-cta"><span>Learn More</span></div>
+</div>
+</div>
+</a>
+</div>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div> </div>
+</div>
+</div>
+</div>
+</main>
+
+
+<footer role="contentinfo" aria-labelledby="footer-nav">
+<h5 id="footer-nav" class="sr-only">Footer Navigation</h5>
+<div id="footer" class="container-fluid">
+<div class="row">
+<div class="row">
+<div class="component row-splitter">
+<div class=" footer-content legal-footer container-fluid">
+<div>
+<div class="row">
+<div class="row component column-splitter">
+<div class="col-12 col-sm-6 col-lg-2">
+<div class="row">
+<div class="component link-list footer-links">
+<div class="component-content">
+<h6></h6>
+<ul>
+<li class="item0 odd first">
+<div class="field-link"><a href="/en/about-us" data-variantitemid="{A9B60E9A-5620-4E75-80D2-442D66F5F4A8}" data-variantfieldname="Link">About Wolters Kluwer</a></div> </li>
+<li class="item1 even">
+<div class="field-link"><a href="/en/about-us/strategy" data-variantitemid="{1B95F13A-95E1-499D-9E91-B8F15AA26C93}" data-variantfieldname="Link">Strategy</a></div> </li>
+<li class="item2 odd">
+<div class="field-link"><a href="/en/about-us/organization" data-variantitemid="{62A7CAF5-F0C1-4E24-AB59-174B26B4B4A0}" data-variantfieldname="Link">Our Organization</a></div> </li>
+<li class="item3 even">
+<div class="field-link"><a href="/en/about-us/management" data-variantitemid="{C30001EF-6F20-4E8E-A2F4-74A0F8308E05}" data-variantfieldname="Link">Management</a></div> </li>
+<li class="item4 odd">
+<div class="field-link"><a href="/en/about-us/supervisory-board" data-variantitemid="{5FFC76A9-2436-4A3C-B23B-989D27F98710}" data-variantfieldname="Link">Supervisory Board</a></div> </li>
+<li class="item5 even">
+<div class="field-link"><a href="/en/about-us/value-creation" data-variantitemid="{E47E1351-D04C-4181-814B-0508CE6E294D}" data-variantfieldname="Link">Value Creation</a></div> </li>
+<li class="item6 odd">
+<div class="field-link"><a href="/en/news" data-variantitemid="{5D5BF977-7E2A-496F-ABDD-4FEFAB5CBFF2}" data-variantfieldname="Link">News &amp; Press Releases</a></div> </li>
+<li class="item7 even last">
+<div class="field-link"><a href="/en/events" data-variantitemid="{51FF515D-F338-4E79-9FC3-7EA075C9CD30}" data-variantfieldname="Link">Events</a></div> </li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="col-12 col-sm-6 col-lg-2">
+<div class="row">
+<div class="component link-list footer-links col-12">
+<div class="component-content">
+<h6></h6>
+<ul>
+<li class="item0 odd first">
+<div class="field-link"><a href="/en/solutions" data-variantitemid="{36AFCB32-44F3-4A12-84F3-9091F0CC78AE}" data-variantfieldname="Link">Solutions Directory</a></div> </li>
+<li class="item1 even">
+<div class="field-link"><a href="/en/health" data-variantitemid="{06B36278-4164-4349-8EB9-5768BD1BC9FE}" data-variantfieldname="Link">Health</a></div> </li>
+<li class="item2 odd">
+<div class="field-link"><a href="/en/tax-and-accounting" data-variantitemid="{847D6795-621F-451E-91A9-28FFAAFD1BF3}" data-variantfieldname="Link">Tax &amp; Accounting</a></div> </li>
+<li class="item3 even">
+<div class="field-link"><a href="/en/finance" data-variantitemid="{00F58B36-20AB-4655-BCB6-A399E3FE45E7}" data-variantfieldname="Link">Finance</a></div> </li>
+<li class="item4 odd">
+<div class="field-link"><a href="/en/compliance" data-variantitemid="{8E71F6B1-8419-4DA4-AE2B-B11E73F13A1A}" data-variantfieldname="Link">Compliance</a></div> </li>
+<li class="item5 even last">
+<div class="field-link"><a href="/en/legal" data-variantitemid="{4103DB64-9E9F-4C18-B087-0EF42DE839E2}" data-variantfieldname="Link">Legal</a></div> </li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="col-12 col-sm-6 col-lg-2">
+<div class="row">
+<div class="component link-list footer-links col-12">
+<div class="component-content">
+<h6></h6>
+<ul>
+<li class="item0 odd first">
+<div class="field-link"><a href="/en/expert-insights" data-variantitemid="{E1C93E35-1169-4532-83D0-EB33E50ED4DC}" data-variantfieldname="Link">Expert Insights</a></div> </li>
+<li class="item1 even">
+<div class="field-link"><a href="https://careers.wolterskluwer.com/en" data-variantitemid="{5679BDC9-EF38-4398-9EA0-22E5FE714255}" data-variantfieldname="Link">Careers</a></div> </li>
+<li class="item2 odd">
+<div class="field-link"><a href="/en/investors" data-variantitemid="{EDACEBEB-937E-4311-9C14-97B1DF3EC7C7}" data-variantfieldname="Link">Investors</a></div> </li>
+<li class="item3 even">
+<div class="field-link"><a href="/en/sitemap" data-variantitemid="{9F5D5548-3AD6-401E-B4A7-A7FD299648D0}" data-variantfieldname="Link">Sitemap</a></div> </li>
+<li class="item4 odd">
+<div class="field-link"><a href="/en/site-owner" data-variantitemid="{3598D0B9-52E2-4393-BC78-71ED3E47C69A}" title="Site Owner" data-variantfieldname="Link">Site Owner</a></div> </li>
+<li class="item5 even last">
+<div class="field-link"><a href="/en/contact-us" data-variantitemid="{59516650-8687-4928-8803-9B95812ADDE8}" data-variantfieldname="Link">Contact Wolters Kluwer</a></div> </li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="col-12 col-sm-6 col-lg-2">
+<div class="row"></div>
+</div>
+<div class="col-12 col-lg-1 vertical-divider">
+<div class="row"></div>
+</div>
+<div class="col-12 col-lg-3 media-contacts">
+<div class="row">
+<div class="component link-list">
+<div class="component-content">
+<h6>Follow Wolters Kluwer</h6>
+<ul>
+<li class="item0 odd first">
+<div class="field-link"><a href="https://www.facebook.com/wolterskluwer" data-variantitemid="{E7CD9851-C9E6-4D8F-ACB6-D156F5E82345}" data-variantfieldname="Link" class="media-icons wk-icon-facebook" target="_blank">Facebook</a></div> </li>
+<li class="item1 even">
+<div class="field-link"><a href="https://twitter.com/Wolters_Kluwer" data-variantitemid="{274599C5-B1DF-445B-ADD2-295874DD6C50}" data-variantfieldname="Link" class="media-icons wk-icon-twitter" target="_blank">Twitter</a></div> </li>
+<li class="item2 odd">
+<div class="field-link"><a href="https://www.linkedin.com/company/wolters-kluwer/" data-variantitemid="{D7AF6D9B-9E5B-4D66-9101-F5A367C821F9}" data-variantfieldname="Link" class="media-icons wk-icon-linkedin" target="_blank">LinkedIn</a></div> </li>
+<li class="item3 even last">
+<div class="field-link"><a href="https://www.youtube.com/user/WoltersKluwerComms" data-variantitemid="{8B2788B5-C350-47A2-AB10-EFB9327F9769}" data-variantfieldname="Link" class="media-icons wk-icon-youtube" target="_blank">YouTube</a></div> </li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="component row-splitter">
+<div class=" footer-content footer-content-bottom container-fluid">
+<div>
+<div class="row">
+<div class="row component column-splitter">
+<div class="col-12 col-lg-6">
+<div class="row">
+<div class="component image file-type-icon-media-link col-12">
+<div class="component-content">
+<a title="WK Logo" href="/en"><picture title="Wolters Kluwer Logo"><source srcset="https://cdn.wolterskluwer.io/wk/fundamentals/1.15.2/logo/assets/white-small.svg" media="(max-width:767px)"></source><source srcset="https://cdn.wolterskluwer.io/wk/fundamentals/1.15.2/logo/assets/white-medium.svg" media="(max-width:991px)"></source><source srcset="https://cdn.wolterskluwer.io/wk/fundamentals/1.15.2/logo/assets/white-medium.svg" media="(max-width:1199px)"></source><img src="https://cdn.wolterskluwer.io/wk/fundamentals/1.15.2/logo/assets/white-medium.svg" alt="Wolters Kluwer Logo"></img></picture></a> </div>
+</div>
+</div>
+</div>
+<div class="col-12 col-lg-6">
+<div class="row">
+<div class="component rich-text col-12">
+<div class="component-content">
+<p class="footer-bottom-text">When you have to be right</p> </div>
+</div>
+</div>
+</div>
+</div></div>
+</div>
+</div>
+<div class=" minimal-content container-fluid">
+<div>
+<div class="row">
+<div class="component link-list footer-links">
+<div class="component-content">
+<p></p>
+<ul>
+<li class="item0 odd first">
+<div class="field-link"><a href="/en/terms-of-use" data-variantitemid="{3554BE4A-FCA0-4391-B46D-2CC79E78F6FD}" data-variantfieldname="Link" target="_blank">Terms of Use</a></div> </li>
+<li class="item1 even last">
+<div class="field-link"><a href="/en/privacy-cookies" data-variantitemid="{AC65F5A7-0494-4F0C-B600-5A1518440BB5}" data-variantfieldname="Link" target="_blank">Privacy &amp; Cookies</a></div> </li>
+</ul>
+</div>
+</div>
+<div class="component container">
+<div class="component-content">
+<div class="row"></div> </div>
+</div></div>
+</div>
+</div>
+<div class=" minimal-content container-fluid">
+<div>
+<div class="row">
+<div class="component rich-text article-text">
+<div class="component-content">
+<p class="copyright-text">&copy; 2021 Wolters Kluwer N.V. and/or its subsidiaries. All rights reserved.</p> </div>
+</div>
+</div>
+</div>
+</div>
+</div></div>
+</div>
+</div>
+</div></div></div>
+</div>
+</footer>
+
+</div>
+
+<div class="component controlled-rich-text">
+<div class="component-content">
+<a id="backToTop" class="back-to-top" title="Back to top" href="/" data-dm-wk="back-to-top.button">
+<span class="wk-sr-only">Back To Top</span>
+<span class="arrow-icon wk-icon-arrow-up">
+</span>
+</a> </div>
+</div>
+
+<script src="/-/media/base themes/custom oneweb theme/scripts/optimized-min.js?rev=ed24e5fc236743b2956ce3414864da2a?t=20200930T144938Z" type="c77e45d08938488effa5055a-text/javascript"></script>
+<script type="c77e45d08938488effa5055a-application/javascript" src="https://www.google.com/recaptcha/api.js?render=6Lf6x-MUAAAAAATFy_Zy7Y9FezDcp0kmycrG1taQ"></script>
+<script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="c77e45d08938488effa5055a-|49" defer=""></script></body>
+</html>

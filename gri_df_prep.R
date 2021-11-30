@@ -196,3 +196,13 @@ out <- tryCatch(
   }
 )
 
+out <- tryCatch(
+  expr = {
+    
+    
+  },
+  error = function(e){ 
+    
+    return(NULL)
+  }
+)  
