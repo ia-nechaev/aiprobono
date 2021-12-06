@@ -1,0 +1,68 @@
+---
+title: "R Notebook"
+output:
+  html_document:
+    df_print: paged
+---
+## Data preparation part (reports download script is in gri_df_prep.R) 
+
+### Loading the script with functions and a list of companies to process (gri_list_df)
+```{r}
+source("dprep_functions.R")
+
+```
+
+### Getting the tables from the page specified + 4 pages forward
+
+```{r}
+temp_indexes <- extract_gri_indexes()
+```
+
+
+### List of reports we are working with
+```{r}
+
+print(names(temp_indexes))
+
+```
+
+### Testing the main function of extracting codes and pagenumbers
+```{r}
+yyy<-get_gri_index(temp_indexes[[13]][[3]]) # testing to extract page numbers for 13 company for the 3d page
+
+glimpse(yyy)
+```
+
+
+### Trying to get the codes and pagenumbers for all files in set
+```{r}
+  tv<- c()
+  df_tp <- temp_indexes
+  
+  for (i in 1:length(df_tp)) { # picking firms
+    tv <- c()
+
+    for (k in 1:length(df_tp[[i]])) { #picking pages
+
+        if (length(df_tp[[i]][[k]])>0){
+          tv <-c(tv,get_gri_index(df_tp[[i]][[k]])) # sending a page to a get_gri_function
+        }else{
+          tv<-c(tv,"No tables found")
+        }
+
+    }  
+    
+    print(names(df_tp)[i])
+    print(tv)
+  }
+
+  
+
+```
+
+
+
+
+
+
+

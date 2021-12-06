@@ -12,6 +12,11 @@ library(pdftools)
 library(jsonlite)
 library(rlang)
 
+source("dprep_functions.R")
+
+
+
+
 getwd()
 setwd("../")
 
