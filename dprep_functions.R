@@ -18,24 +18,31 @@ num_regex <-regex("\\d{1,3}")
 
 saving_dir <- "reports"
 
+getwd()
+# setwd("../")
 ###
 
 #list_of_pdf_reports <-function(){
   
   # Loading the list of available reports to process (results of gri_df_prep.R)
   
-  gri_list_df <- read.csv("reports/GriTempUrlList2.csv", stringsAsFactors=FALSE)
+  gri_list_df <- read.csv("reports/GriTempUrlList3.csv", stringsAsFactors=FALSE)
+  # gri_list_df %>% glimpse()
   
   # Adding the fullpath for retrieving files
-  gri_list_df<-gri_list_df %>% mutate(fullpath=str_c(saving_dir, gri_list_df$folder,gri_list_df$Publication_Year,gri_list_df$filename, sep = "/") )
-  
+  gri_list_df<-gri_list_df %>% mutate(fullpath=str_c(saving_dir, gri_list_df$ffolder, gri_list_df$filename, sep = "/") )
   
   # Filtering only pdfs with available GRI index page number
-  gri_list_df %<>% filter(gri_list_df$type_dld=="application/pdf", !str_detect(gri_list_df$pdf_contents_page,reg_pn), !gri_list_df$pdf_contents_page=="")
+  gri_list_df %<>% filter((dld_status=="FE")|(dld_status=="OK"), !str_detect(pdf_contents_page,reg_pn), !pdf_contents_page=="")
   
   # Making the page number into numeric format
   gri_list_df %<>% mutate(pdf_contents_page=as.numeric(pdf_contents_page))
   
+  # Eliminating na page numbers 
+  gri_list_df %<>% filter(!is.na(pdf_contents_page))
+  # gri_list_df$pdf_contents_page %>%  is.na() %>% sum()
+  gri_list_df %>% glimpse()
+
 #  return(gri_list_df)
 #}
 
@@ -50,11 +57,12 @@ extract_one_cpage <- function(i,j){
   return(contents_page)
 }
 
-extract_gri_indexes <- function (){  # get the list of companies with pages that possibly contain gri indexes
+extract_gri_indexes <- function (n){  # get the list of companies with pages that possibly contain gri indexes
   gic <-c()
-  for(i in 1:nrow(gri_list_df)){
+  #for(i in 1:nrow(gri_list_df)){
+  for(i in 1:n){
     cp <-c()
-    compname <- gri_list_df$Organization[i]
+    compname <- gri_list_df$fullpath[i]
     print(compname)
     for(j in 0:4){
       pagenum  <- gri_list_df$pdf_contents_page[i]+j
@@ -80,8 +88,6 @@ extract_gri_indexes <- function (){  # get the list of companies with pages that
 
   return(gic)
 }
-
-
 
 
 
@@ -128,7 +134,7 @@ combine_codenpage <- function(table_tp){
   if(!is.null(dim(table_tp))){
     k<-choose_column(table_tp)
   }else{
-    return(NULL)
+    return("No tables to process")
   }
   for(j in 1:nrow(table_tp)){
     my_if_statement <- ((!toString(table_tp[j,1])=="") && (!is.na(table_tp[j,1])))

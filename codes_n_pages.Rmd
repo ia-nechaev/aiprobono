@@ -16,7 +16,8 @@ source("dprep_functions.R")
 
 ```{r}
 #options(java.parameters = "-Xmx1000m")
-temp_indexes <- extract_gri_indexes()
+temp_indexes <- extract_gri_indexes(1976)
+
 ```
 
 
@@ -29,32 +30,75 @@ print(names(temp_indexes))
 
 ### Testing the main function of extracting codes and pagenumbers
 ```{r}
-yyy<-get_gri_index(temp_indexes[[13]][[3]]) # testing to extract page numbers for 13 company for the 3d page
+yyy<-get_gri_index(temp_indexes[[258]][[1]]) # testing to extract page numbers for 13 company for the 3d page
 
 glimpse(yyy)
+length(temp_indexes[[258]][[1]])
+
+temp_indexes[[258]][[1]]
+
+
+sss<-enframe(yyy)
+
+temp_indexes[[2]][[5]]
+
+ifelse(is.null(names(temp_indexes[[8]])[1]), "NN", names(temp_indexes[[8]])[1])
+
+names(temp_indexes[[9]])[1]
+
+is.null((temp_indexes[[9]])[1])
+
+zzz<-data.frame(company=names(temp_indexes)[9],
+                page=ifelse(is.null(names(temp_indexes[[9]])[1]), "NN", names(temp_indexes[[8]])[1]),
+                enframe(yyy))
+
+zzz1 <-data.frame(company=names(temp_indexes)[2],page=names(temp_indexes[[2]])[5], name="NN", value="YY")
+
+rbind(zzz,zzz1)
+
 ```
 
 
 ### Trying to get the codes and pagenumbers for all files in set
 ```{r}
-  tv<- c()
+  tv<-  data.frame()
   df_tp <- temp_indexes
+  df <- data.frame()
+  m<-0
+  i<-1
+  k<-1
   
   for (i in 1:length(df_tp)) { # picking firms
-    tv <- c()
+
 
     for (k in 1:length(df_tp[[i]])) { #picking pages
+        tv <-  data.frame()
         cur_page <-df_tp[[i]][[k]]
-        if (length(cur_page)>0){
-          tv <-c(tv,list(get_gri_index(cur_page))) # sending a page to a get_gri_function
-        }else{
-          tv<-c(tv,"No tables found")
-        }
-
+        my_statement <- length(cur_page)>0 && !is.null(cur_page)
+        out <- tryCatch(
+         expr = {
+          if (my_statement){
+            tv <- data.frame(company=names(df_tp)[i],
+                             gi_page=names(df_tp[[i]])[k],
+                             enframe(get_gri_index(cur_page))) # sending a page to a get_gri_function
+          }else{
+            tv <- data.frame(company=names(df_tp)[i], gi_page="nothing found", name="No pages/tables found", value="None")
+          }
+         
+          df <- rbind(df,tv)
+         },
+        error = function(e){ 
+          
+        })
     }  
     
+   # m<-m+1
+    #if (m>200){
+     # write.csv(df, "reports/df.csv")
+      #m<-0
+      #}
     print(names(df_tp)[i])
-    print(tv)
+    # print(tv)
   }
 
   
@@ -62,6 +106,12 @@ glimpse(yyy)
 ```
 
 
+```{r}
+df1 <- df %>% mutate(value=as.character(value))
+
+write.csv(df1,"df1.csv")
+
+```
 
 
 
