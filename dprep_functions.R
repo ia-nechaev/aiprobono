@@ -75,7 +75,9 @@ extract_gri_indexes <- function (){  # get the list of companies with pages that
     gic <-c(gic, list(cp))
     names(gic)[i] <- compname
     print(cat(compname, "processed "))
+    gc()
   }
+
   return(gic)
 }
 
@@ -129,7 +131,7 @@ combine_codenpage <- function(table_tp){
     return(NULL)
   }
   for(j in 1:nrow(table_tp)){
-    my_if_statement <- (!toString(table_tp[j,1])=="") && (!is.na(table_tp[j,1]))
+    my_if_statement <- ((!toString(table_tp[j,1])=="") && (!is.na(table_tp[j,1])))
     if (my_if_statement){
       doc_gri_index <- c(doc_gri_index, list(numextract(table_tp[j,k])))
       names(doc_gri_index)[j] <- table_tp[j,1]

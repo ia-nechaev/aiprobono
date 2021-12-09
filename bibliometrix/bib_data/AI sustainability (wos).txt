@@ -1,0 +1,5185 @@
+﻿FN Clarivate Analytics Web of Science
+VR 1.0
+PT J
+AU Che, SQ
+   Li, XP
+AF Che, Siqi
+   Li, Xuepei
+TI HCI with DEEP learning for sentiment analysis of corporate social
+   responsibility report
+SO CURRENT PSYCHOLOGY
+SN 1046-1310
+EI 1936-4733
+DI 10.1007/s12144-020-00789-y
+EA JUN 2020
+UT WOS:000538999300001
+ER
+
+PT J
+AU Park, YE
+   Son, H
+   Yang, SU
+   Lee, JK
+AF Park, Young Eun
+   Son, Hyunsang
+   Yang, Sung-Un
+   Lee, Jae Kook
+TI A good company gone bad An examination of corporate social
+   responsibility agenda-building in times of corporate crisis using
+   machine learning techniques
+SO JOURNAL OF COMMUNICATION MANAGEMENT
+RI Lee, Jae Kook/AAM-3046-2021
+OI Lee, Jae Kook/0000-0002-1239-3273
+SN 1363-254X
+EI 1478-0852
+PD FEB 13
+PY 2019
+VL 23
+IS 1
+BP 31
+EP 51
+DI 10.1108/JCOM-11-2017-0132
+UT WOS:000458456600003
+ER
+
+PT J
+AU Saveliev, A
+   Zhurenkov, D
+AF Saveliev, Anton
+   Zhurenkov, Denis
+TI Artificial intelligence and social responsibility: the case of the
+   artificial intelligence strategies in the United States, Russia, and
+   China
+SO KYBERNETES
+RI Saveliev, Anton/AAB-7671-2021
+OI Saveliev, Anton/0000-0002-3687-9147
+SN 0368-492X
+EI 1758-7883
+PD MAR 16
+PY 2021
+VL 50
+IS 3
+SI SI
+BP 656
+EP 675
+DI 10.1108/K-01-2020-0060
+EA DEC 2020
+UT WOS:000595846000001
+ER
+
+PT J
+AU Das, SK
+AF Das, Santanu Kumar
+TI Effect of corporate social responsibility on consumer retention for FMCG
+   industries: a deep learning analysis of professional students of Odisha
+SO COMPLEX & INTELLIGENT SYSTEMS
+SN 2199-4536
+EI 2198-6053
+DI 10.1007/s40747-021-00537-0
+EA OCT 2021
+UT WOS:000707684200001
+ER
+
+PT J
+AU Diaz, JF
+   Nguyen, TT
+AF Diaz, John Francis
+   Nguyen, Thanh Tung
+TI Application of grey relational analysis and artificial neural networks
+   on corporate social responsibility (CSR) indices
+SO JOURNAL OF SUSTAINABLE FINANCE & INVESTMENT
+SN 2043-0795
+EI 2043-0809
+DI 10.1080/20430795.2021.1929805
+EA MAY 2021
+UT WOS:000652996900001
+ER
+
+PT J
+AU Velazquez, L
+AF Velazquez, Lourdes
+TI New Challenges for Ethics: The Social Impact of Posthumanism, Robots,
+   and Artificial Intelligence
+SO JOURNAL OF HEALTHCARE ENGINEERING
+OI Velazquez, Lourdes/0000-0003-3082-8194
+SN 2040-2295
+EI 2040-2309
+PD JUN 7
+PY 2021
+VL 2021
+AR 5593467
+DI 10.1155/2021/5593467
+UT WOS:000665829000005
+PM 34194684
+ER
+
+PT J
+AU Misawa, D
+   Fukuyoshi, J
+   Sengoku, S
+AF Misawa, Daitaro
+   Fukuyoshi, Jun
+   Sengoku, Shintaro
+TI Cancer Prevention Using Machine Learning, Nudge Theory and Social Impact
+   Bond
+SO INTERNATIONAL JOURNAL OF ENVIRONMENTAL RESEARCH AND PUBLIC HEALTH
+RI Sengoku, Shintaro/AAZ-8605-2020
+OI Sengoku, Shintaro/0000-0001-8008-3667
+EI 1660-4601
+PD FEB 1
+PY 2020
+VL 17
+IS 3
+AR 790
+DI 10.3390/ijerph17030790
+UT WOS:000517783300115
+PM 32012838
+ER
+
+PT J
+AU Perrault, A
+   Fang, F
+   Sinha, A
+   Tambe, M
+AF Perrault, Andrew
+   Fang, Fei
+   Sinha, Arunesh
+   Tambe, Milind
+TI Artificial Intelligence for Social Impact: Learning and Planning in the
+   Data-to-Deployment Pipeline
+SO AI MAGAZINE
+SN 0738-4602
+PD WIN
+PY 2020
+VL 41
+IS 4
+BP 3
+EP 16
+UT WOS:000609216300001
+ER
+
+PT J
+AU Williams, C
+AF Williams, Carmel
+TI A Health Rights Impact Assessment Guide for Artificial Intelligence
+   Projects
+SO HEALTH AND HUMAN RIGHTS
+SN 1079-0969
+EI 2150-4113
+PD DEC
+PY 2020
+VL 22
+IS 2
+BP 55
+EP 62
+UT WOS:000612108200007
+PM 33390693
+ER
+
+PT J
+AU Yun, JJ
+   Lee, D
+   Ahn, H
+   Park, K
+   Yigitcanlar, T
+AF Yun, JinHyo Joseph
+   Lee, Dooseok
+   Ahn, Heungju
+   Park, Kyungbae
+   Yigitcanlar, Tan
+TI Not Deep Learning but Autonomous Learning of Open Innovation for
+   Sustainable Artificial Intelligence
+SO SUSTAINABILITY
+RI Yun, JinHyo Joseph/AAL-3521-2020; Yigitcanlar, Tan/J-1142-2012
+OI Yigitcanlar, Tan/0000-0001-7262-7118
+SN 2071-1050
+PD AUG
+PY 2016
+VL 8
+IS 8
+AR 797
+DI 10.3390/su8080797
+UT WOS:000382452900097
+ER
+
+PT J
+AU Li, DK
+AF Li, Dongkun
+TI Application of artificial intelligence and machine learning based on big
+   data analysis in sustainable agriculture
+SO ACTA AGRICULTURAE SCANDINAVICA SECTION B-SOIL AND PLANT SCIENCE
+RI Dongkun, Li/ABB-8707-2021
+OI Li, Dongkun/0000-0002-8725-7858
+SN 0906-4710
+EI 1651-1913
+DI 10.1080/09064710.2021.1965650
+EA SEP 2021
+UT WOS:000703422500001
+ER
+
+PT J
+AU Alsolami, FJ
+   Alghamdi, ASAM
+   Khan, AI
+   Abushark, YB
+   Almalawi, A
+   Saleem, F
+   Agrawal, A
+   Kumar, R
+   Khan, RA
+AF Alsolami, Fawaz Jaber
+   Alghamdi, Abdullah Saad Al-Malaise
+   Khan, Asif Irshad
+   Abushark, Yoosef B.
+   Almalawi, Abdulmohsen
+   Saleem, Farrukh
+   Agrawal, Alka
+   Kumar, Rajeev
+   Khan, Raees Ahmad
+TI Impact Assessment of COVID-19 Pandemic Through Machine Learning Models
+SO CMC-COMPUTERS MATERIALS & CONTINUA
+RI Kumar, Rajeev/AAD-7346-2020; Khan, Asif Irshad/AAH-6457-2019
+OI Kumar, Rajeev/0000-0002-1813-1362; Khan, Asif
+   Irshad/0000-0003-1131-5350; AL-Malaise, Abdullah/0000-0001-9259-4536;
+   Saleem, Farrukh/0000-0003-2924-2030
+SN 1546-2218
+EI 1546-2226
+PY 2021
+VL 68
+IS 3
+BP 2895
+EP 2912
+DI 10.32604/cmc.2021.017469
+UT WOS:000648894900006
+ER
+
+PT J
+AU Wagenaar, D
+   Curran, A
+   Balbi, M
+   Bhardwaj, A
+   Soden, R
+   Hartato, E
+   Sarica, GM
+   Ruangpan, L
+   Molinario, G
+   Lallemant, D
+AF Wagenaar, Dennis
+   Curran, Alex
+   Balbi, Mariano
+   Bhardwaj, Alok
+   Soden, Robert
+   Hartato, Emir
+   Sarica, Gizem Mestav
+   Ruangpan, Laddaporn
+   Molinario, Giuseppe
+   Lallemant, David
+TI Invited perspectives: How machine learning will change flood risk and
+   impact assessment
+SO NATURAL HAZARDS AND EARTH SYSTEM SCIENCES
+RI Lallemant, David/AAK-1138-2020
+OI Lallemant, David/0000-0001-5759-9972; Mestav Sarica,
+   Gizem/0000-0003-3239-2718; Wagenaar, Dennis/0000-0001-5215-6435;
+   Bhardwaj, Alok/0000-0003-2614-5796; Balbi, Mariano/0000-0002-1017-3947
+SN 1561-8633
+EI 1684-9981
+PD APR 29
+PY 2020
+VL 20
+IS 4
+BP 1149
+EP 1161
+DI 10.5194/nhess-20-1149-2020
+UT WOS:000531526600001
+ER
+
+PT J
+AU Wang, JP
+   Molina, MD
+   Sundar, SS
+AF Wang, Jinping
+   Molina, Maria D.
+   Sundar, S. Shyam
+TI When expert recommendation contradicts peer opinion: Relative social
+   influence of valence, group identity and artificial intelligence
+SO COMPUTERS IN HUMAN BEHAVIOR
+RI Molina, Maria/AAW-9430-2020
+OI Molina, Maria/0000-0001-8115-6303; Wang, Jinping/0000-0001-8164-8025
+SN 0747-5632
+EI 1873-7692
+PD JUN
+PY 2020
+VL 107
+AR 106278
+DI 10.1016/j.chb.2020.106278
+UT WOS:000523598100048
+ER
+
+PT J
+AU Gupta, A
+   Watson, S
+   Yin, HJ
+AF Gupta, Ananya
+   Watson, Simon
+   Yin, Hujun
+TI Deep learning-based aerial image segmentation with open data for
+   disaster impact assessment
+SO NEUROCOMPUTING
+SN 0925-2312
+EI 1872-8286
+PD JUN 7
+PY 2021
+VL 439
+BP 22
+EP 33
+DI 10.1016/j.neucom.2020.02.139
+UT WOS:000642570800003
+ER
+
+PT J
+AU Crane-Droesch, A
+AF Crane-Droesch, Andrew
+TI Machine learning methods for crop yield prediction and climate change
+   impact assessment in agriculture
+SO ENVIRONMENTAL RESEARCH LETTERS
+SN 1748-9326
+PD NOV
+PY 2018
+VL 13
+IS 11
+AR 114003
+DI 10.1088/1748-9326/aae159
+UT WOS:000448445100001
+ER
+
+PT J
+AU Berk, R
+AF Berk, Richard
+TI An impact assessment of machine learning risk forecasts on parole board
+   decisions and recidivism
+SO JOURNAL OF EXPERIMENTAL CRIMINOLOGY
+SN 1573-3750
+EI 1572-8315
+PD JUN
+PY 2017
+VL 13
+IS 2
+BP 193
+EP 216
+DI 10.1007/s11292-017-9286-2
+UT WOS:000402455600003
+ER
+
+PT J
+AU Ekici, B
+   Kazanasmaz, ZT
+   Turrin, M
+   Tasgetiren, MF
+   Sariyildiz, IS
+AF Ekici, Berk
+   Kazanasmaz, Z. Tugce
+   Turrin, Michela
+   Tasgetiren, M. Fatih
+   Sariyildiz, I. Sevil
+TI Multi-zone optimisation of high-rise buildings using artificial
+   intelligence for sustainable metropolises. Part 1: Background,
+   methodology, setup, and machine learning results
+SO SOLAR ENERGY
+SN 0038-092X
+EI 1471-1257
+PD AUG
+PY 2021
+VL 224
+BP 373
+EP 389
+DI 10.1016/j.solener.2021.05.083
+UT WOS:000681575800004
+ER
+
+PT J
+AU Goralski, MA
+   Tan, TK
+AF Goralski, Margaret A.
+   Tan, Tay Keong
+TI Artificial intelligence and sustainable development
+SO INTERNATIONAL JOURNAL OF MANAGEMENT EDUCATION
+SN 1472-8117
+EI 2352-3565
+PD MAR
+PY 2020
+VL 18
+IS 1
+AR 100330
+DI 10.1016/j.ijme.2019.100330
+UT WOS:000514842200005
+ER
+
+PT J
+AU Luceri, L
+   Braun, T
+   Giordano, S
+AF Luceri, Luca
+   Braun, Torsten
+   Giordano, Silvia
+TI Analyzing and inferring human real-life behavior through online social
+   networks with social influence deep learning
+SO APPLIED NETWORK SCIENCE
+OI Giordano, Silvia/0000-0003-2603-9029
+EI 2364-8228
+PD JUN 13
+PY 2019
+VL 4
+IS 1
+AR 34
+DI 10.1007/s41109-019-0134-3
+UT WOS:000684639400002
+ER
+
+PT J
+AU Duvnjak, K
+   Gregoric, M
+   Gorse, M
+AF Duvnjak, Kristina
+   Gregoric, Maja
+   Gorse, Mateja
+TI SUSTAINABLE DEVELOPMENT - AN ARTIFICIAL INTELLIGENCE APPROACH
+SO MANAGEMENT RESEARCH AND PRACTICE
+RI Gregoric, Maja/N-7430-2018
+OI Gregoric, Maja/0000-0001-6989-045X
+SN 2067-2462
+PD DEC
+PY 2020
+VL 12
+IS 4
+BP 18
+EP 28
+UT WOS:000595003300002
+ER
+
+PT J
+AU Galaz, V
+   Centeno, MA
+   Callahan, PW
+   Causevic, A
+   Patterson, T
+   Brass, I
+   Baum, S
+   Farber, D
+   Fischer, J
+   Garcia, D
+   McPhearson, T
+   Jimenez, D
+   King, B
+   Larcey, P
+   Levy, K
+AF Galaz, Victor
+   Centeno, Miguel A.
+   Callahan, Peter W.
+   Causevic, Amar
+   Patterson, Thayer
+   Brass, Irina
+   Baum, Seth
+   Farber, Darryl
+   Fischer, Joern
+   Garcia, David
+   McPhearson, Timon
+   Jimenez, Daniel
+   King, Brian
+   Larcey, Paul
+   Levy, Karen
+TI Artificial intelligence, systemic risks, and sustainability
+SO TECHNOLOGY IN SOCIETY
+RI Fischer, Joern/C-6625-2012; Garcia, David/A-2113-2014
+OI Fischer, Joern/0000-0003-3187-8978; Jimenez, Daniel/0000-0003-4218-4306;
+   Causevic, Amar/0000-0003-4630-1717; Garcia, David/0000-0002-2820-9151;
+   Galaz, Victor/0000-0002-7303-8849
+SN 0160-791X
+EI 1879-3274
+PD NOV
+PY 2021
+VL 67
+AR 101741
+DI 10.1016/j.techsoc.2021.101741
+UT WOS:000704511300023
+ER
+
+PT J
+AU Zou, YF
+   O'Neill, SM
+   Larkin, NK
+   Alvarado, EC
+   Solomon, R
+   Mass, C
+   Liu, Y
+   Odman, MT
+   Shen, HZ
+AF Zou, Yufei
+   O'Neill, Susan M.
+   Larkin, Narasimhan K.
+   Alvarado, Ernesto C.
+   Solomon, Robert
+   Mass, Clifford
+   Liu, Yang
+   Odman, M. Talat
+   Shen, Huizhong
+TI Machine Learning-Based Integration of High-Resolution Wildfire Smoke
+   Simulations and Observations for Regional Health Impact Assessment
+SO INTERNATIONAL JOURNAL OF ENVIRONMENTAL RESEARCH AND PUBLIC HEALTH
+RI Liu, Yang/AAA-7224-2019; Shen, Huizhong/E-8152-2017; Odman, Mehmet
+   Talat/L-6218-2013
+OI Liu, Yang/0000-0001-5477-2186; Shen, Huizhong/0000-0003-1335-8477;
+   Odman, Mehmet Talat/0000-0002-3947-7047; Zou, Yufei/0000-0003-2667-0697;
+   Alvarado, Ernesto/0000-0002-9606-9963
+EI 1660-4601
+PD JUN 2
+PY 2019
+VL 16
+IS 12
+AR 2137
+DI 10.3390/ijerph16122137
+UT WOS:000473750500071
+PM 31212933
+ER
+
+PT J
+AU Liengpunsakul, S
+AF Liengpunsakul, Subin
+TI Artificial Intelligence and Sustainable Development in China
+SO CHINESE ECONOMY
+SN 1097-1475
+EI 1558-0954
+PY 2021
+VL 54
+IS 4
+SI SI
+BP 235
+EP 248
+DI 10.1080/10971475.2020.1857062
+UT WOS:000675470300002
+ER
+
+PT J
+AU Tanveer, M
+   Hassan, S
+   Bhaumik, A
+AF Tanveer, Muhammad
+   Hassan, Shafiqul
+   Bhaumik, Amiya
+TI Academic Policy Regarding Sustainability and Artificial Intelligence
+   (AI)
+SO SUSTAINABILITY
+RI Bhaumik, Amiya/ABB-5557-2020; Tanveer, Muhammad/AAO-9360-2021
+OI Bhaumik, Amiya/0000-0002-9188-2269; Hassan,
+   Shafiiqul/0000-0003-3826-9868; Tanveer, Dr. Muhammad/0000-0002-2019-6544
+EI 2071-1050
+PD NOV
+PY 2020
+VL 12
+IS 22
+AR 9435
+DI 10.3390/su12229435
+UT WOS:000594621400001
+ER
+
+PT J
+AU Linaza, MT
+   Posada, J
+   Bund, J
+   Eisert, P
+   Quartulli, M
+   Dollner, J
+   Pagani, A
+   Olaizola, IG
+   Barriguinha, A
+   Moysiadis, T
+   Lucat, L
+AF Linaza, Maria Teresa
+   Posada, Jorge
+   Bund, Jurgen
+   Eisert, Peter
+   Quartulli, Marco
+   Doellner, Juergen
+   Pagani, Alain
+   G. Olaizola, Igor
+   Barriguinha, Andre
+   Moysiadis, Theocharis
+   Lucat, Laurent
+TI Data-Driven Artificial Intelligence Applications for Sustainable
+   Precision Agriculture
+SO AGRONOMY-BASEL
+RI Olaizola, Igor Garcia/C-2957-2009; Barriguinha, Andre/E-2851-2013
+OI Olaizola, Igor Garcia/0000-0002-9965-2038; Eisert,
+   Peter/0000-0001-8378-4805; Quartulli, Marco/0000-0001-5735-2072;
+   Barriguinha, Andre/0000-0002-9533-3419
+EI 2073-4395
+PD JUN
+PY 2021
+VL 11
+IS 6
+AR 1227
+DI 10.3390/agronomy11061227
+UT WOS:000665322300001
+ER
+
+PT J
+AU Hardian, R
+   Liang, ZW
+   Zhang, XL
+   Szekely, G
+AF Hardian, Rifan
+   Liang, Zhenwen
+   Zhang, Xiangliang
+   Szekely, Gyorgy
+TI Artificial intelligence: the silver bullet for sustainable materials
+   development
+SO GREEN CHEMISTRY
+RI Zhang, Xiangliang/AAG-2238-2021
+OI Zhang, Xiangliang/0000-0002-3574-5665; Liang,
+   Zhenwen/0000-0003-1080-3408; Hardian, Rifan/0000-0003-1509-8058;
+   Szekely, Gyorgy/0000-0001-9658-2452
+SN 1463-9262
+EI 1463-9270
+PD NOV 7
+PY 2020
+VL 22
+IS 21
+BP 7521
+EP 7528
+DI 10.1039/d0gc02956d
+UT WOS:000583614600025
+ER
+
+PT J
+AU Quinn, J
+   Frias-Martinez, V
+   Subramanian, L
+AF Quinn, John
+   Frias-Martinez, Vanessa
+   Subramanian, Lakshminarayan
+TI Computational Sustainability and Artificial Intelligence in the
+   Developing World
+SO AI MAGAZINE
+SN 0738-4602
+PD FAL
+PY 2014
+VL 35
+IS 3
+BP 36
+EP 47
+DI 10.1609/aimag.v35i3.2529
+UT WOS:000341805500004
+ER
+
+PT J
+AU Mamedov, O
+   Tumanyan, Y
+   Ishchenko-Padukova, O
+   Movchan, I
+AF Mamedov, Oktay
+   Tumanyan, Yuri
+   Ishchenko-Padukova, Oksana
+   Movchan, Irina
+TI SUSTAINABLE ECONOMIC DEVELOPMENT AND POST-ECONOMY OF ARTIFICIAL
+   INTELLIGENCE
+SO ENTREPRENEURSHIP AND SUSTAINABILITY ISSUES
+SN 2345-0282
+PD DEC
+PY 2018
+VL 6
+IS 2
+BP 1028
+EP 1040
+DI 10.9770/jesi.2018.6.2(37)
+UT WOS:000453377400036
+ER
+
+PT J
+AU Milano, M
+   O'Sullivan, B
+   Gavanelli, M
+AF Milano, Michela
+   O'Sullivan, Barry
+   Gavanelli, Marco
+TI Sustainable Policy Making: A Strategic Challenge for Artificial
+   Intelligence
+SO AI MAGAZINE
+OI O'Sullivan, Barry/0000-0002-0090-2085; Gavanelli,
+   Marco/0000-0001-7433-5899
+SN 0738-4602
+PD FAL
+PY 2014
+VL 35
+IS 3
+BP 22
+EP 35
+DI 10.1609/aimag.v35i3.2534
+UT WOS:000341805500003
+ER
+
+PT J
+AU Bienvenido-Huertas, D
+   Farinha, F
+   Oliveira, MJ
+   Silva, EMJ
+   Lanca, R
+AF Bienvenido-Huertas, David
+   Farinha, Fatima
+   Oliveira, Miguel Jose
+   Silva, Elisa M. J.
+   Lanca, Rui
+TI Comparison of artificial intelligence algorithms to estimate
+   sustainability indicators
+SO SUSTAINABLE CITIES AND SOCIETY
+RI Bienvenido-Huertas, David/I-2976-2018; Huertas, Jose David
+   Bienvenido/AAE-8232-2021; Silva, Elisa Maria de Jesus da/A-9743-2016;
+   Farinha, Fatima/M-4880-2017; Lanca, Rui/E-5613-2017
+OI Bienvenido-Huertas, David/0000-0003-0716-8589; Huertas, Jose David
+   Bienvenido/0000-0003-0716-8589; Silva, Elisa Maria de Jesus
+   da/0000-0003-0037-2798; Farinha, Fatima/0000-0002-2056-6453; Lanca,
+   Rui/0000-0002-7753-3767
+SN 2210-6707
+EI 2210-6715
+PD DEC
+PY 2020
+VL 63
+AR 102430
+DI 10.1016/j.scs.2020.102430
+UT WOS:000580580900012
+ER
+
+PT J
+AU Quan, SJ
+   Park, J
+   Economou, A
+   Lee, S
+AF Quan, Steven Jige
+   Park, James
+   Economou, Athanassios
+   Lee, Sugie
+TI Artificial intelligence-aided design: Smart Design for sustainable city
+   development
+SO ENVIRONMENT AND PLANNING B-URBAN ANALYTICS AND CITY SCIENCE
+RI Quan, Steven Jige/AAP-6912-2020; Economou, Athanassios/AAO-6429-2021
+OI Quan, Steven Jige/0000-0001-9841-4823; Economou,
+   Athanassios/0000-0002-8406-0427
+SN 2399-8083
+EI 2399-8091
+PD OCT
+PY 2019
+VL 46
+IS 8
+SI SI
+BP 1581
+EP 1599
+DI 10.1177/2399808319867946
+UT WOS:000485946000013
+ER
+
+PT J
+AU Nishant, R
+   Kennedy, M
+   Corbett, J
+AF Nishant, Rohit
+   Kennedy, Mike
+   Corbett, Jacqueline
+TI Artificial intelligence for sustainability: Challenges, opportunities,
+   and a research agenda
+SO INTERNATIONAL JOURNAL OF INFORMATION MANAGEMENT
+OI Nishant, Rohit/0000-0001-7201-4901
+SN 0268-4012
+EI 1873-4707
+PD AUG
+PY 2020
+VL 53
+AR 102104
+DI 10.1016/j.ijinfomgt.2020.102104
+UT WOS:000544052900005
+ER
+
+PT J
+AU Ilie, C
+   Ploae, C
+   Melnic, LV
+   Cotrumba, MR
+   Gurau, AM
+   Alexandra, C
+AF Ilie, Constantin
+   Ploae, Catalin
+   Melnic, Lucia Violeta
+   Cotrumba, Mirela Rodica
+   Gurau, Andrei Marian
+   Alexandra, Coman
+TI Sustainability through the Use of Modern Simulation MethodsApplied
+   Artificial Intelligence
+SO SUSTAINABILITY
+RI Ilie, Constantin D./D-1590-2015; Lucia, Melnic/H-9642-2019; Ploae,
+   Catalin V./I-3730-2014; Ploae, Catalin/AAP-5022-2021; Cotrumba,
+   Mirela/V-5371-2019
+OI Ilie, Constantin D./0000-0002-1086-2371; Cotrumba, Mirela
+   Rodica/0000-0002-1324-1044
+SN 2071-1050
+PD APR 2
+PY 2019
+VL 11
+IS 8
+AR 2384
+DI 10.3390/su11082384
+UT WOS:000467752200197
+ER
+
+PT J
+AU Khakurel, J
+   Penzenstadler, B
+   Porras, J
+   Knutas, A
+   Zhang, WL
+AF Khakurel, Jayden
+   Penzenstadler, Birgit
+   Porras, Jari
+   Knutas, Antti
+   Zhang, Wenlu
+TI The Rise of Artificial Intelligence under the Lens of Sustainability
+SO TECHNOLOGIES
+RI Knutas, Antti/L-5808-2019; Penzenstadler, Birgit S/B-1582-2015;
+   Khakurel, Jayden/I-4463-2019
+OI Knutas, Antti/0000-0002-6953-0021; Penzenstadler, Birgit
+   S/0000-0002-5771-0455; Khakurel, Jayden/0000-0002-1397-5478
+SN 2227-7080
+PD DEC
+PY 2018
+VL 6
+IS 4
+AR 100
+DI 10.3390/technologies6040100
+UT WOS:000454335200012
+ER
+
+PT J
+AU Peng,
+   Guo, ZL
+   Ullah, S
+   Melagraki, G
+   Afantitis, A
+   Lynch, I
+AF Zhang, Peng
+   Guo, Zhiling
+   Ullah, Sami
+   Melagraki, Georgia
+   Afantitis, Antreas
+   Lynch, Iseult
+TI Nanotechnology and artificial intelligence to enable sustainable and
+   precision agriculture
+SO NATURE PLANTS
+RI Lynch, Iseult/I-3915-2014; Zhang, Peng/H-9461-2018; Afantitis,
+   Antreas/A-9637-2010
+OI Lynch, Iseult/0000-0003-4250-4584; Zhang, Peng/0000-0002-2774-5534;
+   Afantitis, Antreas/0000-0002-0977-8180; GUO, ZHILING/0000-0001-9549-2164
+SN 2055-026X
+EI 2055-0278
+PD JUL
+PY 2021
+VL 7
+IS 7
+BP 864
+EP 876
+DI 10.1038/s41477-021-00946-6
+EA JUN 2021
+UT WOS:000665728100001
+PM 34168318
+ER
+
+PT J
+AU El-Emary, IMM
+   Abdullah, HAA
+   Alqahtani, M
+   Alqahtani, FA
+AF El-Emary, Ibrahim M. M.
+   Abdullah, Hassan Abdullah Alqarni
+   Alqahtani, Mohmmed
+   Alqahtani, Faisal Ahmed
+TI Applications of Artificial Intelligence in Clean Sustainable Energy
+   System Support
+SO BIOSCIENCE BIOTECHNOLOGY RESEARCH COMMUNICATIONS
+SN 0974-6455
+PD OCT-DEC
+PY 2020
+VL 13
+IS 4
+BP 1981
+EP 1985
+DI 10.21786/bbrc/13.4/52
+UT WOS:000617116700052
+ER
+
+PT J
+AU Truby, J
+AF Truby, Jon
+TI Governing Artificial Intelligence to benefit the UN Sustainable
+   Development Goals
+SO SUSTAINABLE DEVELOPMENT
+RI TRUBY, JON/AAJ-2754-2020
+OI TRUBY, JON/0000-0002-9184-7033
+SN 0968-0802
+EI 1099-1719
+PD JUL
+PY 2020
+VL 28
+IS 4
+BP 946
+EP 959
+DI 10.1002/sd.2048
+EA FEB 2020
+UT WOS:000520053300001
+ER
+
+PT J
+AU Yadav, MP
+   Rohit
+   Yadav, DK
+AF Yadav, Mahendra Pratap
+   Rohit
+   Yadav, Dharmendra Kumar
+TI Maintaining container sustainability through machine learning
+SO CLUSTER COMPUTING-THE JOURNAL OF NETWORKS SOFTWARE TOOLS AND
+   APPLICATIONS
+RI Yadav, Mahendra/AAX-5708-2021
+SN 1386-7857
+EI 1573-7543
+PD DEC
+PY 2021
+VL 24
+IS 4
+BP 3725
+EP 3750
+DI 10.1007/s10586-021-03359-4
+EA JUL 2021
+UT WOS:000675793500001
+ER
+
+PT J
+AU Brandic, I
+AF Brandic, Ivona
+TI Sustainable and Trustworthy Edge Machine Learning
+SO IEEE INTERNET COMPUTING
+SN 1089-7801
+EI 1941-0131
+PD SEPT 1
+PY 2021
+VL 25
+IS 5
+BP 5
+EP 9
+DI 10.1109/MIC.2021.3104383
+UT WOS:000704822300008
+ER
+
+PT J
+AU Iwendi, C
+   Rehman, SU
+   Javed, AR
+   Khan, S
+   Srivastava, G
+AF Iwendi, Celestine
+   Rehman, Saif Ur
+   Javed, Abdul Rehman
+   Khan, Suleman
+   Srivastava, Gautam
+TI Sustainable Security for the Internet of Things Using Artificial
+   Intelligence Architectures
+SO ACM TRANSACTIONS ON INTERNET TECHNOLOGY
+RI Iwendi, Celestine/I-1989-2018; Srivastava, Gautam/N-5668-2019
+OI Iwendi, Celestine/0000-0003-4350-3911; Srivastava,
+   Gautam/0000-0001-9851-4103; Javed, Abdul Rehman/0000-0002-0570-1813
+SN 1533-5399
+EI 1557-6051
+PD AUG
+PY 2021
+VL 21
+IS 3
+AR 73
+DI 10.1145/3448614
+UT WOS:000713626400021
+ER
+
+PT J
+AU Arifuzzaman, M
+   Gul, MA
+   Khan, K
+   Hossain, SMZ
+AF Arifuzzaman, Md
+   Aniq Gul, Muhammad
+   Khan, Kaffayatullah
+   Hossain, S. M. Zakir
+TI Application of Artificial Intelligence (AI) for Sustainable Highway and
+   Road System
+SO SYMMETRY-BASEL
+RI khan, kaffayatullah/ABD-4153-2020
+OI KHAN, KAFFAYATULLAH/0000-0001-7994-4642; Gul, Muhammad
+   Aniq/0000-0003-1333-5179; Hossain, S M Zakir/0000-0002-1622-2041;
+   Arifuzzaman, Md/0000-0002-5069-0447
+EI 2073-8994
+PD JAN
+PY 2021
+VL 13
+IS 1
+AR 60
+DI 10.3390/sym13010060
+UT WOS:000610773100001
+ER
+
+PT J
+AU Hermes, J
+   Rimanoczy, I
+AF Hermes, Jan
+   Rimanoczy, Isabel
+TI Deep learning for a sustainability mindset
+SO INTERNATIONAL JOURNAL OF MANAGEMENT EDUCATION
+SN 1472-8117
+EI 2352-3565
+PD NOV
+PY 2018
+VL 16
+IS 3
+BP 460
+EP 467
+DI 10.1016/j.ijme.2018.08.001
+UT WOS:000448628700009
+ER
+
+PT J
+AU Nagappan, SD
+   Daud, SM
+AF Nagappan, Sarojini Devi
+   Daud, Salwani Mohd
+TI Machine Learning Predictors for Sustainable Urban Planning
+SO INTERNATIONAL JOURNAL OF ADVANCED COMPUTER SCIENCE AND APPLICATIONS
+SN 2158-107X
+EI 2156-5570
+PD JUL
+PY 2021
+VL 12
+IS 7
+BP 772
+EP 780
+UT WOS:000686175500087
+ER
+
+PT J
+AU Kamali, M
+   Appels, L
+   Yu, XB
+   Aminabhavi, TM
+   Dewil, R
+AF Kamali, Mohammadreza
+   Appels, Lise
+   Yu, Xiaobin
+   Aminabhavi, Tejraj M.
+   Dewil, Raf
+TI Artificial intelligence as a sustainable tool in wastewater treatment
+   using membrane bioreactors
+SO CHEMICAL ENGINEERING JOURNAL
+RI Aminabhavi, Tejraj M./AAY-3470-2021; Kamali, Mohammadreza/AAS-7837-2021;
+   Dewil, Raf/A-6890-2008
+OI Kamali, Mohammadreza/0000-0002-1591-9605; Dewil, Raf/0000-0003-4717-5484
+SN 1385-8947
+EI 1873-3212
+PD AUG 1
+PY 2021
+VL 417
+AR 128070
+DI 10.1016/j.cej.2020.128070
+UT WOS:000653229500105
+ER
+
+PT J
+AU Leimanis, A
+   Palkova, K
+AF Leimanis, Anri
+   Palkova, Karina
+TI Ethical Guidelines for Artificial Intelligence in Healthcare from the
+   Sustainable Development Perspective
+SO EUROPEAN JOURNAL OF SUSTAINABLE DEVELOPMENT
+RI Palkova, Karina/AAR-2860-2020; Palkova, Karina/AAI-5463-2021
+SN 2239-5938
+EI 2239-6101
+PY 2021
+VL 10
+IS 1
+BP 90
+EP 102
+DI 10.14207/ejsd.2021.v10n1p90
+UT WOS:000617263600007
+ER
+
+PT J
+AU Xiang, XJ
+   Li, Q
+   Khan, S
+   Khalaf, OI
+AF Xiang, Xiaojun
+   Li, Qiong
+   Khan, Shahnawaz
+   Khalaf, Osamah Ibrahim
+TI Urban water resource management for sustainable environment planning
+   using artificial intelligence techniques
+SO ENVIRONMENTAL IMPACT ASSESSMENT REVIEW
+RI Khalaf, Osamah Ibrahim/AAK-3630-2021
+OI Khalaf, Osamah Ibrahim/0000-0002-4750-8384; ,
+   Shahnawaz/0000-0002-3675-4467
+SN 0195-9255
+EI 1873-6432
+PD JAN
+PY 2021
+VL 86
+AR 106515
+DI 10.1016/j.eiar.2020.106515
+UT WOS:000600372100003
+ER
+
+PT J
+AU Mota-Valtierra, G
+   Rodriguez-Resendiz, J
+   Herrera-Ruiz, G
+AF Mota-Valtierra, Georgina
+   Rodriguez-Resendiz, Juvenal
+   Herrera-Ruiz, Gilberto
+TI Constructivism-Based Methodology for Teaching Artificial Intelligence
+   Topics Focused on Sustainable Development
+SO SUSTAINABILITY
+RI Rodriguez-Resendiz, Juvenal/AAA-9293-2020
+OI Rodriguez-Resendiz, Juvenal/0000-0001-8598-5600
+EI 2071-1050
+PD SEP 1
+PY 2019
+VL 11
+IS 17
+AR 4642
+DI 10.3390/su11174642
+UT WOS:000486877700131
+ER
+
+PT J
+AU Liao, MC
+   Lan, K
+   Yao, Y
+AF Liao, Mochen
+   Lan, Kai
+   Yao, Yuan
+TI Sustainability implications of artificial intelligence in the chemical
+   industry: A conceptual framework
+SO JOURNAL OF INDUSTRIAL ECOLOGY
+SN 1088-1980
+EI 1530-9290
+DI 10.1111/jiec.13214
+EA NOV 2021
+UT WOS:000717964200001
+ER
+
+PT J
+AU Camarena, S
+AF Camarena, Stephanie
+TI Artificial intelligence in the design of the transitions to sustainable
+   food systems
+SO JOURNAL OF CLEANER PRODUCTION
+RI Camarena, Stephanie/AAB-3731-2021
+OI Camarena, Stephanie/0000-0002-7626-7858
+SN 0959-6526
+EI 1879-1786
+PD OCT 20
+PY 2020
+VL 271
+AR 122574
+DI 10.1016/j.jclepro.2020.122574
+UT WOS:000569337000003
+ER
+
+PT J
+AU Chiu, TKF
+   Chai, CS
+AF Chiu, Thomas K. F.
+   Chai, Ching-sing
+TI Sustainable Curriculum Planning for Artificial Intelligence Education: A
+   Self-determination Theory Perspective
+SO SUSTAINABILITY
+RI Chiu, Thomas/AAR-4894-2021
+OI Chiu, Thomas K.F./0000-0003-2887-5477
+EI 2071-1050
+PD JUL
+PY 2020
+VL 12
+IS 14
+AR 5568
+DI 10.3390/su12145568
+UT WOS:000554202100001
+ER
+
+PT J
+AU Kuzior, A
+   Kwilinski, A
+   Tkachenko, V
+AF Kuzior, Aleksandra
+   Kwilinski, Aleksy
+   Tkachenko, Volodymyr
+TI SUSTAINABLE DEVELOPMENT OF ORGANIZATIONS BASED ON THE COMBINATORIAL
+   MODEL OF ARTIFICIAL INTELLIGENCE
+SO ENTREPRENEURSHIP AND SUSTAINABILITY ISSUES
+RI Kuzior, Aleksandra/C-5949-2017; Kwilinski, Aleksy/B-7526-2017
+OI Kwilinski, Aleksy/0000-0001-6318-4001; Kuzior,
+   Aleksandra/0000-0001-9764-5320
+SN 2345-0282
+PD SEP
+PY 2019
+VL 7
+IS 2
+BP 1353
+EP 1376
+DI 10.9770/jesi.2019.7.2(39)
+UT WOS:000503074200039
+ER
+
+PT J
+AU Kim, J
+   Jun, S
+   Jang, D
+   Park, S
+AF Kim, Juhwan
+   Jun, Sunghae
+   Jang, Dongsik
+   Park, Sangsung
+TI Sustainable Technology Analysis of Artificial Intelligence Using
+   Bayesian and Social Network Models
+SO SUSTAINABILITY
+OI KIm, Juhwan/0000-0002-4875-5504
+EI 2071-1050
+PD JAN
+PY 2018
+VL 10
+IS 1
+AR 115
+DI 10.3390/su10010115
+UT WOS:000425082600114
+ER
+
+PT J
+AU Madu, CN
+   Kuei, CH
+   Lee, P
+AF Madu, Christian N.
+   Kuei, Chu-hua
+   Lee, Picheng
+TI Urban sustainability management: A deep learning perspective
+SO SUSTAINABLE CITIES AND SOCIETY
+RI Madu, Christian/AAH-6495-2020
+SN 2210-6707
+EI 2210-6715
+PD APR
+PY 2017
+VL 30
+BP CP21
+EP 17
+DI 10.1016/j.scs.2016.12.012
+UT WOS:000398181700001
+ER
+
+PT J
+AU Chi, DJ
+   Chu, CC
+AF Chi, Der-Jang
+   Chu, Chien-Chou
+TI Artificial Intelligence in Corporate Sustainability: Using LSTM and GRU
+   for Going Concern Prediction
+SO SUSTAINABILITY
+EI 2071-1050
+PD NOV
+PY 2021
+VL 13
+IS 21
+AR 11631
+DI 10.3390/su132111631
+UT WOS:000719012100001
+ER
+
+PT J
+AU Liu, TD
+   Sun, YX
+   Wang, C
+   Zhang, YY
+   Qiu, ZX
+   Gong, WF
+   Lei, SH
+   Tong, XY
+   Duan, XY
+AF Liu, Tiedong
+   Sun, Yuxin
+   Wang, Cai
+   Zhang, Yangyang
+   Qiu, Zixuan
+   Gong, Wenfeng
+   Lei, Shuhan
+   Tong, Xinyu
+   Duan, Xuanyu
+TI Unmanned aerial vehicle and artificial intelligence revolutionizing
+   efficient and precision sustainable forest management
+SO JOURNAL OF CLEANER PRODUCTION
+OI Qiu, Zixuan/0000-0002-2243-2133
+SN 0959-6526
+EI 1879-1786
+PD AUG 15
+PY 2021
+VL 311
+AR 127546
+DI 10.1016/j.jclepro.2021.127546
+UT WOS:000668102700004
+ER
+
+PT J
+AU Mrowczynska, M
+   Sztubecka, M
+   Skiba, M
+   Bazan-Krzywoszanska, A
+   Bejga, P
+AF Mrowczynska, Maria
+   Sztubecka, Malgorzata
+   Skiba, Marta
+   Bazan-Krzywoszanska, Anna
+   Bejga, Przemyslaw
+TI The Use of Artificial Intelligence as a Tool Supporting Sustainable
+   Development Local Policy
+SO SUSTAINABILITY
+RI Sztubecka, Malgorzata/AAC-7745-2020; Skiba, Marta/Q-7374-2016;
+   Bazan-Krzywoszanska, Anna/M-3152-2013; Mrowczynska, Maria/R-8384-2019
+OI Sztubecka, Malgorzata/0000-0002-0573-8835; Skiba,
+   Marta/0000-0002-4248-0378; Bazan-Krzywoszanska,
+   Anna/0000-0001-5648-0443; Mrowczynska, Maria/0000-0002-4762-3999
+EI 2071-1050
+PD AUG
+PY 2019
+VL 11
+IS 15
+AR 4199
+DI 10.3390/su11154199
+UT WOS:000485230200204
+ER
+
+PT J
+AU Fernandez-Aller, C
+   de Velasco, AF
+   Manjarres, A
+   Pastor-Escuredo, D
+   Pickin, S
+   Criado, JS
+   Ausin, T
+AF Fernandez-Aller, Celia
+   de Velasco, Arturo Fernandez
+   Manjarres, Angeles
+   Pastor-Escuredo, David
+   Pickin, Simon
+   Criado, Jesus Salgado
+   Ausin, Txetxu
+TI An Inclusive and Sustainable Artificial Intelligence Strategy for Europe
+   Based on Human Rights
+SO IEEE TECHNOLOGY AND SOCIETY MAGAZINE
+OI Salgado-Criado, Jesus/0000-0002-4513-6273; Pastor-Escuredo,
+   David/0000-0002-2662-8686
+SN 0278-0097
+EI 1937-416X
+PD MAR
+PY 2021
+VL 40
+IS 1
+BP 46
+EP 54
+DI 10.1109/MTS.2021.3056283
+UT WOS:000631197100008
+ER
+
+PT J
+AU Ates, KT
+   Sahin, C
+   Kuvvetli, Y
+   Kuren, BA
+   Uysal, A
+AF Ates, Kubra Tumay
+   Sahin, Cenk
+   Kuvvetli, Yusuf
+   Kuren, Bulent A.
+   Uysal, Aykut
+TI Sustainable production in cement via artificial intelligence based
+   decision support system: Case study
+SO CASE STUDIES IN CONSTRUCTION MATERIALS
+RI Sahin, Cenk/H-5055-2013
+OI Sahin, Cenk/0000-0002-6076-7794; Kuvvetli, Yusuf/0000-0002-9817-1371
+SN 2214-5095
+PD DEC
+PY 2021
+VL 15
+AR e00628
+DI 10.1016/j.cscm.2021.e00628
+UT WOS:000703907200008
+ER
+
+PT J
+AU Yeh, SC
+   Wu, AW
+   Yu, HC
+   Wu, HC
+   Kuo, YP
+   Chen, PX
+AF Yeh, Shin-Cheng
+   Wu, Ai-Wei
+   Yu, Hui-Ching
+   Wu, Homer C.
+   Kuo, Yi-Ping
+   Chen, Pei-Xuan
+TI Public Perception of Artificial Intelligence and Its Connections to the
+   Sustainable Development Goals
+SO SUSTAINABILITY
+OI Yeh, Shin-Cheng/0000-0001-6274-9031
+EI 2071-1050
+PD AUG
+PY 2021
+VL 13
+IS 16
+AR 9165
+DI 10.3390/su13169165
+UT WOS:000689882700001
+ER
+
+PT J
+AU Hannan, MA
+   Al-Shetwi, AQ
+   Ker, PJ
+   Begum, RA
+   Mansor, M
+   Rahman, SA
+   Dong, ZY
+   Tiong, SK
+   Mahlia, TMI
+   Muttaqi, KM
+AF Hannan, M. A.
+   Al-Shetwi, Ali Q.
+   Ker, Pin Jern
+   Begum, R. A.
+   Mansor, M.
+   Rahman, S. A.
+   Dong, Z. Y.
+   Tiong, S. K.
+   Mahlia, T. M. Indra
+   Muttaqi, K. M.
+TI Impact of renewable energy utilization and artificial intelligence in
+   achieving sustainable development goals
+SO ENERGY REPORTS
+RI Mahlia, T M Indra/L-3731-2019; Al-Shetwi, Ali Q./G-8887-2019
+OI Mahlia, T M Indra/0000-0002-6985-929X; Al-Shetwi, Ali
+   Q./0000-0002-6581-9629
+SN 2352-4847
+PD NOV
+PY 2021
+VL 7
+BP 5359
+EP 5373
+DI 10.1016/j.egyr.2021.08.172
+UT WOS:000701734000007
+ER
+
+PT J
+AU Lahsen, M
+AF Lahsen, Myanna
+TI Should AI be Designed to Save Us From Ourselves?: Artificial
+   Intelligence for Sustainability
+SO IEEE TECHNOLOGY AND SOCIETY MAGAZINE
+SN 0278-0097
+EI 1937-416X
+PD JUN
+PY 2020
+VL 39
+IS 2
+BP 60
+EP 67
+DI 10.1109/MTS.2020.2991502
+UT WOS:000543713100011
+ER
+
+PT J
+AU Hu, B
+AF Hu, Bo
+TI Research and Application of Combined Algorithm Based on Sustainable
+   Computing and Artificial Intelligence
+SO MATHEMATICAL PROBLEMS IN ENGINEERING
+SN 1024-123X
+EI 1563-5147
+PD MAR 11
+PY 2021
+VL 2021
+AR 5567267
+DI 10.1155/2021/5567267
+UT WOS:000631900300002
+ER
+
+PT J
+AU Matus, KJM
+   Veale, M
+AF Matus, Kira J. M.
+   Veale, Michael
+TI Certification systems for machine learning: Lessons from sustainability
+SO REGULATION & GOVERNANCE
+RI Matus, Kira/AAL-6456-2021
+OI Matus, Kira/0000-0001-8477-0691; Veale, Michael/0000-0002-2342-8785
+SN 1748-5983
+EI 1748-5991
+DI 10.1111/rego.12417
+EA JUN 2021
+UT WOS:000659260600001
+ER
+
+PT J
+AU Sanders, CE
+   Mayfield-Smith, KA
+   Lamm, AJ
+AF Sanders, Catherine E.
+   Mayfield-Smith, Kennedy A.
+   Lamm, Alexa J.
+TI Exploring Twitter Discourse around the Use of Artificial Intelligence to
+   Advance Agricultural Sustainability
+SO SUSTAINABILITY
+EI 2071-1050
+PD NOV
+PY 2021
+VL 13
+IS 21
+AR 12033
+DI 10.3390/su132112033
+UT WOS:000718514700001
+ER
+
+PT J
+AU Hermann, E
+   Hermann, G
+   Tremblay, JC
+AF Hermann, Erik
+   Hermann, Gunter
+   Tremblay, Jean-Christophe
+TI Ethical Artificial Intelligence in Chemical Research and Development: A
+   Dual Advantage for Sustainability
+SO SCIENCE AND ENGINEERING ETHICS
+OI Hermann, Erik/0000-0003-0895-3562
+SN 1353-3452
+EI 1471-5546
+PD AUG
+PY 2021
+VL 27
+IS 4
+AR 45
+DI 10.1007/s11948-021-00325-6
+UT WOS:000691560800003
+PM 34231042
+ER
+
+PT J
+AU Gherhes, V
+   Obrad, C
+AF Gherhes, Vasile
+   Obrad, Ciprian
+TI Technical and Humanities Students' Perspectives on the Development and
+   Sustainability of Artificial Intelligence (AI)
+SO SUSTAINABILITY
+RI Gherhes, Vasile/AAD-5568-2021; Obrad, Ciprian/AAH-8178-2019
+OI Gherhes, Vasile/0000-0001-8633-7584; Obrad, Ciprian/0000-0001-8570-504X
+EI 2071-1050
+PD SEP
+PY 2018
+VL 10
+IS 9
+AR 3066
+DI 10.3390/su10093066
+UT WOS:000446770200109
+ER
+
+PT J
+AU Singh, S
+   Sharma, PK
+   Yoon, B
+   Shojafar, M
+   Cho, GH
+   Ra, IH
+AF Singh, Saurabh
+   Sharma, Pradip Kumar
+   Yoon, Byungun
+   Shojafar, Mohammad
+   Cho, Gi Hwan
+   Ra, In-Ho
+TI Convergence of blockchain and artificial intelligence in IoT network for
+   the sustainable smart city
+SO SUSTAINABLE CITIES AND SOCIETY
+RI Sharma, Pradip Kumar/I-8803-2019
+OI Sharma, Pradip Kumar/0000-0001-6620-9083; Shojafar,
+   Mohammad/0000-0003-3284-5086
+SN 2210-6707
+EI 2210-6715
+PD DEC
+PY 2020
+VL 63
+AR 102364
+DI 10.1016/j.scs.2020.102364
+UT WOS:000580580900002
+ER
+
+PT J
+AU Chui, KT
+   Lytras, MD
+   Visvizi, A
+AF Chui, Kwok Tai
+   Lytras, Miltiadis D.
+   Visvizi, Anna
+TI Energy Sustainability in Smart Cities: Artificial Intelligence, Smart
+   Monitoring, and Optimization of Energy Consumption
+SO ENERGIES
+RI Li, Wang/M-1612-2019; Lytras, Miltiades Demetrios/ABD-5355-2021; Chui,
+   Kwok Tai/T-7346-2019; Visvizi, Anna/AAF-4156-2019; Lytras,
+   Miltiadis/ABD-5607-2021
+OI Chui, Kwok Tai/0000-0001-7992-9901; Visvizi, Anna/0000-0003-3240-3771;
+   Lytras, Miltiadis/0000-0002-7281-5458
+EI 1996-1073
+PD NOV
+PY 2018
+VL 11
+IS 11
+AR 2869
+DI 10.3390/en11112869
+UT WOS:000451814000007
+ER
+
+PT J
+AU D'Amico, B
+   Myers, RJ
+   Sykes, J
+   Voss, E
+   Cousins-Jenvey, B
+   Fawcett, W
+   Richardson, S
+   Kermani, A
+   Pomponi, F
+AF D'Amico, B.
+   Myers, R. J.
+   Sykes, J.
+   Voss, E.
+   Cousins-Jenvey, B.
+   Fawcett, W.
+   Richardson, S.
+   Kermani, A.
+   Pomponi, F.
+TI Machine Learning for Sustainable Structures: A Call for Data
+SO STRUCTURES
+RI Pomponi, Francesco/J-6106-2019
+OI Pomponi, Francesco/0000-0003-3132-2523
+SN 2352-0124
+PD JUN
+PY 2019
+VL 19
+BP 1
+EP 4
+DI 10.1016/j.istruc.2018.11.013
+UT WOS:000465318000001
+ER
+
+PT J
+AU Pham, AD
+   Ngo, NT
+   Nguyen, QT
+   Truong, NS
+AF Pham, Anh-Duc
+   Ngo, Ngoc-Tri
+   Nguyen, Quang-Trung
+   Truong, Ngoc-Son
+TI Hybrid machine learning for predicting strength of sustainable concrete
+SO SOFT COMPUTING
+OI Truong, Ngoc-Son/0000-0003-4867-8980; Ngo, Ngoc-Tri/0000-0002-7102-4566
+SN 1432-7643
+EI 1433-7479
+PD OCT
+PY 2020
+VL 24
+IS 19
+BP 14965
+EP 14980
+DI 10.1007/s00500-020-04848-1
+EA MAR 2020
+UT WOS:000562590500002
+ER
+
+PT J
+AU Subirats, L
+   Fort, S
+   Atrio, S
+   Sacha, GM
+AF Subirats, Laia
+   Fort, Santi
+   Atrio, Santiago
+   Sacha, Gomez-Monivas
+TI Artificial Intelligence to Counterweight the Effect of COVID-19 on
+   Learning in a Sustainable Environment
+SO APPLIED SCIENCES-BASEL
+EI 2076-3417
+PD NOV
+PY 2021
+VL 11
+IS 21
+AR 9923
+DI 10.3390/app11219923
+UT WOS:000718527400001
+ER
+
+PT J
+AU Yang, X
+   Yu, X
+AF Yang, Xi
+   Yu, Xiang
+TI Preventing Patent Risks in Artificial Intelligence Industry for
+   Sustainable Development: A Multi-Level Network Analysis
+SO SUSTAINABILITY
+EI 2071-1050
+PD OCT
+PY 2020
+VL 12
+IS 20
+AR 8667
+DI 10.3390/su12208667
+UT WOS:000583139800001
+ER
+
+PT J
+AU Zhang, HL
+   Song, M
+   He, HH
+AF Zhang, Haili
+   Song, Michael
+   He, Huanhuan
+TI Achieving the Success of Sustainability Development Projects through Big
+   Data Analytics and Artificial Intelligence Capability
+SO SUSTAINABILITY
+RI Song, Michael/AAR-8247-2020
+EI 2071-1050
+PD FEB
+PY 2020
+VL 12
+IS 3
+AR 949
+DI 10.3390/su12030949
+UT WOS:000519135103052
+ER
+
+PT J
+AU Yigitcanlar, T
+   Mehmood, R
+   Corchado, JM
+AF Yigitcanlar, Tan
+   Mehmood, Rashid
+   Corchado, Juan M.
+TI Green Artificial Intelligence: Towards an Efficient, Sustainable and
+   Equitable Technology for Smart Cities and Futures
+SO SUSTAINABILITY
+RI Yigitcanlar, Tan/J-1142-2012; Corchado, Juan Manuel/D-3229-2013;
+   Mehmood, Rashid/A-4833-2014
+OI Yigitcanlar, Tan/0000-0001-7262-7118; Corchado, Juan
+   Manuel/0000-0002-2829-1829; Mehmood, Rashid/0000-0002-4997-5322
+EI 2071-1050
+PD AUG
+PY 2021
+VL 13
+IS 16
+AR 8952
+DI 10.3390/su13168952
+UT WOS:000690092400001
+ER
+
+PT J
+AU Li, MM
+   Goswami, P
+   Mukherjee, P
+   Mukherjee, A
+   Yang, LX
+   Ghosh, U
+   Menon, VG
+   Qi, YN
+   Nkenyereye, L
+AF Manman, Li
+   Goswami, Pratik
+   Mukherjee, Proshikshya
+   Mukherjee, Amrit
+   Yang, Lixia
+   Ghosh, Uttam
+   Menon, Varun G.
+   Qi, Yinan
+   Nkenyereye, Lewis
+TI Distributed Artificial Intelligence Empowered Sustainable Cognitive
+   Radio Sensor Networks: A Smart City on-demand Perspective
+SO SUSTAINABLE CITIES AND SOCIETY
+SN 2210-6707
+EI 2210-6715
+PD DEC
+PY 2021
+VL 75
+AR 103265
+DI 10.1016/j.scs.2021.103265
+UT WOS:000708954000003
+ER
+
+PT J
+AU Ortega-Fernandez, A
+   Martin-Rojas, R
+   Garcia-Morales, VJ
+AF Ortega-Fernandez, Anabel
+   Martin-Rojas, Rodrigo
+   Garcia-Morales, Victor Jesus
+TI Artificial Intelligence in the Urban Environment: Smart Cities as Models
+   for Developing Innovation and Sustainability
+SO SUSTAINABILITY
+RI Martin-Rojas., Rodrigo/G-3029-2015; GARCIA MORALES, VICTOR
+   JESUS/F-9736-2016
+OI Martin-Rojas., Rodrigo/0000-0002-9210-408X; GARCIA MORALES, VICTOR
+   JESUS/0000-0001-9061-6973
+EI 2071-1050
+PD OCT
+PY 2020
+VL 12
+IS 19
+AR 7860
+DI 10.3390/su12197860
+UT WOS:000587164800001
+ER
+
+PT J
+AU Alreshidi, E
+AF Alreshidi, Eissa
+TI Smart Sustainable Agriculture (SSA) Solution Underpinned by Internet of
+   Things (IoT) and Artificial Intelligence (AI)
+SO INTERNATIONAL JOURNAL OF ADVANCED COMPUTER SCIENCE AND APPLICATIONS
+RI Alreshidi, Eissa/AAB-3291-2020
+SN 2158-107X
+EI 2156-5570
+PD MAY
+PY 2019
+VL 10
+IS 5
+BP 93
+EP 102
+UT WOS:000476620600013
+ER
+
+PT J
+AU Elavarasan, D
+   Vincent, DR
+AF Elavarasan, Dhivya
+   Vincent, Durai Raj
+TI Reinforced XGBoost machine learning model for sustainable intelligent
+   agrarian applications
+SO JOURNAL OF INTELLIGENT & FUZZY SYSTEMS
+RI Vincent, P.M. Durai Raj/S-6371-2019
+OI Vincent, P.M. Durai Raj/0000-0002-7598-1363
+SN 1064-1246
+EI 1875-8967
+PY 2020
+VL 39
+IS 5
+BP 7605
+EP 7620
+DI 10.3233/JIFS-200862
+UT WOS:000595520600119
+ER
+
+PT J
+AU Dumitrascu, O
+   Dumitrascu, M
+   Dobrota, D
+AF Dumitrascu, Oana
+   Dumitrascu, Manuel
+   Dobrota, Dan
+TI Performance Evaluation for a Sustainable Supply Chain Management System
+   in the Automotive Industry Using Artificial Intelligence
+SO PROCESSES
+RI Dobrota, Dan/AAK-8989-2021
+OI Dobrota, Dan/0000-0002-2202-7701
+EI 2227-9717
+PD NOV
+PY 2020
+VL 8
+IS 11
+AR 1384
+DI 10.3390/pr8111384
+UT WOS:000594406300001
+ER
+
+PT J
+AU How, ML
+   Cheah, SM
+   Chan, YJ
+   Khor, AC
+   Say, EMP
+AF How, Meng-Leong
+   Cheah, Sin-Mei
+   Chan, Yong-Jiet
+   Khor, Aik Cheow
+   Say, Eunice Mei Ping
+TI Artificial Intelligence-Enhanced Decision Support for Informing Global
+   Sustainable Development: A Human-Centric AI-Thinking Approach
+SO INFORMATION
+RI Jiet, CHAN Yong/AAP-2858-2020
+OI Jiet, CHAN Yong/0000-0002-1936-0263; How, Meng-Leong/0000-0003-2845-0292
+EI 2078-2489
+PD JAN
+PY 2020
+VL 11
+IS 1
+AR 39
+DI 10.3390/info11010039
+UT WOS:000513801000039
+ER
+
+PT J
+AU Di Vaio, A
+   Boccia, F
+   Landriani, L
+   Palladino, R
+AF Di Vaio, Assunta
+   Boccia, Flavio
+   Landriani, Loris
+   Palladino, Rosa
+TI Artificial Intelligence in the Agri-Food System: Rethinking Sustainable
+   Business Models in the COVID-19 Scenario
+SO SUSTAINABILITY
+RI Di Vaio, Susy/ABF-7157-2020; Di Vaio, Assunta/N-2259-2019
+OI Di Vaio, Assunta/0000-0002-0498-1630; Palladino,
+   Rosa/0000-0002-8722-2540; Loris, Landriani/0000-0002-3819-1012
+EI 2071-1050
+PD JUN
+PY 2020
+VL 12
+IS 12
+AR 4851
+DI 10.3390/su12124851
+UT WOS:000554577100001
+ER
+
+PT J
+AU Cavus, N
+   Mohammed, YB
+   Yakubu, MN
+AF Cavus, Nadire
+   Mohammed, Yakubu Bala
+   Yakubu, Mohammed Nasiru
+TI An Artificial Intelligence-Based Model for Prediction of Parameters
+   Affecting Sustainable Growth of Mobile Banking Apps
+SO SUSTAINABILITY
+RI Yakubu, Nasiru/AAY-5131-2021; Cavus, Nadire/C-4210-2016
+OI Mohammed, Yakubu Bala/0000-0002-8400-3035; Cavus,
+   Nadire/0000-0001-7470-7752
+EI 2071-1050
+PD JUN
+PY 2021
+VL 13
+IS 11
+AR 6206
+DI 10.3390/su13116206
+UT WOS:000660721100001
+ER
+
+PT J
+AU Shi, CX
+   Feng, XW
+   Jin, ZN
+AF Shi, Chunxue
+   Feng, Xiwen
+   Jin, Zhennan
+TI Sustainable development of China's smart energy industry based on
+   artificial intelligence and low-carbon economy
+SO ENERGY SCIENCE & ENGINEERING
+SN 2050-0505
+DI 10.1002/ese3.856
+EA DEC 2020
+UT WOS:000602555400001
+ER
+
+PT J
+AU Lee, HJ
+   Oh, H
+AF Lee, Hong Joo
+   Oh, Hoyeon
+TI A Study on the Deduction and Diffusion of Promising Artificial
+   Intelligence Technology for Sustainable Industrial Development
+SO SUSTAINABILITY
+EI 2071-1050
+PD JUL
+PY 2020
+VL 12
+IS 14
+AR 5609
+DI 10.3390/su12145609
+UT WOS:000554244000001
+ER
+
+PT J
+AU Yigitcanlar, T
+   Cugurullo, F
+AF Yigitcanlar, Tan
+   Cugurullo, Federico
+TI The Sustainability of Artificial Intelligence: An Urbanistic Viewpoint
+   from the Lens of Smart and Sustainable Cities
+SO SUSTAINABILITY
+RI Yigitcanlar, Tan/J-1142-2012
+OI Yigitcanlar, Tan/0000-0001-7262-7118; Cugurullo,
+   Federico/0000-0002-0625-8868
+EI 2071-1050
+PD OCT
+PY 2020
+VL 12
+IS 20
+AR 8548
+DI 10.3390/su12208548
+UT WOS:000583092400001
+ER
+
+PT J
+AU Olan, F
+   Liu, SF
+   Suklan, J
+   Jayawickrama, U
+   Arakpogun, E
+AF Olan, Femi
+   Liu, Shaofeng
+   Suklan, Jana
+   Jayawickrama, Uchitha
+   Arakpogun, Emmanuel
+TI The role of Artificial Intelligence networks in sustainable supply chain
+   finance for food and drink industry
+SO INTERNATIONAL JOURNAL OF PRODUCTION RESEARCH
+RI Jayawickrama, Uchitha/AAL-5387-2020
+OI Jayawickrama, Uchitha/0000-0002-7159-6759; Olan,
+   Femi/0000-0002-7377-9882; Suklan, Jana/0000-0001-8665-6593; Liu,
+   Shaofeng/0000-0002-8330-3335
+SN 0020-7543
+EI 1366-588X
+DI 10.1080/00207543.2021.1915510
+EA APR 2021
+UT WOS:000643824600001
+ER
+
+PT J
+AU Gonzalez-Cancelas, N
+   Serrano, BM
+   Soler-Flores, F
+AF Gonzalez-Cancelas, Nicoleta
+   Molina Serrano, Beatriz
+   Soler-Flores, Francisco
+TI Seaport Sustainable: Use of Artificial Intelligence to Evaluate Liquid
+   Natural Gas Utilization in Short Sea Shipping
+SO TRANSPORTATION JOURNAL
+SN 0041-1612
+EI 2157-328X
+PD SUM
+PY 2019
+VL 58
+IS 3
+BP 197
+EP 221
+UT WOS:000510443800003
+ER
+
+PT J
+AU Budak, A
+   Sarvari, PA
+AF Budak, Aysenur
+   Sarvari, Peiman Alipour
+TI Profit margin prediction in sustainable road freight transportation
+   using machine learning
+SO JOURNAL OF CLEANER PRODUCTION
+SN 0959-6526
+EI 1879-1786
+PD SEP 10
+PY 2021
+VL 314
+AR 127990
+DI 10.1016/j.jclepro.2021.127990
+UT WOS:000709188300014
+ER
+
+PT J
+AU Taghizadeh-Mehrjardi, R
+   Nabiollahi, K
+   Rasoli, L
+   Kerry, R
+   Scholten, T
+AF Taghizadeh-Mehrjardi, Ruhollah
+   Nabiollahi, Kamal
+   Rasoli, Leila
+   Kerry, Ruth
+   Scholten, Thomas
+TI Land Suitability Assessment and Agricultural Production Sustainability
+   Using Machine Learning Models
+SO AGRONOMY-BASEL
+RI Nabiollahi, Kamal/AAY-5347-2020; Taghizadeh, Ruhollah/H-3682-2013
+OI Taghizadeh, Ruhollah/0000-0002-4620-6624; saeedi,
+   heshmat/0000-0001-8442-6962; Kerry, Ruth/0000-0001-9174-0167;
+   Nabiollahi, Kamal/0000-0001-8616-6084
+EI 2073-4395
+PD APR
+PY 2020
+VL 10
+IS 4
+AR 573
+DI 10.3390/agronomy10040573
+UT WOS:000534620300071
+ER
+
+PT J
+AU Kumar, S
+   Ignacz, G
+   Szekely, G
+AF Kumar, Sushil
+   Ignacz, Gergo
+   Szekely, Gyorgy
+TI Synthesis of covalent organic frameworks using sustainable solvents and
+   machine learning
+SO GREEN CHEMISTRY
+RI ; KUMAR, SUSHIL/L-4908-2016
+OI Ignacz, Gergo/0000-0002-7227-3070; KUMAR, SUSHIL/0000-0001-6680-718X
+SN 1463-9262
+EI 1463-9270
+PD NOV 16
+PY 2021
+VL 23
+IS 22
+BP 8932
+EP 8939
+DI 10.1039/d1gc02796d
+EA OCT 2021
+UT WOS:000710308100001
+ER
+
+PT J
+AU Martinez, RG
+AF Martinez, R. Gonzales
+TI Which social program supports sustainable grass-root finance?
+   Machine-learning evidence
+SO INTERNATIONAL JOURNAL OF SUSTAINABLE DEVELOPMENT AND WORLD ECOLOGY
+SN 1350-4509
+EI 1745-2627
+PD JUL 3
+PY 2020
+VL 27
+IS 5
+BP 389
+EP 395
+DI 10.1080/13504509.2019.1706059
+EA DEC 2019
+UT WOS:000503643700001
+ER
+
+PT J
+AU Lok, KL
+   So, AL
+   Opoku, A
+   Chen, CR
+AF Lok, Ka Leung
+   So, Albert
+   Opoku, Alex
+   Chen, Charles
+TI A Sustainable Facility Management Outsourcing Relationships System:
+   Artificial Neural Networks
+SO SUSTAINABILITY
+RI Opoku, Alex/H-9180-2018
+OI Opoku, Alex/0000-0002-5973-512X; Lok, Ka Leung/0000-0002-4378-8403
+EI 2071-1050
+PD MAY
+PY 2021
+VL 13
+IS 9
+AR 4740
+DI 10.3390/su13094740
+UT WOS:000650897500001
+ER
+
+PT J
+AU Kouziokas, GN
+   Perakis, K
+AF Kouziokas, Georgios N.
+   Perakis, Konstantinos
+TI Decision Support System Based on Artificial Intelligence, GIS and Remote
+   Sensing for Sustainable Public and Judicial Management
+SO EUROPEAN JOURNAL OF SUSTAINABLE DEVELOPMENT
+RI Kouziokas, Georgios N./O-2043-2015
+OI Kouziokas, Georgios N./0000-0001-7764-2309
+SN 2239-5938
+EI 2239-6101
+PY 2017
+VL 6
+IS 3
+BP 397
+EP 404
+DI 10.14207/ejsd.2017.v6n3p397
+UT WOS:000412135600037
+ER
+
+PT J
+AU Serna, A
+   Soroa, A
+   Agerri, R
+AF Serna, Ainhoa
+   Soroa, Aitor
+   Agerri, Rodrigo
+TI Applying Deep Learning Techniques for Sentiment Analysis to Assess
+   Sustainable Transport
+SO SUSTAINABILITY
+RI Agerri, Rodrigo/ABA-4096-2021
+OI Agerri, Rodrigo/0000-0002-7303-7598; SOROA ETXABE,
+   AITOR/0000-0001-8573-2654; Serna, Ainhoa/0000-0003-4750-3222
+EI 2071-1050
+PD FEB
+PY 2021
+VL 13
+IS 4
+AR 2397
+DI 10.3390/su13042397
+UT WOS:000624807100001
+ER
+
+PT J
+AU Geitz, G
+   Joosten-ten Brinke, D
+   Kirschner, PA
+AF Geitz, Gerry
+   Joosten-ten Brinke, Desiree
+   Kirschner, Paul A.
+TI Goal Orientation, Deep Learning, and Sustainable Feedback in Higher
+   Business Education
+SO JOURNAL OF TEACHING IN INTERNATIONAL BUSINESS
+OI Kirschner, Paul A./0000-0002-8743-0462
+SN 0897-5930
+EI 1528-6991
+PY 2015
+VL 26
+IS 4
+BP 273
+EP 292
+DI 10.1080/08975930.2015.1128375
+UT WOS:000435326300004
+ER
+
+PT J
+AU Gambin, AF
+   Angelats, E
+   Gonzalez, JS
+   Miozzo, M
+   Dini, P
+AF Fernandez Gambin, Angel
+   Angelats, Eduard
+   Soriano Gonzalez, Jesus
+   Miozzo, Marco
+   Dini, Paolo
+TI Sustainable Marine Ecosystems: Deep Learning for Water Quality
+   Assessment and Forecasting
+SO IEEE ACCESS
+RI ; Dini, Paolo/M-9719-2015
+OI Fernandez Gambin, Angel/0000-0002-6882-4845; Dini,
+   Paolo/0000-0001-6756-0289; Miozzo, Marco/0000-0003-3872-5907; Soriano
+   Gonzalez, Jesus/0000-0001-6573-3924
+SN 2169-3536
+PY 2021
+VL 9
+BP 121344
+EP 121365
+DI 10.1109/ACCESS.2021.3109216
+UT WOS:000694687400001
+ER
+
+PT J
+AU O'Brien, W
+   Sarkis, J
+AF O'Brien, Will
+   Sarkis, Joseph
+TI The potential of community-based sustainability projects for deep
+   learning initiatives
+SO JOURNAL OF CLEANER PRODUCTION
+RI Sarkis, Joseph/F-4508-2014
+OI Sarkis, Joseph/0000-0003-0143-804X
+SN 0959-6526
+EI 1879-1786
+PD JAN 1
+PY 2014
+VL 62
+BP 48
+EP 61
+DI 10.1016/j.jclepro.2013.07.001
+UT WOS:000328314400006
+ER
+
+PT J
+AU de la Torre, R
+   Corlu, CG
+   Faulin, J
+   Onggo, BS
+   Juan, AA
+AF de la Torre, Rocio
+   Corlu, Canan G.
+   Faulin, Javier
+   Onggo, Bhakti S.
+   Juan, Angel A.
+TI Simulation, Optimization, and Machine Learning in Sustainable
+   Transportation Systems: Models and Applications
+SO SUSTAINABILITY
+RI Juan, Angel A./J-7923-2015
+OI Juan, Angel A./0000-0003-1392-1776; Onggo, Bhakti/0000-0001-5899-304X; ,
+   Canan/0000-0001-8305-5741
+EI 2071-1050
+PD FEB
+PY 2021
+VL 13
+IS 3
+AR 1551
+DI 10.3390/su13031551
+UT WOS:000615623500001
+ER
+
+PT J
+AU Mabina, P
+   Mukoma, P
+   Booysen, MJ
+AF Mabina, P.
+   Mukoma, P.
+   Booysen, M. J.
+TI Sustainability matchmaking: Linking renewable sources to electric water
+   heating through machine learning
+SO ENERGY AND BUILDINGS
+OI Mabina, Paseka/0000-0003-2580-8156; Booysen, Marthinus
+   Johannes/0000-0003-2817-2069
+SN 0378-7788
+EI 1872-6178
+PD SEP 1
+PY 2021
+VL 246
+AR 111085
+DI 10.1016/j.enbuild.2021.111085
+UT WOS:000674472400012
+ER
+
+PT J
+AU Majumdar, S
+   Subhani, MM
+   Roullier, B
+   Anjum, A
+   Zhu, RB
+AF Majumdar, Sharmila
+   Subhani, Moeez M.
+   Roullier, Benjamin
+   Anjum, Ashiq
+   Zhu, Rongbo
+TI Congestion prediction for smart sustainable cities using IoT and machine
+   learning approaches
+SO SUSTAINABLE CITIES AND SOCIETY
+OI Zhu, Rongbo/0000-0003-1620-0560; Subhani, Moeez/0000-0003-2695-8009;
+   Roullier, Benjamin/0000-0002-5427-4483
+SN 2210-6707
+EI 2210-6715
+PD JAN
+PY 2021
+VL 64
+AR 102500
+DI 10.1016/j.scs.2020.102500
+UT WOS:000599341900001
+ER
+
+PT J
+AU Singh, SK
+   Salim, MM
+   Cha, J
+   Pan, Y
+   Park, JH
+AF Singh, Sushil Kumar
+   Salim, Mikail Mohammed
+   Cha, Jeonghun
+   Pan, Yi
+   Park, Jong Hyuk
+TI Machine Learning-Based Network Sub-Slicing Framework in a Sustainable 5G
+   Environment
+SO SUSTAINABILITY
+RI Salim, Mikail Mohammed/ABC-4613-2021; Singh, Sushil/AAO-4857-2021; Pan,
+   Yi/AAJ-2341-2021
+OI Salim, Mikail Mohammed/0000-0001-7870-9368; Pan, Yi/0000-0002-2766-3096
+EI 2071-1050
+PD AUG
+PY 2020
+VL 12
+IS 15
+AR 6250
+DI 10.3390/su12156250
+UT WOS:000559265500001
+ER
+
+PT J
+AU Nilashi, M
+   Rupani, PF
+   Rupani, MM
+   Kamyab, H
+   Shao, WL
+   Ahmadi, H
+   Rashid, TA
+   Aljojo, N
+AF Nilashi, Mehrbakhsh
+   Rupani, Parveen Fatemeh
+   Rupani, Mohammad Mobin
+   Kamyab, Hesam
+   Shao, Weilan
+   Ahmadi, Hossein
+   Rashid, Tarik A.
+   Aljojo, Nahla
+TI Measuring sustainability through ecological sustainability and human
+   sustainability: A machine learning approach
+SO JOURNAL OF CLEANER PRODUCTION
+RI Rashid, Tarik A./P-3473-2019; Nilashi, Mehrbakhsh/AAM-2215-2020; Aljojo,
+   Nahla Mohamed/AAH-7178-2019; Kamyab, Hesam/H-4583-2016; Aljojo,
+   Nahla/I-1380-2014
+OI Rashid, Tarik A./0000-0002-8661-258X; Nilashi,
+   Mehrbakhsh/0000-0002-2804-3227; Kamyab, Hesam/0000-0002-5272-2297;
+   Aljojo, Nahla/0000-0003-2501-8533; Rupani, Parveen
+   Fatemeh/0000-0003-2001-498X
+SN 0959-6526
+EI 1879-1786
+PD DEC 10
+PY 2019
+VL 240
+AR 118162
+DI 10.1016/j.jclepro.2019.118162
+UT WOS:000487936100135
+ER
+
+PT J
+AU Mumtaz, Z
+   Whiteford, P
+AF Mumtaz, Zahid
+   Whiteford, Peter
+TI Machine Learning Based Approach for Sustainable Social Protection
+   Policies in Developing Societies
+SO MOBILE NETWORKS & APPLICATIONS
+RI Whiteford, Peter/I-3441-2019; Mumtaz, zahid/AAS-9780-2021
+OI Whiteford, Peter/0000-0002-5963-6797; , zahid/0000-0002-0037-9845
+SN 1383-469X
+EI 1572-8153
+PD FEB
+PY 2021
+VL 26
+IS 1
+SI SI
+BP 159
+EP 173
+DI 10.1007/s11036-020-01696-z
+EA JAN 2021
+UT WOS:000605895600004
+ER
+
+PT J
+AU Churikanova, O
+   Lysenko, M
+AF Churikanova, O.
+   Lysenko, M.
+TI MODELING THE SUSTAINABLE DEVELOPMENT OF THE UKRAINIAN REGIONS BY NEURAL
+   NETWORKS
+SO FINANCIAL AND CREDIT ACTIVITY-PROBLEMS OF THEORY AND PRACTICE
+RI Olena, Churikanova/A-8667-2019
+OI Olena, Churikanova/0000-0001-5703-2271
+SN 2306-4994
+EI 2310-8770
+PY 2021
+VL 2
+IS 37
+BP 192
+EP 201
+UT WOS:000654768000020
+ER
+
+PT J
+AU Frank, B
+AF Frank, Bjorn
+TI Artificial intelligence-enabled environmental sustainability of
+   products: Marketing benefits and their variation by consumer, location,
+   and product types
+SO JOURNAL OF CLEANER PRODUCTION
+SN 0959-6526
+EI 1879-1786
+PD FEB 20
+PY 2021
+VL 285
+AR 125242
+DI 10.1016/j.jclepro.2020.125242
+UT WOS:000611934600023
+ER
+
+PT J
+AU Farooque, AA
+   Afzaal, H
+   Abbas, F
+   Bos, M
+   Maqsood, J
+   Wang, X
+   Hussain, N
+AF Farooque, Aitazaz Ahsan
+   Afzaal, Hassan
+   Abbas, Farhat
+   Bos, Melanie
+   Maqsood, Junaid
+   Wang, Xander
+   Hussain, Nazar
+TI Forecasting daily evapotranspiration using artificial neural networks
+   for sustainable irrigation scheduling
+SO IRRIGATION SCIENCE
+SN 0342-7188
+EI 1432-1319
+DI 10.1007/s00271-021-00751-1
+EA OCT 2021
+UT WOS:000710598400001
+ER
+
+PT J
+AU Jiang, XY
+   Lin, GH
+   Huang, JC
+   Hu, IH
+   Chiu, YC
+AF Jiang, Xiangyu
+   Lin, Gu-Hong
+   Huang, Jui-Chan
+   Hu, I-Hsiang
+   Chiu, Yen-Chun
+TI Performance of Sustainable Development and Technological Innovation
+   Based on Green Manufacturing Technology of Artificial Intelligence and
+   Block Chain
+SO MATHEMATICAL PROBLEMS IN ENGINEERING
+OI Huang, JuiChan/0000-0003-1884-3375
+SN 1024-123X
+EI 1563-5147
+PD APR 5
+PY 2021
+VL 2021
+AR 5527489
+DI 10.1155/2021/5527489
+UT WOS:000641615900005
+ER
+
+PT J
+AU Zhang, Q
+   Wu, KJ
+   Tseng, ML
+AF Zhang, Qian
+   Wu, Kuo-Jui
+   Tseng, Ming-Lang
+TI Exploring Carry Trade and Exchange Rate toward Sustainable Financial
+   Resources: An application of the Artificial Intelligence UKF Method
+SO SUSTAINABILITY
+RI Wu, Kuo-Jui/N-1926-2019; Tseng, Ming Lang/M-9051-2014
+OI Wu, Kuo-Jui/0000-0002-6246-8245; Tseng, Ming Lang/0000-0002-2702-3590
+SN 2071-1050
+PD JUN 2
+PY 2019
+VL 11
+IS 12
+AR 3240
+DI 10.3390/su11123240
+UT WOS:000473753700010
+ER
+
+PT J
+AU Alonso, SLN
+   Forradellas, RFR
+   Morell, OP
+   Jorge-Vazquez, J
+AF Nanez Alonso, Sergio Luis
+   Reier Forradellas, Ricardo Francisco
+   Pi Morell, Oriol
+   Jorge-Vazquez, Javier
+TI Digitalization, Circular Economy and Environmental Sustainability: The
+   Application of Artificial Intelligence in the Efficient Self-Management
+   of Waste
+SO SUSTAINABILITY
+RI Alonso, Sergio Luis Nanez/AAJ-9071-2020; Jorge-Vazquez,
+   Javier/AAA-2725-2020
+OI Alonso, Sergio Luis Nanez/0000-0001-5353-2017; Jorge-Vazquez,
+   Javier/0000-0003-3654-7203; Reier, Ricardo/0000-0002-4790-0351; Pi
+   Morell, Oriol/0000-0003-3145-4614
+EI 2071-1050
+PD FEB
+PY 2021
+VL 13
+IS 4
+AR 2092
+DI 10.3390/su13042092
+UT WOS:000624835000001
+ER
+
+PT J
+AU Yin, CW
+   Chen, ZB
+AF Yin, Chunwu
+   Chen, Zhanbo
+TI Developing Sustainable Classification of Diseases via Deep Learning and
+   Semi-Supervised Learning
+SO HEALTHCARE
+EI 2227-9032
+PD SEP
+PY 2020
+VL 8
+IS 3
+AR 291
+DI 10.3390/healthcare8030291
+UT WOS:000580254100001
+PM 32846941
+ER
+
+PT J
+AU Elavarasan, D
+   Vincent, PMDR
+AF Elavarasan, Dhivya
+   Vincent, P. M. Durai Raj
+TI Fuzzy deep learning-based crop yield prediction model for sustainable
+   agronomical frameworks
+SO NEURAL COMPUTING & APPLICATIONS
+RI Vincent, P.M. Durai Raj/S-6371-2019
+OI Vincent, P.M. Durai Raj/0000-0002-7598-1363
+SN 0941-0643
+EI 1433-3058
+PD OCT
+PY 2021
+VL 33
+IS 20
+BP 13205
+EP 13224
+DI 10.1007/s00521-021-05950-7
+EA APR 2021
+UT WOS:000638821400002
+ER
+
+PT J
+AU Ma, YG
+   Li, Q
+   Hu, N
+   Li, LL
+AF Ma, Yugang
+   Li, Qing
+   Hu, Nan
+   Li, Lili
+TI SeBioGraph: Semi-supervised Deep Learning for the Graph via Sustainable
+   Knowledge Transfer
+SO FRONTIERS IN NEUROROBOTICS
+SN 1662-5218
+PD APR 1
+PY 2021
+VL 15
+AR 665055
+DI 10.3389/fnbot.2021.665055
+UT WOS:000640346900001
+PM 33867966
+ER
+
+PT J
+AU Sapitang, M
+   Ridwan, WM
+   Kushiar, KF
+   Ahmed, AN
+   El-Shafie, A
+AF Sapitang, Michelle
+   Ridwan, Wanie M.
+   Kushiar, Khairul Faizal
+   Ahmed, Ali Najah
+   El-Shafie, Ahmed
+TI Machine Learning Application in Reservoir Water Level Forecasting for
+   Sustainable Hydropower Generation Strategy
+SO SUSTAINABILITY
+RI El-Shafie, Ahmed/J-1799-2014
+OI El-Shafie, Ahmed/0000-0001-5018-8505
+EI 2071-1050
+PD AUG
+PY 2020
+VL 12
+IS 15
+AR 6121
+DI 10.3390/su12156121
+UT WOS:000559002400001
+ER
+
+PT J
+AU Tang, BS
+   Ho, WKO
+   Wong, SW
+AF Tang, Bo-sin
+   Ho, Winky K. O.
+   Wong, Siu Wai
+TI Sustainable development scale of housing estates: An economic assessment
+   using machine learning approach
+SO SUSTAINABLE DEVELOPMENT
+RI Tang, Bo-sin/B-1126-2008
+OI Tang, Bo-sin/0000-0003-1909-2059
+SN 0968-0802
+EI 1099-1719
+PD JUL
+PY 2021
+VL 29
+IS 4
+BP 708
+EP 718
+DI 10.1002/sd.2168
+EA JAN 2021
+UT WOS:000608171400001
+ER
+
+PT J
+AU Niu, WJ
+   Feng, ZK
+AF Niu, Wen-jing
+   Feng, Zhong-kai
+TI Evaluating the performances of several artificial intelligence methods
+   in forecasting daily streamflow time series for sustainable water
+   resources management
+SO SUSTAINABLE CITIES AND SOCIETY
+RI Feng, Zhong-kai/H-7069-2012
+OI Feng, Zhong-kai/0000-0002-0166-8956
+SN 2210-6707
+EI 2210-6715
+PD JAN
+PY 2021
+VL 64
+AR 102562
+DI 10.1016/j.scs.2020.102562
+UT WOS:000598345100008
+ER
+
+PT J
+AU Huang, Y
+   Nazir, S
+   Ma, XQ
+   Kong, SM
+   Liu, YY
+AF Huang, Yi
+   Nazir, Shah
+   Ma, Xinqiang
+   Kong, Shiming
+   Liu, Youyuan
+TI Acquiring Data Traffic for Sustainable IoT and Smart Devices Using
+   Machine Learning Algorithm
+SO SECURITY AND COMMUNICATION NETWORKS
+RI ; Nazir, Shah/D-2020-2015
+OI ma, xinqiang/0000-0001-7278-6258; Nazir, Shah/0000-0003-0126-9944
+SN 1939-0114
+EI 1939-0122
+PD JUN 19
+PY 2021
+VL 2021
+AR 1852466
+DI 10.1155/2021/1852466
+UT WOS:000669934000001
+ER
+
+PT J
+AU Garg, R
+   Aggarwal, H
+   Centobelli, P
+   Cerchione, R
+AF Garg, Raghu
+   Aggarwal, Himanshu
+   Centobelli, Piera
+   Cerchione, Roberto
+TI Extracting Knowledge from Big Data for Sustainability: A Comparison of
+   Machine Learning Techniques
+SO SUSTAINABILITY
+EI 2071-1050
+PD DEC
+PY 2019
+VL 11
+IS 23
+AR 6669
+DI 10.3390/su11236669
+UT WOS:000508186400141
+ER
+
+PT J
+AU Wang, XL
+   Lei, N
+   Hou, YZ
+AF Wang, Xiao-Ling
+   Lei, Ni
+   Hou, Yun-Zhang
+TI How does human resource department's client relationship management
+   affect sustainable enterprise performance - in the context of artificial
+   intelligence?
+SO INTERNATIONAL JOURNAL OF TECHNOLOGY MANAGEMENT
+SN 0267-5730
+EI 1741-5276
+PY 2020
+VL 84
+IS 1-2
+SI SI
+BP 50
+EP 69
+UT WOS:000607800400003
+ER
+
+PT J
+AU Casazza, M
+   Gioppo, L
+AF Casazza, Marco
+   Gioppo, Luca
+TI A playwriting technique to engage on a shared reflective enquiry about
+   the social sustainability of robotization and artificial intelligence
+SO JOURNAL OF CLEANER PRODUCTION
+RI Casazza, Marco/T-6783-2017
+OI Casazza, Marco/0000-0002-7579-3231; Gioppo, Luca/0000-0002-8488-1081
+SN 0959-6526
+EI 1879-1786
+PD MAR 1
+PY 2020
+VL 248
+AR 119201
+DI 10.1016/j.jclepro.2019.119201
+UT WOS:000507364000014
+ER
+
+PT J
+AU Taylan, O
+   Alkabaa, AS
+   Alamoudi, M
+   Basahel, A
+   Balubaid, M
+   Andejany, M
+   Alidrisi, H
+AF Taylan, Osman
+   Alkabaa, Abdulaziz S.
+   Alamoudi, Mohammed
+   Basahel, Abdulrahman
+   Balubaid, Mohammed
+   Andejany, Murad
+   Alidrisi, Hisham
+TI Air Quality Modeling for Sustainable Clean Environment Using ANFIS and
+   Machine Learning Approaches
+SO ATMOSPHERE
+RI Alidrisi, Hisham/D-7259-2015; Alkabaa, Abdulaziz/AAU-3090-2021
+OI Alidrisi, Hisham/0000-0003-1934-1131; Alkabaa,
+   Abdulaziz/0000-0001-9016-4241; Taylan, Osman/0000-0002-5806-3237;
+   Andejany, Murad/0000-0002-5557-2773; Balubaid,
+   Mohammed/0000-0001-7978-401X
+EI 2073-4433
+PD JUN
+PY 2021
+VL 12
+IS 6
+AR 713
+DI 10.3390/atmos12060713
+UT WOS:000667833000001
+ER
+
+PT J
+AU De Las Heras, A
+   Luque-Sendra, A
+   Zamora-Polo, F
+AF De Las Heras, Ana
+   Luque-Sendra, Amalia
+   Zamora-Polo, Francisco
+TI Machine Learning Technologies for Sustainability in Smart Cities in the
+   Post-COVID Era
+SO SUSTAINABILITY
+RI ; Zamora-Polo, Francisco/H-3765-2018
+OI Luque, Amalia/0000-0002-1205-4722; De Las Heras Garcia De Vinuesa,
+   Ana/0000-0002-9884-7490; Zamora-Polo, Francisco/0000-0002-9700-6809
+EI 2071-1050
+PD NOV
+PY 2020
+VL 12
+IS 22
+AR 9320
+DI 10.3390/su12229320
+UT WOS:000594577100001
+ER
+
+PT J
+AU Porciello, J
+   Ivanina, M
+   Islam, M
+   Einarson, S
+   Hirsh, H
+AF Porciello, Jaron
+   Ivanina, Maryia
+   Islam, Maidul
+   Einarson, Stefan
+   Hirsh, Haym
+TI Accelerating evidence-informed decision-making for the Sustainable
+   Development Goals using machine learning
+SO NATURE MACHINE INTELLIGENCE
+OI Porciello, Jaron/0000-0002-3179-1971; Ivanina,
+   Maryia/0000-0002-3165-8118
+EI 2522-5839
+PD OCT
+PY 2020
+VL 2
+IS 10
+BP 559
+EP 565
+DI 10.1038/s42256-020-00235-5
+EA OCT 2020
+UT WOS:000579336000003
+ER
+
+PT J
+AU Alami, H
+   Rivard, L
+   Lehoux, P
+   Hoffman, SJ
+   Cadeddu, SBM
+   Savoldelli, M
+   Samri, MA
+   Ahmed, MAA
+   Fleet, R
+   Fortin, JP
+AF Alami, Hassane
+   Rivard, Lysanne
+   Lehoux, Pascale
+   Hoffman, Steven J.
+   Cadeddu, Stephanie Bernadette Mafalda
+   Savoldelli, Mathilde
+   Samri, Mamane Abdoulaye
+   Ag Ahmed, Mohamed Ali
+   Fleet, Richard
+   Fortin, Jean-Paul
+TI Artificial intelligence in health care: laying the Foundation for
+   Responsible, sustainable, and inclusive innovation in low- and
+   middle-income countries
+SO GLOBALIZATION AND HEALTH
+OI Alami, Hassane/0000-0002-5461-7693; Ag Ahmed, Mohamed
+   Ali/0000-0001-9374-871X
+EI 1744-8603
+PD JUN 24
+PY 2020
+VL 16
+IS 1
+AR 52
+DI 10.1186/s12992-020-00584-1
+UT WOS:000544972300002
+PM 32580741
+ER
+
+PT J
+AU Bindajam, AA
+   Mallick, J
+   Talukdar, S
+   Islam, AMT
+   Alqadhi, S
+AF Bindajam, Ahmed Ali
+   Mallick, Javed
+   Talukdar, Swapan
+   Islam, Abu Reza Md. Towfiqul
+   Alqadhi, Saeed
+TI Integration of artificial intelligence-based LULC mapping and prediction
+   for estimating ecosystem services for urban sustainability: past to
+   future perspective
+SO ARABIAN JOURNAL OF GEOSCIENCES
+RI Mallick, Javed/AAH-6444-2020
+OI Mallick, Javed/0000-0002-6155-3720
+SN 1866-7511
+EI 1866-7538
+PD SEP
+PY 2021
+VL 14
+IS 18
+AR 1887
+DI 10.1007/s12517-021-08251-4
+UT WOS:000688544300004
+ER
+
+PT J
+AU Palomares, I
+   Martinez-Camara, E
+   Montes, R
+   Garcia-Moral, P
+   Chiachio, M
+   Chiachio, J
+   Alonso, S
+   Melero, FJ
+   Molina, D
+   Fernandez, B
+   Moral, C
+   Marchena, R
+   de Vargas, JP
+   Herrera, F
+AF Palomares, Ivan
+   Martinez-Camara, Eugenio
+   Montes, Rosana
+   Garcia-Moral, Pablo
+   Chiachio, Manuel
+   Chiachio, Juan
+   Alonso, Sergio
+   Melero, Francisco J.
+   Molina, Daniel
+   Fernandez, Barbara
+   Moral, Cristina
+   Marchena, Rosario
+   de Vargas, Javier Perez
+   Herrera, Francisco
+TI A panoramic view and swot analysis of artificial intelligence for
+   achieving the sustainable development goals by 2030: progress and
+   prospects
+SO APPLIED INTELLIGENCE
+RI Soldado, Rosana Montes/AAT-7222-2021; Montes, Rosana/C-2434-2012
+OI Soldado, Rosana Montes/0000-0002-0183-044X; Montes,
+   Rosana/0000-0002-0183-044X
+SN 0924-669X
+EI 1573-7497
+PD SEP
+PY 2021
+VL 51
+IS 9
+SI SI
+BP 6497
+EP 6527
+DI 10.1007/s10489-021-02264-y
+EA JUN 2021
+UT WOS:000659782200001
+PM 34764606
+ER
+
+PT J
+AU Praveen, KV
+   Prathap, PMJ
+   Dhanasekaran, S
+   Punithavathi, ISH
+   Duraipandy, P
+   Pustokhina, IV
+   Pustokhin, DA
+AF Praveen, K., V
+   Prathap, P. M. Joe
+   Dhanasekaran, S.
+   Punithavathi, I. S. Hephzi
+   Duraipandy, P.
+   Pustokhina, Irina, V
+   Pustokhin, Denis A.
+TI Deep Learning Based Intelligent and Sustainable Smart Healthcare
+   Application in Cloud-Centric IoT
+SO CMC-COMPUTERS MATERIALS & CONTINUA
+RI Pustokhina, Irina/D-3508-2019; Pathrose, Joe Prathap/V-7670-2019;
+   Pustokhin, Denis/D-3509-2019
+OI Pustokhina, Irina/0000-0001-5480-8871; Pathrose, Joe
+   Prathap/0000-0002-4708-8308; Pustokhin, Denis/0000-0002-8138-8494
+SN 1546-2218
+EI 1546-2226
+PY 2021
+VL 66
+IS 2
+BP 1987
+EP 2003
+DI 10.32604/cmc.2020.012398
+UT WOS:000594856200009
+ER
+
+PT J
+AU Fan, DC
+   Liu, KR
+AF Fan, Decheng
+   Liu, Kairan
+TI The Relationship between Artificial Intelligence and China's Sustainable
+   Economic Growth: Focused on the Mediating Effects of Industrial
+   Structural Change
+SO SUSTAINABILITY
+EI 2071-1050
+PD OCT
+PY 2021
+VL 13
+IS 20
+AR 11542
+DI 10.3390/su132011542
+UT WOS:000715120000001
+ER
+
+PT J
+AU [Anonymous]
+AF [Anonymous]
+TI Deploying artificial intelligence to augment green supply chain
+   management performance: innovations from South Africa on the road to
+   operational sustainability
+SO ANNALS IN SOCIAL RESPONSIBILITY
+SN 2056-3515
+EI 2056-3523
+PD AUG 3
+PY 2020
+VL 6
+IS 2
+BP 39
+EP 41
+DI 10.1108/ASR-05-2020-0010
+EA JUN 2020
+UT WOS:000541752800001
+ER
+
+PT J
+AU Jin, XB
+   Yu, XH
+   Wang, XY
+   Bai, YT
+   Su, TL
+   Kong, JL
+AF Jin, Xue-Bo
+   Yu, Xing-Hong
+   Wang, Xiao-Yi
+   Bai, Yu-Ting
+   Su, Ting-Li
+   Kong, Jian-Lei
+TI Deep Learning Predictor for Sustainable Precision Agriculture Based on
+   Internet of Things System
+SO SUSTAINABILITY
+RI JIN, Xue-bo/W-2837-2019; Bai, Yu-ting/AAW-2554-2020
+OI JIN, Xue-bo/0000-0002-2230-0077; 
+EI 2071-1050
+PD FEB 2
+PY 2020
+VL 12
+IS 4
+AR 1433
+DI 10.3390/su12041433
+UT WOS:000522460200151
+ER
+
+PT J
+AU Wong, S
+   Yeung, JKW
+   Lau, YY
+   So, J
+AF Wong, Simon
+   Yeung, John-Kun-Woon
+   Lau, Yui-Yip
+   So, Joseph
+TI Technical Sustainability of Cloud-Based Blockchain Integrated with
+   Machine Learning for Supply Chain Management
+SO SUSTAINABILITY
+RI So, Joseph/AAB-1789-2021
+OI So, Joseph/0000-0001-8784-3083
+EI 2071-1050
+PD AUG
+PY 2021
+VL 13
+IS 15
+AR 8270
+DI 10.3390/su13158270
+UT WOS:000682287700001
+ER
+
+PT J
+AU Shah, MI
+   Memon, SA
+   Niazi, MSK
+   Amin, MN
+   Aslam, F
+   Javed, MF
+AF Shah, Muhammad Izhar
+   Memon, Shazim Ali
+   Khan Niazi, Muhammad Sohaib
+   Amin, Muhammad Nasir
+   Aslam, Fahid
+   Javed, Muhammad Faisal
+TI Machine Learning-Based Modeling with Optimization Algorithm for
+   Predicting Mechanical Properties of Sustainable Concrete
+SO ADVANCES IN CIVIL ENGINEERING
+RI Aslam, Fahid/AAG-4938-2020; Javed, Muhammad/AAM-8277-2021; Amin,
+   Muhammad Nasir/D-2089-2014
+OI Aslam, Fahid/0000-0003-2863-3283; Shah, Muhammad
+   Izhar/0000-0002-0588-6301; Amin, Muhammad Nasir/0000-0001-6524-4389;
+   Memon, Shazim/0000-0001-6625-8811
+SN 1687-8086
+EI 1687-8094
+PD MAR 4
+PY 2021
+VL 2021
+AR 6682283
+DI 10.1155/2021/6682283
+UT WOS:000629366300003
+ER
+
+PT J
+AU Keys, PW
+   Barnes, EA
+   Carter, NH
+AF Keys, Patrick W.
+   Barnes, Elizabeth A.
+   Carter, Neil H.
+TI A machine-learning approach to human footprint index estimation with
+   applications to sustainable development
+SO ENVIRONMENTAL RESEARCH LETTERS
+RI Barnes, Elizabeth A/O-1790-2014; Keys, Patrick/AAK-1359-2021
+OI Barnes, Elizabeth A/0000-0003-4284-9320; Keys,
+   Patrick/0000-0002-7250-1563; Carter, Neil/0000-0002-4399-6384
+SN 1748-9326
+PD APR
+PY 2021
+VL 16
+IS 4
+AR 044061
+DI 10.1088/1748-9326/abe00a
+UT WOS:000639516100001
+ER
+
+PT J
+AU Shafiq, SM
+   Tian, ZH
+   Bashir, AK
+   Jolfaei, A
+   Yu, XZ
+AF Shafiq, Survey Muhammad
+   Tian, Zhihong
+   Bashir, Ali Kashif
+   Jolfaei, Alireza
+   Yu, Xiangzhan
+TI Data mining and machine learning methods for sustainable smart cities
+   traffic classification: A survey
+SO SUSTAINABLE CITIES AND SOCIETY
+RI Bashir, Ali Kashif/R-4015-2019
+OI Bashir, Ali Kashif/0000-0003-2601-9327; tian,
+   zhihong/0000-0002-9409-5359; Jolfaei, Alireza/0000-0001-7818-459X
+SN 2210-6707
+EI 2210-6715
+PD SEP
+PY 2020
+VL 60
+AR 102177
+DI 10.1016/j.scs.2020.102177
+UT WOS:000565711300004
+ER
+
+PT J
+AU Molina-Gomez, NI
+   Rodriguez-Rojas, K
+   Calderon-Rivera, D
+   Diaz-Arevalo, JL
+   Lopez-Jimenez, PA
+AF Isabel Molina-Gomez, Nidia
+   Rodriguez-Rojas, Karen
+   Calderon-Rivera, Dayam
+   Luis Diaz-Arevalo, Jose
+   Amparo Lopez-Jimenez, P.
+TI Using Machine Learning Tools to Classify Sustainability Levels in the
+   Development of Urban Ecosystems
+SO SUSTAINABILITY
+RI Gomez, Nidia Isabel Molina/AAG-7671-2021; Lopez-Jimenez, P.
+   Amparo/AAD-9381-2021
+OI Gomez, Nidia Isabel Molina/0000-0003-4485-262X; Lopez-Jimenez, P.
+   Amparo/0000-0002-7043-3683; DIAZ-AREVALO, JOSE LUIS/0000-0003-4330-1957;
+   Calderon Rivera, Dayam Soret/0000-0002-7604-0581
+EI 2071-1050
+PD APR
+PY 2020
+VL 12
+IS 8
+AR 3326
+DI 10.3390/su12083326
+UT WOS:000535598700259
+ER
+
+PT J
+AU Mukherjee, R
+AF Mukherjee, Rajib
+TI Selection of Sustainable Process and Essential Indicators for Decision
+   Making Using Machine Learning Algorithms
+SO PROCESS INTEGRATION AND OPTIMIZATION FOR SUSTAINABILITY
+SN 2509-4238
+EI 2509-4246
+PD JUL
+PY 2017
+VL 1
+IS 2
+BP 153
+EP 163
+DI 10.1007/s41660-017-0011-4
+UT WOS:000620778700005
+ER
+
+PT J
+AU Kosir, S
+   Heyne, J
+   Graham, J
+AF Kosir, Shane
+   Heyne, Joshua
+   Graham, John
+TI A machine learning framework for drop-in volume swell characteristics of
+   sustainable aviation fuel
+SO FUEL
+OI Kosir, Shane/0000-0001-5743-8300
+SN 0016-2361
+EI 1873-7153
+PD AUG 15
+PY 2020
+VL 274
+AR 117832
+DI 10.1016/j.fuel.2020.117832
+UT WOS:000530710600014
+ER
+
+PT J
+AU Raghupathi, V
+   Ren, J
+   Raghupathi, W
+AF Raghupathi, Viju
+   Ren, Jie
+   Raghupathi, Wullianallur
+TI Identifying Corporate Sustainability Issues by Analyzing Shareholder
+   Resolutions: A Machine-Learning Text Analytics Approach
+SO SUSTAINABILITY
+OI Raghupathi, Wullianallur/0000-0001-9927-5343
+EI 2071-1050
+PD JUN
+PY 2020
+VL 12
+IS 11
+AR 4753
+DI 10.3390/su12114753
+UT WOS:000543391800416
+ER
+
+PT J
+AU Gloria, A
+   Cardoso, J
+   Sebastiao, P
+AF Gloria, Andre
+   Cardoso, Joao
+   Sebastiao, Pedro
+TI Sustainable Irrigation System for Farming Supported by Machine Learning
+   and Real-Time Sensor Data
+SO SENSORS
+RI ; Sebastiao, Pedro/N-7737-2013
+OI Gloria, Andre/0000-0002-5245-4392; Sebastiao, Pedro/0000-0001-7729-4033
+EI 1424-8220
+PD MAY
+PY 2021
+VL 21
+IS 9
+AR 3079
+DI 10.3390/s21093079
+UT WOS:000650789400001
+PM 33925142
+ER
+
+PT J
+AU Rojek, I
+   Mikolajewski, D
+   Macko, M
+   Szczepanski, Z
+   Dostatni, E
+AF Rojek, Izabela
+   Mikolajewski, Dariusz
+   Macko, Marek
+   Szczepanski, Zbigniew
+   Dostatni, Ewa
+TI Optimization of Extrusion-Based 3D Printing Process Using Neural
+   Networks for Sustainable Development
+SO MATERIALS
+OI Dostatni, Ewa/0000-0003-3723-4540; Mikolajewski,
+   Dariusz/0000-0003-4157-2796; Macko, Marek/0000-0002-8743-6602; Rojek,
+   Izabela/0000-0002-9958-6579
+EI 1996-1944
+PD JUN
+PY 2021
+VL 14
+IS 11
+AR 2737
+DI 10.3390/ma14112737
+UT WOS:000661224100001
+PM 34067326
+ER
+
+PT J
+AU De Sancha-Navarro, JM
+   Lara-Rubio, J
+   Oliver-Alfonso, MD
+   Palma-Martos, L
+AF De Sancha-Navarro, Jesus Manuel
+   Lara-Rubio, Juan
+   Oliver-Alfonso, Maria Dolores
+   Palma-Martos, Luis
+TI Cultural Sustainability in University Students' Flamenco Music Event
+   Attendance: A Neural Networks Approach
+SO SUSTAINABILITY
+RI Lara-Rubio, Juan/L-4234-2014; OLIVER-ALFONSO, MARIA DOLORES/H-7424-2017
+OI Lara-Rubio, Juan/0000-0001-7703-5920; OLIVER-ALFONSO, MARIA
+   DOLORES/0000-0003-1347-8284; DE SANCHA-NAVARRO, JESUS
+   MANUEL/0000-0003-2314-8510
+EI 2071-1050
+PD MAR
+PY 2021
+VL 13
+IS 5
+AR 2911
+DI 10.3390/su13052911
+UT WOS:000628561600001
+ER
+
+PT J
+AU Antanasijevic, D
+   Pocajt, V
+   Popovic, I
+   Redzic, N
+   Ristic, M
+AF Antanasijevic, Davor
+   Pocajt, Viktor
+   Popovic, Ivanka
+   Redzic, Nebojsa
+   Ristic, Mirjana
+TI The forecasting of municipal waste generation using artificial neural
+   networks and sustainability indicators
+SO SUSTAINABILITY SCIENCE
+RI NEMLIOGLU, SEMIH/AAH-8909-2019; Antanasijevic, Davor/D-4242-2014
+OI NEMLIOGLU, SEMIH/0000-0002-9938-4651; Antanasijevic,
+   Davor/0000-0002-0915-1281; Popovic, Ivanka/0000-0003-3812-3623
+SN 1862-4065
+EI 1862-4057
+PD JAN
+PY 2013
+VL 8
+IS 1
+BP 37
+EP 46
+DI 10.1007/s11625-012-0161-9
+UT WOS:000313029000004
+ER
+
+PT J
+AU Untaru, M
+   Rotarescu, V
+   Dorneanu, L
+AF Untaru, Mircea
+   Rotarescu, Vasile
+   Dorneanu, Liliana
+TI ARTIFICIAL NEURAL NETWORKS FOR SUSTAINABLE AGRIBUSINESS: A CASE STUDY OF
+   FIVE ENERGETIC CROPS
+SO AGROCIENCIA
+SN 1405-3195
+PD JUL-AUG
+PY 2012
+VL 46
+IS 5
+BP 507
+EP 518
+UT WOS:000307374000008
+ER
+
+PT J
+AU Camarena, S
+AF Camarena, Stephanie
+TI Engaging with Artificial Intelligence (AI) with a Bottom-Up Approach for
+   the Purpose of Sustainability: Victorian Farmers Market Association,
+   Melbourne Australia
+SO SUSTAINABILITY
+OI Camarena, Stephanie/0000-0002-7626-7858
+EI 2071-1050
+PD AUG
+PY 2021
+VL 13
+IS 16
+AR 9314
+DI 10.3390/su13169314
+UT WOS:000689988100001
+ER
+
+PT J
+AU Neshat, N
+   Moayedfar, S
+   Rezaee, K
+   Biuki, NA
+AF Neshat, Najmeh
+   Moayedfar, Saeedeh
+   Rezaee, Khosro
+   Amrollahi Biuki, Nahid
+TI Sustainable planning of developing tourism destinations after COVID-19
+   outbreak: a deep learning approach
+SO JOURNAL OF POLICY RESEARCH IN TOURISM LEISURE AND EVENTS
+SN 1940-7963
+EI 1940-7971
+DI 10.1080/19407963.2021.1970578
+EA SEP 2021
+UT WOS:000693116000001
+ER
+
+PT J
+AU Moradzadeh, A
+   Moayyed, H
+   Zakeri, S
+   Mohammadi-Ivatloo, B
+   Aguiar, AP
+AF Moradzadeh, Arash
+   Moayyed, Hamed
+   Zakeri, Sahar
+   Mohammadi-Ivatloo, Behnam
+   Aguiar, A. Pedro
+TI Deep Learning-Assisted Short-Term Load Forecasting for Sustainable
+   Management of Energy in Microgrid
+SO INVENTIONS
+RI Mohammadi-ivatloo, Behnam/E-5636-2013; Aguiar, Antonio Pedro/L-4305-2014
+OI Mohammadi-ivatloo, Behnam/0000-0002-0255-8353; Moayyed,
+   Hamed/0000-0001-7075-1609; Aguiar, Antonio Pedro/0000-0001-7105-0505;
+   Moradzadeh, Arash/0000-0002-2557-1307
+EI 2411-5134
+PD MAR
+PY 2021
+VL 6
+IS 1
+AR 15
+DI 10.3390/inventions6010015
+UT WOS:000636084600001
+ER
+
+PT J
+AU Wang, DL
+   Zhang, YM
+AF Wang, Dongling
+   Zhang, Yuming
+TI Implications for sustainability in supply chain management and the
+   circular economy using machine learning model
+SO INFORMATION SYSTEMS AND E-BUSINESS MANAGEMENT
+SN 1617-9846
+EI 1617-9854
+DI 10.1007/s10257-020-00477-1
+EA SEP 2020
+UT WOS:000573479000001
+ER
+
+PT J
+AU Abdella, GM
+   Kucukvar, M
+   Onat, NC
+   Al-Yafay, HM
+   Bulak, ME
+AF Abdella, Galal M.
+   Kucukvar, Murat
+   Onat, Nuri Cihat
+   Al-Yafay, Hussein M.
+   Bulak, Muhammet Enis
+TI Sustainability assessment and modeling based on supervised machine
+   learning techniques: The case for food consumption
+SO JOURNAL OF CLEANER PRODUCTION
+RI ; Onat, Nuri C./A-7575-2016
+OI Al-Yafei, Hussein/0000-0003-2874-4995; Onat, Nuri C./0000-0002-0263-5144
+SN 0959-6526
+EI 1879-1786
+PD APR 1
+PY 2020
+VL 251
+AR 119661
+DI 10.1016/j.jclepro.2019.119661
+UT WOS:000510823700111
+ER
+
+PT J
+AU Hidalgo, A
+   Gabaly, S
+   Morales-Alonso, G
+   Uruena, A
+AF Hidalgo, Antonio
+   Gabaly, Samuel
+   Morales-Alonso, Gustavo
+   Uruena, Alberto
+TI The digital divide in light of sustainable development: An approach
+   through advanced machine learning techniques
+SO TECHNOLOGICAL FORECASTING AND SOCIAL CHANGE
+RI Uruena, Alberto/AAL-5268-2021; Hidalgo, Antonio/AAZ-5720-2020
+OI Hidalgo, Antonio/0000-0002-3598-9862
+SN 0040-1625
+EI 1873-5509
+PD JAN
+PY 2020
+VL 150
+AR 119754
+DI 10.1016/j.techfore.2019.119754
+UT WOS:000503324600018
+ER
+
+PT J
+AU Pham, AD
+   Ngo, NT
+   Truong, TTH
+   Huynh, NT
+   Truong, NS
+AF Anh-Duc Pham
+   Ngoc-Tri Ngo
+   Thu Ha Truong Thi
+   Nhat-To Huynh
+   Ngoc-Son Truong
+TI Predicting energy consumption in multiple buildings using machine
+   learning for improving energy efficiency and sustainability
+SO JOURNAL OF CLEANER PRODUCTION
+OI Truong, Ngoc-Son/0000-0003-4867-8980; Ngo, Ngoc-Tri/0000-0002-7102-4566
+SN 0959-6526
+EI 1879-1786
+PD JUL 1
+PY 2020
+VL 260
+AR 121082
+DI 10.1016/j.jclepro.2020.121082
+UT WOS:000531488900006
+ER
+
+PT J
+AU Jung, H
+   Jeon, J
+   Choi, D
+   Park, JY
+AF Jung, Hail
+   Jeon, Jinsu
+   Choi, Dahui
+   Park, Jung-Ywn
+TI Application of Machine Learning Techniques in Injection Molding Quality
+   Prediction: Implications on Sustainable Manufacturing Industry
+SO SUSTAINABILITY
+OI Choi, Dahui/0000-0002-9735-7385
+EI 2071-1050
+PD APR
+PY 2021
+VL 13
+IS 8
+AR 4120
+DI 10.3390/su13084120
+UT WOS:000645368300001
+ER
+
+PT J
+AU Naseri, H
+   Jahanbakhsh, H
+   Hosseini, P
+   Moghadas Nejad, F
+AF Naseri, Hamed
+   Jahanbakhsh, Hamid
+   Hosseini, Payam
+   Moghadas Nejad, Fereidoon
+TI =cmarkid_boolean AND{11502}}"Designing sustainable concrete mixture by
+   developing a new machine learning technique
+SO JOURNAL OF CLEANER PRODUCTION
+RI Nejad, Fereidoon Moghadas/M-2828-2018
+OI Nejad, Fereidoon Moghadas/0000-0003-3830-4555; Hosseini,
+   Payam/0000-0001-5670-577X
+SN 0959-6526
+EI 1879-1786
+PD JUN 10
+PY 2020
+VL 258
+AR 120578
+DI 10.1016/j.jclepro.2020.120578
+UT WOS:000525323600053
+ER
+
+PT J
+AU Penagos-Londono, GI
+   Rodriguez-Sanchez, C
+   Ruiz-Moreno, F
+   Torres, E
+AF Penagos-Londono, Gabriel, I
+   Rodriguez-Sanchez, Carla
+   Ruiz-Moreno, Felipe
+   Torres, Eduardo
+TI A machine learning approach to segmentation of tourists based on
+   perceived destination sustainability and trustworthiness
+SO JOURNAL OF DESTINATION MARKETING & MANAGEMENT
+RI Ruiz-Moreno, Felipe/H-6424-2015; Rodriguez-Sanchez, Carla/AAA-6612-2021;
+   Penagos, Gabriel/P-8377-2014
+OI Ruiz-Moreno, Felipe/0000-0002-1848-2701; Penagos,
+   Gabriel/0000-0002-4415-4277
+SN 2212-571X
+EI 2212-5752
+PD MAR
+PY 2021
+VL 19
+AR 100532
+DI 10.1016/j.jdmm.2020.100532
+UT WOS:000634266200009
+ER
+
+PT J
+AU Ayvaz, E
+   Kaplan, K
+   Kuncan, M
+AF Ayvaz, Ednan
+   Kaplan, Kaplan
+   Kuncan, Melih
+TI An Integrated LSTM Neural Networks Approach to Sustainable Balanced
+   Scorecard-Based Early Warning System
+SO IEEE ACCESS
+RI Kaplan, Kaplan/AAR-4893-2020; KUNCAN, Melih/A-5857-2017
+OI Kaplan, Kaplan/0000-0001-8036-1145; KUNCAN, Melih/0000-0002-9749-0418
+SN 2169-3536
+PY 2020
+VL 8
+BP 37958
+EP 37966
+DI 10.1109/ACCESS.2020.2973514
+UT WOS:000525545900039
+ER
+
+PT J
+AU Ekici, B
+   Kazanasmaz, ZT
+   Turrin, M
+   Tasgetiren, MF
+   Sariyildiz, IS
+AF Ekici, Berk
+   Kazanasmaz, Z. Tugce
+   Turrin, Michela
+   Tasgetiren, M. Fatih
+   Sariyildiz, I. Sevil
+TI Multi-zone optimisation of high-rise buildings using artificial
+   intelligence for sustainable metropolises. Part 2: Optimisation
+   problems, algorithms, results, and method validation
+SO SOLAR ENERGY
+SN 0038-092X
+EI 1471-1257
+PD AUG
+PY 2021
+VL 224
+BP 309
+EP 326
+DI 10.1016/j.solener.2021.05.082
+UT WOS:000684217800004
+ER
+
+PT J
+AU Kang, DK
+   Yang, EJ
+   Youn, CH
+AF Kang, Dong-Ki
+   Yang, Eun-Ju
+   Youn, Chan-Hyun
+TI Deep Learning-Based Sustainable Data Center Energy Cost Minimization
+   With Temporal MACRO/MICRO Scale Management
+SO IEEE ACCESS
+OI Kang, Dong-Ki/0000-0003-1314-8189
+SN 2169-3536
+PY 2019
+VL 7
+BP 5477
+EP 5491
+DI 10.1109/ACCESS.2018.2888839
+UT WOS:000456365700001
+ER
+
+PT J
+AU Miao, S
+   Zhou, CL
+   AlQahtani, SA
+   Alrashoud, M
+   Ghoneim, A
+   Lv, ZH
+AF Miao, Sheng
+   Zhou, Changliang
+   AlQahtani, Salman Ali
+   Alrashoud, Mubarak
+   Ghoneim, Ahmed
+   Lv, Zhihan
+TI Applying machine learning in intelligent sewage treatment: A case study
+   of chemical plant in sustainable cities
+SO SUSTAINABLE CITIES AND SOCIETY
+RI Lv, Zhihan/I-3187-2014
+OI Lv, Zhihan/0000-0003-2525-3074; miao, sheng/0000-0001-6176-3624;
+   Ghoneim, Ahmed/0000-0003-2076-8925
+SN 2210-6707
+EI 2210-6715
+PD SEP
+PY 2021
+VL 72
+AR 103009
+DI 10.1016/j.scs.2021.103009
+UT WOS:000683803800004
+ER
+
+PT J
+AU Bertoni, A
+   Hallstedt, SI
+   Dasari, SK
+   Andersson, P
+AF Bertoni, Alessandro
+   Hallstedt, Sophie I.
+   Dasari, Siva Krishna
+   Andersson, Petter
+TI Integration of value and sustainability assessment in design space
+   exploration by machine learning: an aerospace application
+SO DESIGN SCIENCE
+RI Bertoni, Alessandro/AAG-6876-2020
+OI Bertoni, Alessandro/0000-0001-5114-4811; Hallstedt,
+   Sophie/0000-0002-7382-1825; Dasari, Siva Krishna/0000-0002-3311-2530
+SN 2053-4701
+PY 2020
+VL 6
+AR e2
+DI 10.1017/dsj.2019.29
+UT WOS:000506688600001
+ER
+
+PT J
+AU Papastefanou, S
+AF Papastefanou, Stefan
+TI Smart Grids and Machine Learning in Chinese and Western Intellectual
+   Property Law The Key Role of Machine Learning in Integrating Sustainable
+   Energy into Smart Grids and the Corresponding Approaches to Asset
+   Protection in Intellectual Property Law
+SO IIC-INTERNATIONAL REVIEW OF INTELLECTUAL PROPERTY AND COMPETITION LAW
+SN 0018-9855
+EI 2195-0237
+PD SEP
+PY 2021
+VL 52
+IS 8
+BP 989
+EP 1019
+DI 10.1007/s40319-021-01100-7
+EA AUG 2021
+UT WOS:000691166900001
+ER
+
+PT J
+AU Sami, BHZ
+   Khai, WJ
+   Sami, BFZ
+   Fai, CM
+   Essam, Y
+   Ahmed, AN
+   El-Shafie, A
+AF Sami, Balahaha Hadi Ziyad
+   Khai, Wong Jee
+   Sami, Balahaha Fadi Ziyad
+   Fai, Chow Ming
+   Essam, Yusuf
+   Ahmed, Ali Najah
+   El-Shafie, Ahmed
+TI Investigating the reliability of machine learning algorithms as a
+   sustainable tool for total suspended solid prediction
+SO AIN SHAMS ENGINEERING JOURNAL
+RI ; El-Shafie, Ahmed/J-1799-2014; Chow, Ming Fai/I-1811-2016
+OI Essam, Yusuf/0000-0001-7229-6814; El-Shafie, Ahmed/0000-0001-5018-8505;
+   Chow, Ming Fai/0000-0002-0732-5575
+SN 2090-4479
+EI 2090-4495
+PD JUN
+PY 2021
+VL 12
+IS 2
+BP 1607
+EP 1622
+DI 10.1016/j.asej.2021.01.007
+UT WOS:000658530300012
+ER
+
+PT J
+AU Liu, YH
+AF Liu, Yinghan
+TI Intelligent analysis platform of agricultural sustainable development
+   based on the Internet of Things and machine learning
+SO ACTA AGRICULTURAE SCANDINAVICA SECTION B-SOIL AND PLANT SCIENCE
+SN 0906-4710
+EI 1651-1913
+PD NOV 17
+PY 2021
+VL 71
+IS 8
+BP 718
+EP 731
+DI 10.1080/09064710.2021.1943513
+EA JUN 2021
+UT WOS:000662769100001
+ER
+
+PT J
+AU Dunn, C
+   Moustafa, N
+   Turnbull, B
+AF Dunn, Corey
+   Moustafa, Nour
+   Turnbull, Benjamin
+TI Robustness Evaluations of Sustainable Machine Learning Models against
+   Data Poisoning Attacks in the Internet of Things
+SO SUSTAINABILITY
+OI Moustafa, Nour/0000-0001-6127-9349; Turnbull,
+   Benjamin/0000-0003-0440-5032
+EI 2071-1050
+PD AUG
+PY 2020
+VL 12
+IS 16
+AR 6434
+DI 10.3390/su12166434
+UT WOS:000579583300001
+ER
+
+PT J
+AU Oprea, SV
+   Bara, A
+AF Oprea, Simona-Vasilica
+   Bara, Adela
+TI Setting the Time-of-Use Tariff Rates With NoSQL and Machine Learning to
+   a Sustainable Environment
+SO IEEE ACCESS
+RI Bara, Adela/AAF-1472-2019
+OI Bara, Adela/0000-0002-0961-352X; Oprea, Simona
+   Vasilica/0000-0002-9005-5181
+SN 2169-3536
+PY 2020
+VL 8
+BP 25521
+EP 25530
+DI 10.1109/ACCESS.2020.2969728
+UT WOS:000524658400002
+ER
+
+PT J
+AU Stamenkovic, LJ
+   Antanasijevic, DZ
+   Ristic, MD
+   Peric-Grujic, AA
+   Pocajt, VV
+AF Stamenkovic, Lidija J.
+   Antanasijevic, Davor Z.
+   Ristic, Mirjana D.
+   Peric-Grujic, Aleksandra A.
+   Pocajt, Viktor V.
+TI Estimation of NMVOC emissions using artificial neural networks and
+   economical and sustainability indicators as inputs
+SO ENVIRONMENTAL SCIENCE AND POLLUTION RESEARCH
+CT International Conference on Contaminated Sediments (ContaSed-2015)
+CY MAR 08-13, 2015
+CL Ascona, SWITZERLAND
+RI Antanasijevic, Davor/D-4242-2014
+OI Antanasijevic, Davor/0000-0002-0915-1281; Stamenkovic,
+   Lidija/0000-0002-6402-3274
+SN 0944-1344
+EI 1614-7499
+PD JUN
+PY 2016
+VL 23
+IS 11
+BP 10753
+EP 10762
+DI 10.1007/s11356-016-6279-z
+UT WOS:000377021500040
+PM 26888640
+ER
+
+PT J
+AU Bag, S
+   Pretorius, JHC
+   Gupta, S
+   Dwivedi, YK
+AF Bag, Surajit
+   Pretorius, Jan Ham Christiaan
+   Gupta, Shivam
+   Dwivedi, Yogesh K.
+TI Role of institutional pressures and resources in the adoption of big
+   data analytics powered artificial intelligence, sustainable
+   manufacturing practices and circular economy capabilities
+SO TECHNOLOGICAL FORECASTING AND SOCIAL CHANGE
+RI Dwivedi, Yogesh Kumar/A-5362-2008
+OI Dwivedi, Yogesh Kumar/0000-0002-5547-9990; BAG,
+   SURAJIT/0000-0002-2344-9551; Pretorius, Jan Harm
+   Christiaan/0000-0002-2023-749X
+SN 0040-1625
+EI 1873-5509
+PD FEB
+PY 2021
+VL 163
+AR 120420
+DI 10.1016/j.techfore.2020.120420
+UT WOS:000608420000020
+ER
+
+PT J
+AU Kumar, P
+   Gupta, GP
+   Tripathi, R
+AF Kumar, Prabhat
+   Gupta, Govind P.
+   Tripathi, Rakesh
+TI TP2SF: A Trustworthy Privacy-Preserving Secured Framework for
+   sustainable smart cities by leveraging blockchain and machine learning
+SO JOURNAL OF SYSTEMS ARCHITECTURE
+RI Gupta, Govind P./AAR-5307-2020; Kumar, Prabhat/ABF-9321-2020
+OI Kumar, Prabhat/0000-0002-0723-0752
+SN 1383-7621
+EI 1873-6165
+PD MAY
+PY 2021
+VL 115
+AR 101954
+DI 10.1016/j.sysarc.2020.101954
+UT WOS:000639862100003
+ER
+
+PT J
+AU Rashid, M
+   Khan, MA
+   Alhaisoni, M
+   Wang, SH
+   Naqvi, SR
+   Rehman, A
+   Saba, T
+AF Rashid, Muhammad
+   Khan, Muhammad Attique
+   Alhaisoni, Majed
+   Wang, Shui-Hua
+   Naqvi, Syed Rameez
+   Rehman, Amjad
+   Saba, Tanzila
+TI A Sustainable Deep Learning Framework for Object Recognition Using
+   Multi-Layers Deep Features Fusion and Selection
+SO SUSTAINABILITY
+RI Wang, Shuihua/G-7326-2016; Khan, Muhammad Attique/AAX-2644-2021
+OI Wang, Shuihua/0000-0003-4713-2791; Attique,
+   Muhammad/0000-0002-6347-4890; Rehman, Amjad/0000-0002-3817-2655
+EI 2071-1050
+PD JUN
+PY 2020
+VL 12
+IS 12
+AR 5037
+DI 10.3390/su12125037
+UT WOS:000553571000001
+ER
+
+PT J
+AU Ullah, I
+   Liu, K
+   Yamamoto, T
+   Al Mamlook, RE
+   Jamal, A
+AF Ullah, Irfan
+   Liu, Kai
+   Yamamoto, Toshiyuki
+   Al Mamlook, Rabia Emhamed
+   Jamal, Arshad
+TI A comparative performance of machine learning algorithm to predict
+   electric vehicles energy consumption: A path towards sustainability
+SO ENERGY & ENVIRONMENT
+SN 0958-305X
+EI 2048-4070
+AR 0958305X211044998
+DI 10.1177/0958305X211044998
+EA OCT 2021
+UT WOS:000713197600001
+ER
+
+PT J
+AU Yang, FF
+   Wanik, DW
+   Cerrai, D
+   Bhuiyan, MA
+   Anagnostou, EN
+AF Yang, Feifei
+   Wanik, David W.
+   Cerrai, Diego
+   Bhuiyan, Md Abul Ehsan
+   Anagnostou, Emmanouil N.
+TI Quantifying Uncertainty in Machine Learning-Based Power Outage
+   Prediction Model Training: A Tool for Sustainable Storm Restoration
+SO SUSTAINABILITY
+RI Bhuiyan, Abul Ehsan/AAA-3827-2021
+OI Cerrai, Diego/0000-0001-5918-4885
+EI 2071-1050
+PD FEB 2
+PY 2020
+VL 12
+IS 4
+AR 1525
+DI 10.3390/su12041525
+UT WOS:000522460200243
+ER
+
+PT J
+AU Ravi, N
+   Rani, PV
+   Harinarayan, RRA
+   Shalinie, SM
+   Seshadri, K
+   Pariventhan, P
+AF Ravi, Nagarathna
+   Rani, Vimala P.
+   Harinarayan, Rajesh Alias R.
+   Shalinie, Mercy S.
+   Seshadri, Karthick
+   Pariventhan, P.
+TI Deep Learning-based Framework for Smart Sustainable Cities: A Case-study
+   in Protection from Air Pollution
+SO INTERNATIONAL JOURNAL OF INTELLIGENT INFORMATION TECHNOLOGIES
+RI S, Mercy Shalinie Shalinie/AAX-7115-2021; Ravi, Nagarathna/AAX-6526-2021
+OI Ravi, Nagarathna/0000-0003-0355-6832; R, Rajesh Alias
+   Harinarayan/0000-0002-5796-9651; Shalinie, S Mercy/0000-0003-3542-1879
+SN 1548-3657
+EI 1548-3665
+PD OCT-DEC
+PY 2019
+VL 15
+IS 4
+BP 76
+EP 107
+DI 10.4018/IJIIT.2019100105
+UT WOS:000511162400005
+ER
+
+PT J
+AU Veerachamy, R
+   Ramar, R
+AF Veerachamy, Ramachandran
+   Ramar, Ramalakshmi
+TI Agricultural Irrigation Recommendation and Alert (AIRA) system using
+   optimization and machine learning in Hadoop for sustainable agriculture
+SO ENVIRONMENTAL SCIENCE AND POLLUTION RESEARCH
+RI V, Ramachandran/AAO-9576-2021
+OI Veerachamy, Ramachandran/0000-0002-5783-8897
+SN 0944-1344
+EI 1614-7499
+DI 10.1007/s11356-021-13248-3
+EA MAR 2021
+UT WOS:000635506400005
+PM 33788091
+ER
+
+PT J
+AU Choi, E
+   Cho, S
+   Kim, DK
+AF Choi, Eunjeong
+   Cho, Soohwan
+   Kim, Dong Keun
+TI Power Demand Forecasting Using Long Short-Term Memory (LSTM)
+   Deep-Learning Model for Monitoring Energy Sustainability
+SO SUSTAINABILITY
+OI Cho, Soo-Hwan/0000-0003-0734-4802
+EI 2071-1050
+PD FEB
+PY 2020
+VL 12
+IS 3
+AR 1109
+DI 10.3390/su12031109
+UT WOS:000524899601052
+ER
+
+PT J
+AU Mallick, J
+   Naikoo, MW
+   Talukdar, S
+   Ahmed, IA
+   Rahman, A
+   Islam, AMT
+   Pal, S
+   Ghose, B
+   Shashtri, S
+AF Mallick, Javed
+   Naikoo, Mohd Waseem
+   Talukdar, Swapan
+   Ahmed, Ishita Afreen
+   Rahman, Atiqur
+   Islam, Abu Reza Md Towfiqul
+   Pal, Swades
+   Ghose, Bonosri
+   Shashtri, Satyanarayan
+TI Developing groundwater potentiality models by coupling ensemble machine
+   learning algorithms and statistical techniques for sustainable
+   groundwater management
+SO GEOCARTO INTERNATIONAL
+RI Towfiqul Islam, Abu Reza Md./N-4022-2014
+OI Towfiqul Islam, Abu Reza Md./0000-0001-5779-1382
+SN 1010-6049
+EI 1752-0762
+DI 10.1080/10106049.2021.1987535
+EA OCT 2021
+UT WOS:000708291800001
+ER
+
+PT J
+AU Weng, SS
+   Chen, HC
+AF Weng, Sung-Shun
+   Chen, Hung-Chia
+TI Exploring the Role of Deep Learning Technology in the Sustainable
+   Development of the Music Production Industry
+SO SUSTAINABILITY
+EI 2071-1050
+PD JAN 2
+PY 2020
+VL 12
+IS 2
+AR 625
+DI 10.3390/su12020625
+UT WOS:000516824600183
+ER
+
+PT J
+AU Dairi, A
+   Cheng, TY
+   Harrou, F
+   Sun, Y
+   Leiknes, T
+AF Dairi, Abdelkader
+   Cheng, Tuoyuan
+   Harrou, Fouzi
+   Sun, Ying
+   Leiknes, TorOve
+TI Deep learning approach for sustainable WWTP operation: A case study on
+   data-driven influent conditions monitoring
+SO SUSTAINABLE CITIES AND SOCIETY
+RI Harrou, Fouzi/AAY-5178-2021; Dairi, Abdelkader/AAK-8749-2021; Cheng,
+   Tuoyuan/M-7477-2018; Sun, Ying/N-2009-2017
+OI Dairi, Abdelkader/0000-0003-4712-6949; Cheng,
+   Tuoyuan/0000-0001-5170-6546; Sun, Ying/0000-0001-6703-4270; Harrou,
+   Fouzi/0000-0002-2138-319X
+SN 2210-6707
+EI 2210-6715
+PD OCT
+PY 2019
+VL 50
+AR 101670
+DI 10.1016/j.scs.2019.101670
+UT WOS:000484255800048
+ER
+
+PT J
+AU Mhlanga, D
+AF Mhlanga, David
+TI Artificial Intelligence in the Industry 4.0, and Its Impact on Poverty,
+   Innovation, Infrastructure Development, and the Sustainable Development
+   Goals: Lessons from Emerging Economies?
+SO SUSTAINABILITY
+OI Mhlanga, David/0000-0002-8512-2124
+EI 2071-1050
+PD JUN
+PY 2021
+VL 13
+IS 11
+AR 5788
+DI 10.3390/su13115788
+UT WOS:000660722900001
+ER
+
+PT J
+AU Yousefi, S
+   Shabanpour, H
+   Saen, RF
+AF Yousefi, Saeed
+   Shabanpour, Hadi
+   Farzipoor Saen, Reza
+TI Sustainable clustering of customers using capacitive artificial neural
+   networks: a case study in Pegah Distribution Company
+SO RAIRO-OPERATIONS RESEARCH
+RI Farzipoor Saen, Reza/L-2958-2013
+OI Farzipoor Saen, Reza/0000-0002-0851-6509; Shabanpour,
+   Hadi/0000-0002-3681-1070
+SN 0399-0559
+EI 1290-3868
+PD MAR 3
+PY 2021
+VL 55
+IS 1
+BP 51
+EP 60
+DI 10.1051/ro/2020059
+UT WOS:000624898100005
+ER
+
+PT J
+AU Yang, HZ
+   Gao, HY
+AF Yang, Hangzhou
+   Gao, Huiying
+TI Toward Sustainable Virtualized Healthcare: Extracting Medical Entities
+   from Chinese Online Health Consultations Using Deep Neural Networks
+SO SUSTAINABILITY
+RI Yang, Hangzhou/K-2223-2019
+EI 2071-1050
+PD SEP
+PY 2018
+VL 10
+IS 9
+AR 3292
+DI 10.3390/su10093292
+UT WOS:000446770200335
+ER
+
+PT J
+AU Inam, F
+   Inam, A
+   Mian, MA
+   Sheikh, AA
+   Awan, HM
+AF Inam, Fraz
+   Inam, Aneeq
+   Mian, Muhammad Abbas
+   Sheikh, Adnan Ahmed
+   Awan, Hayat Muhammad
+TI Forecasting Bankruptcy for organizational sustainability in Pakistan
+   Using artificial neural networks, logit regression, and discriminant
+   analysis
+SO JOURNAL OF ECONOMIC AND ADMINISTRATIVE SCIENCES
+RI Inam, Aneeq/AAE-5530-2019
+OI Inam, Aneeq/0000-0001-7682-2244
+SN 1026-4116
+EI 2054-6246
+PD SEP 2
+PY 2019
+VL 35
+IS 3
+SI SI
+BP 183
+EP 201
+DI 10.1108/JEAS-05-2018-0063
+UT WOS:000485302500005
+ER
+
+PT J
+AU Aldegheishem, A
+   Anwar, M
+   Javaid, N
+   Alrajeh, N
+   Shafiq, M
+   Ahmed, H
+AF Aldegheishem, Abdulaziz
+   Anwar, Mubbashra
+   Javaid, Nadeem
+   Alrajeh, Nabil
+   Shafiq, Muhammad
+   Ahmed, Hasan
+TI Towards Sustainable Energy Efficiency With Intelligent Electricity Theft
+   Detection in Smart Grids Emphasising Enhanced Neural Networks
+SO IEEE ACCESS
+RI Javaid, Nadeem/B-8835-2014
+OI Javaid, Nadeem/0000-0003-3777-8249; Aldegheishem,
+   Abdulaziz/0000-0003-3287-5357
+SN 2169-3536
+PY 2021
+VL 9
+BP 25036
+EP 25061
+DI 10.1109/ACCESS.2021.3056566
+UT WOS:000617752600001
+ER
+
+PT J
+AU Nagarajan, SM
+   Deverajan, GG
+   Chatterjee, P
+   Alnumay, W
+   Ghosh, U
+AF Nagarajan, Senthil Murugan
+   Deverajan, Ganesh Gopal
+   Chatterjee, Puspita
+   Alnumay, Waleed
+   Ghosh, Uttam
+TI Effective task scheduling algorithm with deep learning for Internet of
+   Health Things (IoHT) in sustainable smart cities
+SO SUSTAINABLE CITIES AND SOCIETY
+RI NAGARAJAN, SENTHIL MURUGAN/AAB-3284-2020; Deverajan, Ganesh
+   Gopal/AAJ-6406-2020
+OI NAGARAJAN, SENTHIL MURUGAN/0000-0001-9284-7724; Deverajan, Ganesh
+   Gopal/0000-0003-0036-7841; Ghosh, Uttam/0000-0003-1698-8888
+SN 2210-6707
+EI 2210-6715
+PD AUG
+PY 2021
+VL 71
+AR 102945
+DI 10.1016/j.scs.2021.102945
+UT WOS:000660250300009
+ER
+
+PT J
+AU Zheng, YE
+   Zheng, HX
+   Ye, XY
+AF Zheng, Yinger
+   Zheng, Haixia
+   Ye, Xinyue
+TI Using Machine Learning in Environmental Tax Reform Assessment for
+   Sustainable Development: A Case Study of Hubei Province, China
+SO SUSTAINABILITY
+RI Ye, Xinyue/A-7677-2011
+OI Ye, Xinyue/0000-0001-8838-9476
+EI 2071-1050
+PD NOV
+PY 2016
+VL 8
+IS 11
+AR 1124
+DI 10.3390/su8111124
+UT WOS:000389316200045
+ER
+
+PT J
+AU Vijayalakshmi, B
+   Ramar, K
+   Jhanjhi, NZ
+   Verma, S
+   Kaliappan, M
+   Vijayalakshmi, K
+   Vimal, S
+   Kavita
+   Ghosh, U
+AF Vijayalakshmi, Balachandran
+   Ramar, Kadarkarayandi
+   Jhanjhi, N. Z.
+   Verma, Sahil
+   Kaliappan, Madasamy
+   Vijayalakshmi, Kandasamy
+   Vimal, Shanmuganathan
+   Kavita
+   Ghosh, Uttam
+TI An attention-based deep learning model for traffic flow prediction using
+   spatiotemporal features towards sustainable smart city
+SO INTERNATIONAL JOURNAL OF COMMUNICATION SYSTEMS
+RI S, Vimal/E-9551-2016; Jhanjhi, Noor Zaman/F-3051-2011; Verma,
+   Sahil/AAO-3572-2020; ., Kavita/AAP-4316-2021
+OI S, Vimal/0000-0002-1467-1206; Jhanjhi, Noor Zaman/0000-0001-8116-4733;
+   Verma, Sahil/0000-0003-3136-4029; ., Kavita/0000-0001-5422-1659; Ghosh,
+   Uttam/0000-0003-1698-8888
+SN 1074-5351
+EI 1099-1131
+PD FEB
+PY 2021
+VL 34
+IS 3
+AR e4609
+DI 10.1002/dac.4609
+EA NOV 2020
+UT WOS:000588053900001
+ER
+
+PT J
+AU Abd El-Hameed, A
+   Kim, J
+AF Abd El-Hameed, Ahmed
+   Kim, Juyoul
+TI Machine Learning-Based Classification and Regression Approach for
+   Sustainable Disaster Management: The Case Study of APR1400 in Korea
+SO SUSTAINABILITY
+OI KIM, JUYOUL/0000-0003-4076-0760; abdelhameed, ahmed/0000-0001-7361-4650
+EI 2071-1050
+PD SEP
+PY 2021
+VL 13
+IS 17
+AR 9712
+DI 10.3390/su13179712
+UT WOS:000694489400001
+ER
+
+PT J
+AU Bansal, T
+   Talakokula, V
+   Mathiyazhagan, K
+AF Bansal, Tushar
+   Talakokula, Visalakshi
+   Mathiyazhagan, Kaliyan
+TI Equivalent structural parameters based non-destructive prediction of
+   sustainable concrete strength using machine learning models via piezo
+   sensor
+SO MEASUREMENT
+SN 0263-2241
+EI 1873-412X
+PD JAN
+PY 2022
+VL 187
+AR 110202
+DI 10.1016/j.measurement.2021.110202
+UT WOS:000710250200004
+ER
+
+PT J
+AU Wang, WW
+   Cai, JH
+   Xu, JL
+   Wang, YX
+   Zou, YL
+AF Wang, Weiwei
+   Cai, Jinghui
+   Xu, Jiali
+   Wang, Yuxiang
+   Zou, Yulin
+TI Prediction of the COVID-19 infectivity and the sustainable impact on
+   public health under deep learning algorithm
+SO SOFT COMPUTING
+SN 1432-7643
+EI 1433-7479
+DI 10.1007/s00500-021-06142-0
+EA AUG 2021
+UT WOS:000687005400007
+PM 34456617
+ER
+
+PT J
+AU Jan, CL
+AF Jan, Chyan-Long
+TI Detection of Financial Statement Fraud Using Deep Learning for
+   Sustainable Development of Capital Markets under Information Asymmetry
+SO SUSTAINABILITY
+EI 2071-1050
+PD SEP
+PY 2021
+VL 13
+IS 17
+AR 9879
+DI 10.3390/su13179879
+UT WOS:000694529700001
+ER
+
+PT J
+AU Latif, SD
+AF Latif, Sarmad Dashti
+TI Concrete compressive strength prediction modeling utilizing deep
+   learning long short-term memory algorithm for a sustainable environment
+SO ENVIRONMENTAL SCIENCE AND POLLUTION RESEARCH
+RI Latif, Sarmad Dashti/ABD-4755-2020
+OI Latif, Sarmad Dashti/0000-0002-0417-3545
+SN 0944-1344
+EI 1614-7499
+PD JUN
+PY 2021
+VL 28
+IS 23
+BP 30294
+EP 30302
+DI 10.1007/s11356-021-12877-y
+EA FEB 2021
+UT WOS:000618154100007
+PM 33590396
+ER
+
+PT J
+AU Chen, YW
+   Song, B
+   Zeng, Y
+   Du, XJ
+   Guizani, M
+AF Chen, Yuwen
+   Song, Bin
+   Zeng, Yuan
+   Du, Xiaojiang
+   Guizani, Mohsen
+TI Fault diagnosis based on deep learning for current-carrying ring of
+   catenary system in sustainable railway transportation
+SO APPLIED SOFT COMPUTING
+OI Guizani, Mohsen/0000-0002-8972-8094
+SN 1568-4946
+EI 1872-9681
+PD MAR
+PY 2021
+VL 100
+AR 106907
+DI 10.1016/j.asoc.2020.106907
+UT WOS:000615942500015
+ER
+
+PT J
+AU Tahwia, AM
+   Heniegal, A
+   Elgamal, MS
+   Tayeh, BA
+AF Tahwia, Ahmed M.
+   Heniegal, Ashraf
+   Elgamal, Mohamed S.
+   Tayeh, Bassam A.
+TI The prediction of compressive strength and non-destructive tests of
+   sustainable concrete by using artificial neural networks
+SO COMPUTERS AND CONCRETE
+RI HENIEGAL, ASHRAF/Z-2785-2019
+OI HENIEGAL, ASHRAF/0000-0002-8145-5896
+SN 1598-8198
+EI 1598-818X
+PD JAN
+PY 2021
+VL 27
+IS 1
+BP 21
+EP 28
+DI 10.12989/cac.2021.27.1.021
+UT WOS:000610835400003
+ER
+
+PT J
+AU Zhan, JY
+   Zhou, XZ
+   Jiang, W
+AF Zhan, Jinyu
+   Zhou, Xingzhi
+   Jiang, Wei
+TI Field programmable gate array-based all-layer accelerator with
+   quantization neural networks for sustainable cyber-physical systems
+SO SOFTWARE-PRACTICE & EXPERIENCE
+SN 0038-0644
+EI 1097-024X
+PD NOV
+PY 2021
+VL 51
+IS 11
+SI SI
+BP 2203
+EP 2224
+DI 10.1002/spe.2938
+EA DEC 2020
+UT WOS:000595324200001
+ER
+
+PT J
+AU Feng, JY
+   Yuan, BY
+   Li, X
+   Tian, D
+   Mu, WS
+AF Feng Jianying
+   Yuan Bianyu
+   Li Xin
+   Tian Dong
+   Mu Weisong
+TI Evaluation on risks of sustainable supply chain based on optimized BP
+   neural networks in fresh grape industry
+SO COMPUTERS AND ELECTRONICS IN AGRICULTURE
+SN 0168-1699
+EI 1872-7107
+PD APR
+PY 2021
+VL 183
+AR 105988
+DI 10.1016/j.compag.2021.105988
+UT WOS:000634877000001
+ER
+
+PT J
+AU Dawood, T
+   Elwakil, E
+   Novoa, HM
+   Delgado, JFG
+AF Dawood, Thikra
+   Elwakil, Emad
+   Novoa, Hector Mayol
+   Garate Delgado, Jose Fernando
+TI Toward urban sustainability and clean potable water: Prediction of water
+   quality via arti fi cial neural networks
+SO JOURNAL OF CLEANER PRODUCTION
+RI Novoa, Hector Mayol/G-3955-2015
+OI Novoa, Hector Mayol/0000-0002-1333-8903
+SN 0959-6526
+EI 1879-1786
+PD APR 1
+PY 2021
+VL 291
+AR 125266
+DI 10.1016/j.jclepro.2020.125266
+UT WOS:000624664900001
+ER
+
+PT J
+AU Okewu, E
+   Misra, S
+   Sanz, LF
+   Ayeni, F
+   Mbarika, V
+   Damasevicius, R
+AF Okewu, Emmanuel
+   Misra, Sanjay
+   Fernandez Sanz, Luis
+   Ayeni, Foluso
+   Mbarika, Victor
+   Damasevicius, Robertas
+TI Deep Neural Networks for Curbing Climate Change-Induced Farmers-Herdsmen
+   Clashes in a Sustainable Social Inclusion Initiative
+SO PROBLEMY EKOROZWOJU
+RI Fernandez, Luis/J-4895-2012; Damasevicius, Robertas/E-1387-2017; Misra,
+   Sanjay/K-2203-2014
+OI Fernandez, Luis/0000-0003-0778-0073; Damasevicius,
+   Robertas/0000-0001-9990-1084; Misra, Sanjay/0000-0002-3556-9331
+SN 1895-6912
+PY 2019
+VL 14
+IS 2
+BP 143
+EP 155
+UT WOS:000472684600014
+ER
+
+PT J
+AU Azizi, A
+AF Azizi, Aydin
+TI Applications of Artificial Intelligence Techniques to Enhance
+   Sustainability of Industry 4.0: Design of an Artificial Neural Network
+   Model as Dynamic Behavior Optimizer of Robotic Arms
+SO COMPLEXITY
+RI Azizi, Aydin/S-2444-2018
+OI Azizi, Aydin/0000-0001-6772-743X
+SN 1076-2787
+EI 1099-0526
+PD MAR 21
+PY 2020
+VL 2020
+AR 8564140
+DI 10.1155/2020/8564140
+UT WOS:000522958000003
+ER
+
+PT J
+AU Olukan, TA
+   Chiou, YC
+   Chiu, CH
+   Lai, CY
+   Santos, S
+   Chiesa, M
+AF Olukan, Tuza A.
+   Chiou, Yu-Cheng
+   Chiu, Cheng Hsiang
+   Lai, Chia-Yun
+   Santos, Sergio
+   Chiesa, Matteo
+TI Predicting the suitability of lateritic soil type for low cost
+   sustainable housing with image recognition and machine learning
+   techniques
+SO JOURNAL OF BUILDING ENGINEERING
+OI chiesa, matteo/0000-0001-8170-5288
+SN 2352-7102
+PD MAY
+PY 2020
+VL 29
+AR 101175
+DI 10.1016/j.jobe.2020.101175
+UT WOS:000543785300047
+ER
+
+PT J
+AU Rangel-Martinez, D
+   Nigam, KDP
+   Ricardez-Sandoval, LA
+AF Rangel-Martinez, Daniel
+   Nigam, K. D. P.
+   Ricardez-Sandoval, Luis A.
+TI Machine learning on sustainable energy: A review and outlook on
+   renewable energy systems, catalysis, smart grid and energy storage
+SO CHEMICAL ENGINEERING RESEARCH & DESIGN
+SN 0263-8762
+EI 1744-3563
+PD OCT
+PY 2021
+VL 174
+BP 414
+EP 441
+DI 10.1016/j.cherd.2021.08.013
+UT WOS:000704405000001
+ER
+
+PT J
+AU Foody, GM
+   Ling, F
+   Boyd, DS
+   Li, XD
+   Wardlaw, J
+AF Foody, Giles M.
+   Ling, Feng
+   Boyd, Doreen S.
+   Li, Xiaodong
+   Wardlaw, Jessica
+TI Earth Observation and Machine Learning to Meet Sustainable Development
+   Goal 8.7: Mapping Sites Associated with Slavery from Space
+SO REMOTE SENSING
+RI Boyd, Doreen/P-9807-2019; ling, feng/E-4811-2013; Foody, Giles
+   M/AAE-8184-2019; Li, Xiaodong/I-1638-2014
+OI Boyd, Doreen/0000-0003-3040-552X; ling, feng/0000-0002-0685-4897; Foody,
+   Giles M/0000-0001-6464-3054; Li, Xiaodong/0000-0001-8285-8446
+EI 2072-4292
+PD FEB 1
+PY 2019
+VL 11
+IS 3
+AR 266
+DI 10.3390/rs11030266
+UT WOS:000459944400054
+ER
+
+PT J
+AU Petrea, SM
+   Mogodan, A
+   Simionov, IA
+   Nica, A
+   Cristea, DS
+   Neculita, M
+AF Petrea, Stefan-Mihai
+   Mogodan, Alina
+   Simionov, Ira-Adeline
+   Nica, Aurelia
+   Cristea, Dragos Sebastian
+   Neculita, Mihaela
+TI THE IMPACT OF THE COMMON AGRICULTURAL POLICY ON THE EUROPEAN
+   AGRICULTURAL SECTOR SUSTAINABILITY BY USING A MACHINE-LEARNING APPROACH
+SO SCIENTIFIC PAPERS-SERIES MANAGEMENT ECONOMIC ENGINEERING IN AGRICULTURE
+   AND RURAL DEVELOPMENT
+RI Cristea, Dragos/AAY-2781-2020
+OI Cristea, Dragos/0000-0001-8227-4854
+SN 2284-7995
+EI 2285-3952
+PY 2021
+VL 21
+IS 2
+BP 451
+EP 459
+UT WOS:000664986400053
+ER
+
+PT J
+AU Abidi, SMR
+   Hussain, M
+   Xu, YL
+   Zhang, W
+AF Abidi, Syed Muhammad Raza
+   Hussain, Mushtaq
+   Xu, Yonglin
+   Zhang, Wu
+TI Prediction of Confusion Attempting Algebra Homework in an Intelligent
+   Tutoring System through Machine Learning Techniques for Educational
+   Sustainable Development
+SO SUSTAINABILITY
+RI Hussain, Mushtaq/AAN-9530-2021; Abidi, Syed Muhammad Raza/Q-4896-2019
+OI Hussain, Mushtaq/0000-0002-7238-7924; Abidi, Syed Muhammad
+   Raza/0000-0001-8808-0882
+EI 2071-1050
+PD JAN 1
+PY 2019
+VL 11
+IS 1
+AR 105
+DI 10.3390/su11010105
+UT WOS:000457127300105
+ER
+
+PT J
+AU Naseer, M
+   Zhang, W
+   Zhu, WH
+AF Naseer, Mehwish
+   Zhang, Wu
+   Zhu, Wenhao
+TI Prediction of Coding Intricacy in a Software Engineering Team through
+   Machine Learning to Ensure Cooperative Learning and Sustainable
+   Education
+SO SUSTAINABILITY
+EI 2071-1050
+PD NOV
+PY 2020
+VL 12
+IS 21
+AR 8986
+DI 10.3390/su12218986
+UT WOS:000589240400001
+ER
+
+PT J
+AU Zhou, QF
+   Wong, CJ
+   Su, X
+AF Zhou, Qingfeng
+   Wong, Chun Janice
+   Su, Xian
+TI Machine Learning Approach to Quantity Management for Long-Term
+   Sustainable Development of Dockless Public Bike: Case of Shenzhen in
+   China
+SO JOURNAL OF ADVANCED TRANSPORTATION
+OI zhou, qingfeng/0000-0003-4504-5926
+SN 0197-6729
+EI 2042-3195
+PD NOV 28
+PY 2020
+VL 2020
+AR 8847752
+DI 10.1155/2020/8847752
+UT WOS:000597953300001
+ER
+
+PT J
+AU Haftor, DM
+   Climent, RC
+   Lundstrom, JE
+AF Haftor, Darek M.
+   Climent, Ricardo Costa
+   Lundstrom, Jenny Eriksson
+TI How machine learning activates data network effects in business models:
+   Theory advancement through an industrial case of promoting ecological
+   sustainability
+SO JOURNAL OF BUSINESS RESEARCH
+SN 0148-2963
+EI 1873-7978
+PD JUL
+PY 2021
+VL 131
+BP 196
+EP 205
+DI 10.1016/j.jbusres.2021.04.015
+UT WOS:000694876300017
+ER
+
+PT J
+AU Tayal, A
+   Solanki, A
+   Singh, SP
+AF Tayal, Akash
+   Solanki, Arun
+   Singh, Simar Preet
+TI Integrated frame work for identifying sustainable manufacturing layouts
+   based on big data, machine learning, meta-heuristic and data envelopment
+   analysis
+SO SUSTAINABLE CITIES AND SOCIETY
+SN 2210-6707
+EI 2210-6715
+PD NOV
+PY 2020
+VL 62
+AR 102383
+DI 10.1016/j.scs.2020.102383
+UT WOS:000573594600010
+ER
+
+PT J
+AU Jamil, F
+   Iqbal, N
+   Ahmad, S
+   Kim, D
+AF Jamil, Faisal
+   Iqbal, Naeem
+   Ahmad, Shabir
+   Kim, Dohyeun
+TI Peer-to-Peer Energy Trading Mechanism Based on Blockchain and Machine
+   Learning for Sustainable Electrical Power Supply in Smart Grid
+SO IEEE ACCESS
+RI Jamil, Faisal/O-1755-2019; , Imran/AAW-7117-2020; Ahmad,
+   Shabir/N-3850-2018; Jamil, Faisal/AAV-4892-2021
+OI Jamil, Faisal/0000-0003-1994-6907; , Imran/0000-0002-6197-1025; Ahmad,
+   Shabir/0000-0002-8788-2717; Iqbal, Naeem/0000-0003-2749-6344
+SN 2169-3536
+PY 2021
+VL 9
+BP 39193
+EP 39217
+DI 10.1109/ACCESS.2021.3060457
+UT WOS:000631191400001
+ER
+
+PT J
+AU Chakraborty, D
+   Elzarka, H
+   Bhatnagar, R
+AF Chakraborty, Debaditya
+   Elzarka, Hazem
+   Bhatnagar, Raj
+TI Generation of accurate weather files using a hybrid machine learning
+   methodology for design and analysis of sustainable and resilient
+   buildings
+SO SUSTAINABLE CITIES AND SOCIETY
+OI Chakraborty, Debaditya/0000-0002-2165-9440; Elzarka,
+   Hazem/0000-0003-2845-4568
+SN 2210-6707
+EI 2210-6715
+PD JUL
+PY 2016
+VL 24
+BP 33
+EP 41
+DI 10.1016/j.scs.2016.04.009
+UT WOS:000389319900004
+ER
+
+PT J
+AU Choi, SW
+   Lee, EB
+   Kim, JH
+AF Choi, So-Won
+   Lee, Eul-Bum
+   Kim, Jong-Hyun
+TI The Engineering Machine-Learning Automation Platform (EMAP): A
+   Big-Data-Driven AI Tool for Contractors' Sustainable Management
+   Solutions for Plant Projects
+SO SUSTAINABILITY
+EI 2071-1050
+PD SEP
+PY 2021
+VL 13
+IS 18
+AR 10384
+DI 10.3390/su131810384
+UT WOS:000701920400001
+ER
+
+PT J
+AU Nam, K
+   Hwangbo, S
+   Yoo, C
+AF Nam, KiJeon
+   Hwangbo, Soonho
+   Yoo, ChangKyoo
+TI A deep learning-based forecasting model for renewable energy scenarios
+   to guide sustainable energy policy: A case study of Korea
+SO RENEWABLE & SUSTAINABLE ENERGY REVIEWS
+RI 유, 창규/AAJ-1226-2020; Hwangbo, Soonho/AAA-2827-2021
+OI Yoo, ChangKyoo/0000-0002-9406-7649
+SN 1364-0321
+PD APR
+PY 2020
+VL 122
+AR 109725
+DI 10.1016/j.rser.2020.109725
+UT WOS:000515322900002
+ER
+
+PT J
+AU Pirouz, B
+   Haghshenas, SS
+   Haghshenas, SS
+   Piro, P
+AF Pirouz, Behrouz
+   Haghshenas, Sina Shaffiee
+   Haghshenas, Sami Shaffiee
+   Piro, Patrizia
+TI Investigating a Serious Challenge in the Sustainable Development
+   Process: Analysis of Confirmed cases of COVID-19 (New Type of
+   Coronavirus) Through a Binary Classification Using Artificial
+   Intelligence and Regression Analysis
+SO SUSTAINABILITY
+RI Haghshenas, Sina Shaffiee/J-3688-2019; Pirouz, Behrouz/AAF-1238-2020
+OI Haghshenas, Sina Shaffiee/0000-0003-2859-3920; Pirouz,
+   Behrouz/0000-0002-9163-3393; Shaffiee Haghshenas,
+   Sami/0000-0002-9301-8677; Piro, Patrizia/0000-0002-9202-6544
+EI 2071-1050
+PD MAR 2
+PY 2020
+VL 12
+IS 6
+AR 2427
+DI 10.3390/su12062427
+UT WOS:000523751400274
+ER
+
+PT J
+AU Li, Q
+   Loy-Benitez, J
+   Nam, K
+   Hwangbo, S
+   Rashidi, J
+   Yoo, C
+AF Li, Qian
+   Loy-Benitez, Jorge
+   Nam, KiJeon
+   Hwangbo, Soonho
+   Rashidi, Jouan
+   Yoo, ChangKyoo
+TI Sustainable and reliable design of reverse osmosis desalination with
+   hybrid renewable energy systems through supply chain forecasting using
+   recurrent neural networks
+SO ENERGY
+RI 유, 창규/AAJ-1226-2020; Hwangbo, Soonho/AAA-2827-2021
+OI Yoo, ChangKyoo/0000-0002-9406-7649; Hwangbo, Soonho/0000-0003-2208-9301;
+   Loy-Benitez, Jorge/0000-0003-4841-0933
+SN 0360-5442
+EI 1873-6785
+PD JUL 1
+PY 2019
+VL 178
+BP 277
+EP 292
+DI 10.1016/j.energy.2019.04.114
+UT WOS:000472686300023
+ER
+
+PT J
+AU Liu, BJ
+   Gong, M
+   Wu, XQ
+   Liu, X
+AF Liu, Baijing
+   Gong, Meng
+   Wu, Xiaoqing
+   Liu, Xin
+TI A comprehensive model of vessel anchoring pressure based on machine
+   learning to support the sustainable management of the marine
+   environments of coastal cities
+SO SUSTAINABLE CITIES AND SOCIETY
+SN 2210-6707
+EI 2210-6715
+PD SEP
+PY 2021
+VL 72
+AR 103011
+DI 10.1016/j.scs.2021.103011
+UT WOS:000672607600003
+ER
+
+PT J
+AU Badreldin, N
+   Abu Hatab, A
+   Lagerkvist, CJ
+AF Badreldin, Nasem
+   Abu Hatab, Assem
+   Lagerkvist, Carl-Johan
+TI Spatiotemporal dynamics of urbanization and cropland in the Nile Delta
+   of Egypt using machine learning and satellite big data: implications for
+   sustainable development
+SO ENVIRONMENTAL MONITORING AND ASSESSMENT
+RI Abu Hatab, Assem/J-6823-2019; Badreldin, Nasem/B-8529-2008
+OI Abu Hatab, Assem/0000-0002-6764-1887; Badreldin,
+   Nasem/0000-0003-2539-6972
+SN 0167-6369
+EI 1573-2959
+PD DEC
+PY 2019
+VL 191
+IS 12
+AR 767
+DI 10.1007/s10661-019-7934-x
+UT WOS:000498443000001
+PM 31760509
+ER
+
+PT J
+AU Andrejiova, M
+   Grincova, A
+   Marasova, D
+AF Andrejiova, Miriam
+   Grincova, Anna
+   Marasova, Daniela
+TI Identification with machine learning techniques of a classification
+   model for the degree of damage to rubber-textile conveyor belts with the
+   aim to achieve sustainability
+SO ENGINEERING FAILURE ANALYSIS
+RI Andrejiova, Miriam/AAH-4572-2019; Marasova, Daniela/A-9649-2013
+OI Andrejiova, Miriam/0000-0001-5689-2798; 
+SN 1350-6307
+EI 1873-1961
+PD SEP
+PY 2021
+VL 127
+AR 105564
+DI 10.1016/j.engfailanal.2021.105564
+UT WOS:000691761400003
+ER
+
+PT J
+AU Duan, YL
+   Mu, C
+   Yang, M
+   Deng, ZQ
+   Chin, TC
+   Zhou, L
+   Fang, QF
+AF Duan, Yunlong
+   Mu, Chang
+   Yang, Meng
+   Deng, Zhiqing
+   Chin, Tachia
+   Zhou, Li
+   Fang, Qifeng
+TI Study on early warnings of strategic risk during the process of firms'
+   sustainable innovation based on an optimized genetic BP neural networks
+   model: Evidence from Chinese manufacturing firms
+SO INTERNATIONAL JOURNAL OF PRODUCTION ECONOMICS
+OI Yang, Meng/0000-0001-9566-3103; Chin, Tachia/0000-0001-5793-7847
+SN 0925-5273
+EI 1873-7579
+PD DEC
+PY 2021
+VL 242
+AR 108293
+DI 10.1016/j.ijpe.2021.108293
+UT WOS:000709914000015
+ER
+
+EF

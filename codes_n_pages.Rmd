@@ -15,6 +15,7 @@ source("dprep_functions.R")
 ### Getting the tables from the page specified + 4 pages forward
 
 ```{r}
+#options(java.parameters = "-Xmx1000m")
 temp_indexes <- extract_gri_indexes()
 ```
 
@@ -43,9 +44,9 @@ glimpse(yyy)
     tv <- c()
 
     for (k in 1:length(df_tp[[i]])) { #picking pages
-
-        if (length(df_tp[[i]][[k]])>0){
-          tv <-c(tv,get_gri_index(df_tp[[i]][[k]])) # sending a page to a get_gri_function
+        cur_page <-df_tp[[i]][[k]]
+        if (length(cur_page)>0){
+          tv <-c(tv,list(get_gri_index(cur_page))) # sending a page to a get_gri_function
         }else{
           tv<-c(tv,"No tables found")
         }

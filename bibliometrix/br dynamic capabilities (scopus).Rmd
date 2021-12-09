@@ -1,0 +1,223 @@
+---
+title: "Bibliometrix analysis using journals"
+output: html_notebook
+---
+### Contents{#con}
+1. [Search string](#ss)
+2. [General](#gen)
+3. [Lotka’s Law coefficient estimation](#lotka)
+4. [Network matricies](#nm)
+5. [Bibliographic coupling](#bc)
+6. [Co-Word Analysis](#cw)
+7. [Historical Direct Citation Network](#hdcn)
+
+
+### Search string{#ss}
+
+>  TITLE ( "dynamic capability" )  AND  SUBJAREA ( arts  OR  busi  OR  deci  OR  econ  OR  psyc  OR  soci )
+
+  
+***  
+#### Plugin the library
+```{r Plugin the library}
+library(bibliometrix)
+```
+
+***  
+Load file (or several) \\ - use double slash or normal slash - /  
+```{r}
+myfile <- 'C:\\Users\\TL66LU\\Nextcloud\\GitHub\\aiprobono\\bibliometrix\\scopus_dynamic_capability.bib'
+```
+***  
+
+Convert to r understandable structure
+```{r}
+bib_df<-convert2df(file = myfile, dbsource = "scopus", format = "bibtex")
+```
+  
+***  
+
+Analyze the data
+```{r}
+myresults <- biblioAnalysis(bib_df, sep = ";")
+```
+***      
+### General{#gen}
+[Contents](#con)  
+Summarize 10 results
+```{r}
+sor<-summary(myresults,10,FALSE)
+```
+Don't know where it takes countries from. It parses it from some field.
+
+Plot 10 results
+```{r}
+plot(x=myresults,k=10,pause=FALSE)
+```
+Analyze citations and get 10 most cited articles
+```{r}
+CR<-citations(bib_df, field = "article", sep = ";")
+cbind(CR$Cited[1:10])
+```
+
+Analyze citations and get 10 most cited authors
+```{r}
+CR <- citations(bib_df, field = "author", sep = ";")
+cbind(CR$Cited[1:10])
+```
+
+
+Local citations:
+```{r}
+CR <- localCitations(bib_df, sep = ";")
+CR$Authors[1:10,]
+CR$Papers[1:10,]
+```
+
+Dominance ranking
+```{r}
+DF <- dominance(myresults, k = 10)
+DF
+```
+
+H-index
+```{r}
+authors=gsub(","," ",names(myresults$Authors)[1:10])
+indices <- Hindex(bib_df, field = "author", elements=authors, sep = ";", years = 50)
+indices$H
+```
+### Lotka’s Law coefficient estimation{#lotka}
+[Contents](#con)  
+
+```{r}
+L <- lotka(myresults)
+# Author Productivity. Empirical Distribution
+L$AuthorProd
+# Beta
+L$Beta
+# Constatnt
+L$C
+# Goodness of fit
+L$R2
+# P-value of K-S two sample test
+L$p.value
+```
+```{r}
+# Observed distribution
+Observed=L$AuthorProd[,3]
+
+# Theoretical distribution with Beta = 2
+Theoretical=10^(log10(L$C)-2*log10(L$AuthorProd[,1]))
+
+plot(L$AuthorProd[,1],Theoretical,type="l",col="red",ylim=c(0, 1), xlab="Articles",ylab="Freq. of Authors",main="Scientific Productivity")
+lines(L$AuthorProd[,1],Observed,col="blue")
+legend(x="topright",c("Theoretical (B=2)","Observed"),col=c("red","blue"),lty = c(1,1,1),cex=0.6,bty="n")
+```
+Don't know how to comment upon these results. Does this mean authors are being not that productive?
+
+### Network matricies{#nm}
+[Contents](#con)  
+
+#### Biparite networks
+
+```{r}
+A <- cocMatrix(bib_df, Field = "SO", sep = ";")
+sort(Matrix::colSums(A), decreasing = TRUE)[1:5]
+```
+#### Citation network
+```{r}
+A <- cocMatrix(bib_df, Field = "CR", sep = ".  ")
+sort(Matrix::colSums(A), decreasing = TRUE)[1:5]
+```
+Did not understand how to interpret it.
+
+#### Author network
+
+```{r}
+ A <- cocMatrix(bib_df, Field = "AU", sep = ";")
+sort(Matrix::colSums(A), decreasing = TRUE)[1:5]
+```
+
+#### Country network
+```{r}
+AuCo <- metaTagExtraction(bib_df, Field = "AU_CO", sep = ";")
+A <- cocMatrix(AuCo, Field = "AU_CO", sep = ";")
+sort(Matrix::colSums(A), decreasing = TRUE)[1:10]
+```
+#### Author keyword nw
+
+```{r}
+A <- cocMatrix(bib_df, Field = "DE", sep = ";")
+sort(Matrix::colSums(A), decreasing = TRUE)[1:10]
+```
+#### Keyword nw
+
+```{r}
+A <- cocMatrix(bib_df, Field = "ID", sep = ";")
+sort(Matrix::colSums(A), decreasing = TRUE)[1:30]
+```
+#### Page count nw
+
+```{r eval=FALSE, include=FALSE}
+A <- cocMatrix(bib_df, Field = "PG", sep = ";")
+sort(Matrix::colSums(A), decreasing = TRUE)[1:30]
+```
+Doesn't work as the dataset has no such a field.
+
+### Bibliographic coupling{#bc}
+[Contents](#con)  
+
+```{r}
+NetMatrix <- biblioNetwork(bib_df, analysis = "coupling", network = "authors", sep = ";")
+
+
+net=networkPlot(NetMatrix,  normalize = "salton", weighted=NULL, n = 20, Title = "Authors' Coupling", type = "fruchterman", size=5,size.cex=T,remove.multiple=TRUE,labelsize=0.8,label.n=20,label.cex=F)
+```
+#### Collaborating authors
+
+```{r}
+NetMatrix <- biblioNetwork(bib_df, analysis = "collaboration", network = "authors", sep = ";")
+net=networkPlot(NetMatrix,  normalize = "salton", weighted=NULL, n = 100, Title = "Authors' Coupling", type = "fruchterman", size=5,size.cex=T,remove.multiple=TRUE,labelsize=0.5,label.n=10,label.cex=F)
+```
+#### Co-citation
+
+```{r}
+NetMatrix <- biblioNetwork(bib_df, analysis = "co-citation", network = "references", sep = ".  ")
+net=networkPlot(NetMatrix,  normalize = "salton", weighted=NULL, n = 50, Title = "Co-citation", type = "fruchterman", size=5,size.cex=T,remove.multiple=TRUE,labelsize=0.3,label.n=10,label.cex=F)
+```
+#### Co-citation network
+```{r}
+NetMatrix <- biblioNetwork(bib_df, analysis = "co-citation", network = "references", sep = ";")
+
+# Plot the network
+net=networkPlot(NetMatrix, n = 30, Title = "Co-Citation Network", type = "fruchterman", size=T, remove.multiple=FALSE, labelsize=0.7,edgesize = 5)
+```
+
+#### Keyword co-occurrences
+```{r}
+NetMatrix <- biblioNetwork(bib_df, analysis = "co-occurrences", network = "keywords", sep = ";")
+
+# Plot the network
+net=networkPlot(NetMatrix, normalize="association", weighted=T, n = 30, Title = "Keyword Co-occurrences", type = "fruchterman", size=T,edgesize = 5,labelsize=0.7)
+```
+### Co-Word Analysis: The conceptual structure of a field{#cw}
+[Contents](#con)  
+
+```{r}
+png(pointsize=10, width=2800, height=2000, res=600)
+par(mar=c(5, 4, 4, 2))
+CS <- conceptualStructure(bib_df,field="ID", method="CA", minDegree=4, clust=5, stemming=FALSE, labelsize=6, documents=10)
+```
+
+
+### Historical Direct Citation Network{#hdcn}
+```{r}
+options(width=130)
+histResults <- histNetwork(bib_df, min.citations = 1, sep = ";")
+
+```
+```{r}
+net <- histPlot(histResults, n=15, size = 10, labelsize=5)
+```
+Doesn't work due to some error.
+The end.
