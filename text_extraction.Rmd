@@ -1,0 +1,65 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+
+```{r}
+library(pdftools)
+library(tidyverse)
+library(magrittr)
+library(stringi)
+
+```
+
+```{r}
+compiled_gic <- read.csv("joined_df.csv")
+```
+
+
+```{r}
+y<-compiled_gic
+y %<>% mutate(text="")
+
+for (i in 1:nrow(y)){ # very poor design, uncomment pdf_text line if you need to run it
+  
+  out <- tryCatch(
+    expr = {
+      #x<-pdf_text(y$fullpath[i]) %>%  str_split("\n")
+      y$text[i]<-x[y$value[i]]
+    },
+    error = function(e){ 
+  
+      return(NULL)
+    }
+  )
+  
+}
+```
+
+
+```{r}
+z<- y %>% mutate(text=as.character(text))
+z %<>% unnest(text)
+```
+
+
+```{r}
+selected_columns <- c("X", "Organization", "Country_Organization_Account", "Publication_Year", "fullpath", "gcode", "gcode2", "name", "value", "text")
+b <- z[selected_columns] 
+
+rename_col <-c("orig_id", "organization", "country", "pub_year", "fullpath", "gcode", "gcode2", "orig_code_str", "page_num", "text")
+names(b) <-rename_col
+
+b <-b[!b$text %in% c("NULL", ""),]
+
+write.csv(b, "companies_codes_text.csv")
+
+```
+
+
+```{r}
+
+
+```
+

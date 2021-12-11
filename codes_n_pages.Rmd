@@ -16,7 +16,7 @@ source("dprep_functions.R")
 
 ```{r}
 #options(java.parameters = "-Xmx1000m")
-temp_indexes <- extract_gri_indexes(1976)
+# temp_indexes <- extract_gri_indexes(1976)
 
 ```
 
@@ -107,11 +107,37 @@ rbind(zzz,zzz1)
 
 
 ```{r}
-df1 <- df %>% mutate(value=as.character(value))
+df3 <- df %>% unnest(value)
 
-write.csv(df1,"df1.csv")
+df3 <- df3[!df3$value %in% c("None","No GRI code found","No tables to process"),]
+
+df3 %>% count(company)
+
+df3 %<>% mutate(gcode2=str_extract(name,gri_code))
+
+df3 
+colnames(df3)[1] <-"fullpath"
+
+joined_df <- left_join(df3,gri_list_df, by="fullpath")
+
+write.csv(joined_df,"joined_df.csv")
+
+joined_df %>% group_by(Country_Organization_Account) %>% summarise(n=n())
+
+
 
 ```
+
+
+```{r}
+gri_code <- regex("(4[0-1][0-9])(?:-[0-9])?", ignore_case = FALSE)
+
+df2 <- df2[str_detect(df2$name,gri_code),]
+
+df2 %>% count(company) %>% count(n>5)
+
+```
+
 
 
 
