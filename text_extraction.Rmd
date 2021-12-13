@@ -9,6 +9,7 @@ library(pdftools)
 library(tidyverse)
 library(magrittr)
 library(stringi)
+library(cld2)
 
 ```
 
@@ -45,15 +46,35 @@ z %<>% unnest(text)
 
 
 ```{r}
-selected_columns <- c("X", "Organization", "Country_Organization_Account", "Publication_Year", "fullpath", "gcode", "gcode2", "name", "value", "text")
+selected_columns <- c("X", "Organization", "Country_Organization_Account", "Publication_Year", "fullpath", "pdf_contents_page", "gcode", "gcode2", "name", "value", "text")
 b <- z[selected_columns] 
 
-rename_col <-c("orig_id", "organization", "country", "pub_year", "fullpath", "gcode", "gcode2", "orig_code_str", "page_num", "text")
+rename_col <-c("orig_id", "organization", "country", "pub_year", "fullpath", "pdf_contents_page", "gcode", "gcode2", "orig_code_str", "page_num", "text")
 names(b) <-rename_col
 
 b <-b[!b$text %in% c("NULL", ""),]
 
+b %<>% mutate(lang=detect_language(text))
+
+eng_orgs <- b %>% group_by(orig_id, organization, lang) %>% summarize(.groups = "keep") %>% filter(lang=="en")
+
+eng_orgs_joined <- left_join(eng_orgs, b, by=c("orig_id", "lang", "organization"), keep=F)
+
+gri_list_df %>% select(X, Report_PDF_Address) %>% group_by(X) %>% glimpse(10)
+
+#eng_orgs_joined %>% left_join()
+
+eng_orgs_joined %<>% mutate(corr_page="")
+eng_orgs_joined %<>% select(-text)
 write.csv(b, "companies_codes_text.csv")
+
+write.csv(eng_orgs_joined, "eng_orgs_joined3.csv")
+
+eoj_complist <- eng_orgs_joined %>% group_by(organization) %>% count()
+
+write.csv(eoj_complist, "orlist.csv")
+
+b[b$country %in% c("United Kingdom of Great Britain and Northern Ireland", "United States of America", "Denmark", "Sweden"),] %>% head(30)
 
 ```
 
