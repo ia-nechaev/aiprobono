@@ -48,35 +48,50 @@ top_by_g %>% mutate(bigram = reorder_within(bigram, by = tf_idf, within = gcode)
     theme(axis.text.y = element_text(size = 6))
 
 ```
+
 ```{r}
 library(textdata)
 library(recipes)
 library(tidymodels)
 library(textrecipes)
 library(themis)
+library(tune)
+library(glmnet)
+
 glove6b <- embedding_glove6b(dimensions = 100)
 
 set.seed(19)
-
-mdata <- pre_pro_rep %>% select(gcode,text)
+rem_punct <- regex("[[:punct:]]")
+rem_alpha <- regex("[[:alpha:]]")
+pre_pro_rep %<>% mutate(text=str_squish(text))
+pre_pro_rep %<>% mutate(text=str_remove_all(text,rem_punct))
+#pre_pro_rep %<>% mutate(text=str_remove_all(text,rem_alpha))
+mdata <- pre_pro_rep %>% filter(lang=="en") %>% select(gcode,text)
 #mdata %<>% mutate(text=str_remove(text, "c("))
 mdata %<>% mutate(gcode=as.factor(gcode))
 mdata %>% count(gcode) %>% ggplot(aes(x = gcode, y = n)) + geom_col()
-mdata %<>% filter(!gcode %in% c("400","410","411"))
+mdata %<>% filter(!gcode %in% c("400","410","411", "415"))
 mdata %<>% drop_na()
 tidy_split <- initial_split(mdata, strata = gcode)
 train_data <- training(tidy_split)
 test_data <- testing(tidy_split)
+tidy_split
 
-train_data <- recipe(gcode~., data = train_data) %>% themis::step_downsample(gcode) %>% prep() %>% juice()
 
+#train_data %<>% unnest_tokens()
+
+
+train_data <- recipe(gcode~., data = train_data) %>% themis::step_upsample(gcode) %>% prep() %>% juice()
+
+data_res <- train_data %>% vfold_cv(strata = gcode, v = 16, repeats = 1)
+data_res <- vfold_cv(train_data)
 
 train_data %>% count(gcode)
 ```
 
 
 ```{r}
-library(textrecipes)
+
 tf_idf_rec <- recipe(gcode~., data = train_data) %>%
   step_tokenize(text) %>%
   step_stem(text) %>%
@@ -84,19 +99,60 @@ tf_idf_rec <- recipe(gcode~., data = train_data) %>%
   step_tokenfilter(text, max_tokens = 1000) %>%
   step_tfidf(all_predictors())
 
+tf_idf_rec %>% prep() %>% juice()
+
 hash_rec <- recipe(gcode~., data = train_data) %>%
   step_tokenize(text) %>%
   step_stem(text) %>%
   #step_stopwords(text) %>%
   step_tokenfilter(text, max_tokens = 1000) %>%
   step_texthash(text, num_terms = 100)
+
+hash_rec %>% prep() %>% juice()
+
 ```
 
 
 ```{r}
-model_lg <- multinom_reg(penalty = tune(), mixture = 1) %>% set_engine("glmnet") %>% set_mode("classification")
+
+model_lg <- multinom_reg() %>%
+  set_args(penalty=tune(), mixture=NULL) %>% 
+  set_engine("glmnet") %>%
+  set_mode("classification")
+
+
+#model_lg <- multinom_reg(penalty = tune(), mixture = 1) %>% set_engine("glmnet") %>% set_mode("classification")
 
 model_rf <- rand_forest() %>% set_engine("ranger", importance = "impurity") %>% set_mode("classification")
+```
+
+
+```{r}
+
+```
+
+
+```{r}
+
+
+```
+
+
+```{r}
+logistic_grid <- grid_regular(parameters(model_lg), levels = 3)
+model_control <- control_grid(save_pred = TRUE)
+model_metrics <- metric_set(accuracy, roc_auc)
+
+linear_hash_res <- tune_grid(model_lg, hash_rec, grid = logistic_grid, control = model_control, metrics = model_metrics, resamples = k_folds_data)
+
+linear_tf_res <- tune_grid(model_lg, tf_idf_rec, grid = logistic_grid, control = model_control, metrics = model_metrics, resamples = data_res)
+
+```
+
+
+```{r}
+log_res_hash <- workflow_lg_tf %>% fit_resamples( resamples = k_folds_data, metrics = metric_set( recall, precision, f_meas, accuracy, kap, roc_auc, sens, spec), control = control_resamples( save_pred = TRUE)
+)
 ```
 
 
@@ -112,30 +168,10 @@ workflow_rf_hash <- workflow_general_hash %>% add_model(model_rf)
 
 
 ```{r}
-k_folds_data <- train_data %>% vfold_cv(strata = gcode, v = 17, repeats = 3)
 
-```
-
-
-```{r}
-logistic_grid <- grid_regular(parameters(model_lg), levels = 3)
-model_control <- control_grid(save_pred = TRUE)
-model_metrics <- metric_set(accuracy, sens, spec, mn_log_loss, roc_auc)
-
-library(glmnet)
-
-linear_hash_res <- tune_grid(model_lg, hash_rec, grid = logistic_grid, control = model_control, metrics = model_metrics, resamples = k_folds_data)
-
-linear_tf_res <- tune_grid( model_lg, tf_idf_rec, grid = logistic_grid, control = model_control, metrics = model_metrics, resamples = k_folds_data)
-```
-
-
-```{r}
-
-log_res_hash <- workflow_lg_tf %>% fit_resamples( resamples = k_folds_data, metrics = metric_set( recall, precision, f_meas, accuracy, kap, roc_auc, sens, spec), control = control_resamples( save_pred = TRUE)
-)
-
-
+rf_fit <- workflow_lg_tf %>%
+  # fit on the training set and evaluate on test set
+  last_fit(tidy_split)
 ```
 
 
