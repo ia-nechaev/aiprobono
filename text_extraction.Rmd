@@ -5,29 +5,37 @@ output: html_notebook
 
 
 ```{r}
+
+# options(java.parameters = c("-XX:+UseConcMarkSweepGC", "-Xmx8192m")) - run if outofmemory error while text extracting
+#gc()
 library(pdftools)
 library(tidyverse)
 library(magrittr)
 library(stringi)
-library(cld2)
+#library(cld2)
+library(tabulizer)
 
 ```
 
 ```{r}
 compiled_gic <- read.csv("joined_df.csv")
+manual_gic <- read.csv("eng_orgs_joined_man_page.csv")
 ```
 
 
 ```{r}
+
+## first variant of text extraction
 y<-compiled_gic
+y<-manual_gic
 y %<>% mutate(text="")
 
-for (i in 1:nrow(y)){ # very poor design, uncomment pdf_text line if you need to run it
+for (i in 1:nrow(y)){ #very poor design, uncomment pdf_text line if you need to run it
   
   out <- tryCatch(
     expr = {
       #x<-pdf_text(y$fullpath[i]) %>%  str_split("\n")
-      y$text[i]<-x[y$value[i]]
+      y$text[i]<-x[y$real_pdf_page[i]]
     },
     error = function(e){ 
   
@@ -36,6 +44,63 @@ for (i in 1:nrow(y)){ # very poor design, uncomment pdf_text line if you need to
   )
   
 }
+```
+
+
+```{r}
+## second variant of extracting text. neat and quick
+
+qq5 <- manual_gic %>%
+  select(orig_id,organization,fullpath,gcode,real_pdf_page) %>% 
+  distinct(.keep_all = T) %>% 
+  filter(!is.na(real_pdf_page), real_pdf_page!="0") %>% 
+  group_by(orig_id,organization,fullpath,gcode) %>%
+  summarise(pdf_page = c(cur_data())) %>%
+  rowwise()
+
+qq5[192:195,] %<>% mutate(fullpath="reports/kernel/2019/kernel_fy2019_annual_report.pdf") # due to manual processing of pages didn't have the right path
+
+qq5 %<>% mutate(text=list(extract_text(fullpath, unlist(as.vector(pdf_page))))) # text extraction
+
+
+```
+
+
+```{r}
+
+## draft for text extracting
+
+qq <- manual_gic
+qq %<>% mutate(text="")
+j<-1
+xx1<-pdf_text(qq$fullpath[j])
+xx2<-extract_text(qq3$fullpath[j], unlist(as.vector(qq3$pdf_page[j])))
+
+
+temp<-unlist(as.vector(qq3$pdf_page[j]))
+unlist(temp)
+qq2 <- qq %>% select(orig_id,organization,fullpath,gcode,real_pdf_page) %>% nest_by(orig_id,organization,fullpath,gcode)
+
+qq2[[3]][[5]]$real_pdf_page
+
+
+temp <- qq %>% select(orig_id,organization,fullpath,gcode,real_pdf_page) %>% distinct(.keep_all = T) #%>% 
+  filter(!is.na(real_pdf_page), real_pdf_page!="0")
+
+
+
+qq3 %<>% mutate(text=list(c()))
+qq3[151:202,] %<>% mutate(text=list(extract_text(fullpath, unlist(as.vector(pdf_page)))))
+
+
+
+
+
+rlang::last_error()
+```
+
+
+```{r}
 ```
 
 
