@@ -22,6 +22,7 @@ gri_rep_df <- gri_rep_df %>%
          Organization_Legal_Name=str_squish(Organization_Legal_Name))
 
 gri_rep_df %>% filter(!Report_PDF_Address=="") %>% count
+gri_rep_df %>% group_by(Organization) %>% summarize()
 
 # make the list of pdf links to download
 url_list <- gri_rep_df %>% filter(!Report_PDF_Address=="") %>% filter(!is.na(Organization))

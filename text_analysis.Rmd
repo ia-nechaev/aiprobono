@@ -15,15 +15,21 @@ library(tidytext)
 
 # top 10 bigrams in each code
 ```{r}
-pre_pro_rep <- read.csv("companies_codes_text.csv")
+pre_pro_rep <- read.csv("companies_codes_text2.csv")
 
-undata <- pre_pro_rep %>% 
+undata2 <- pre_pro_rep %>% 
   unnest_tokens(bigram,text,token = "ngrams", n=2) #%>% 
   #mutate(bigram = bigram %>% str_remove_all("[^[:alnum:]]")) %>% 
-  #filter(!is.na(bigram))
-  # anti_join(stop_words, by = "word")
 
-bigrams_separated <- undata %>% separate(bigram, c("word1", "word2"), sep = " ")
+undata1 <- pre_pro_rep %>% 
+  unnest_tokens(word,text,token = "ngrams", n=1) %>% 
+  mutate(word = word %>% str_remove_all("[^[:alnum:]]")) %>% 
+  mutate(word = word %>% str_remove_all(rem_dig)) %>% 
+  mutate(word = word %>% str_remove_all("null")) %>% 
+  filter(!is.na(word)) %>% 
+  anti_join(stop_words, by = "word")
+
+bigrams_separated <- undata2 %>% separate(bigram, c("word1", "word2"), sep = " ")
 bigrams_filtered <- bigrams_separated %>% filter(!word1 %in% stop_words$word) %>% filter(!word2 %in% stop_words$word)
 
 # new bigram counts:
@@ -31,9 +37,13 @@ bigram_counts <- bigrams_filtered %>% count(word1, word2, sort = TRUE)
 bigrams_united <- bigrams_filtered %>% unite(bigram, word1, word2, sep = " ")
 bigrams_united %<>% add_count(X,bigram) %>% bind_tf_idf(term = bigram, document = X, n = n)
 
+words <- undata1 %>% add_count(X,word) %>% bind_tf_idf(term = word, document = X, n = n)
+
 bigrams_united %>% count(bigram, wt = tf_idf, sort = TRUE) %>% head(25)
 
 top_by_g <- bigrams_united %>% group_by(gcode) %>% count(bigram, wt = tf_idf, sort = TRUE, name = "tf_idf") %>% dplyr::slice(1:12) %>% ungroup()
+
+top_by_g <- words %>% group_by(gcode) %>% count(word, wt = tf_idf, sort = TRUE, name = "tf_idf") %>% dplyr::slice(1:5) %>% ungroup()
 
 top_by_y <- bigrams_united %>% group_by(rep_year) %>% count(bigram, wt = tf_idf, sort = TRUE, name = "tf_idf") %>% dplyr::slice(1:12) %>% ungroup()
 
@@ -46,6 +56,16 @@ top_by_g %>% mutate(bigram = reorder_within(bigram, by = tf_idf, within = gcode)
     coord_flip() +
     scale_x_reordered() +
     theme(axis.text.y = element_text(size = 6))
+
+
+top_by_g %>% mutate(word = reorder_within(word, by = tf_idf, within = gcode)) %>%
+  ggplot(aes(x = word, y = tf_idf, fill = gcode)) +
+    geom_col(show.legend = FALSE) +
+    labs(x = NULL, y = "tf-idf") +
+    facet_wrap(~gcode, ncol = 3, scales = "free") +
+    coord_flip() +
+    scale_x_reordered() +
+    theme(axis.text.y = element_text(size = 8))
 
 ```
 
@@ -61,32 +81,34 @@ library(ranger)
 
 glove6b <- embedding_glove6b(dimensions = 100)
 
-set.seed(1634)
+set.seed(1234)
 
 rem_punct <- regex("[[:punct:]]")
 rem_dig <- regex("[[:digit:]]")
+pre_pro_rep2 %>% count(fullpath)
 pre_pro_rep %<>% mutate(text=str_squish(text))
 pre_pro_rep %<>% mutate(text=str_remove_all(text,rem_punct))
 pre_pro_rep %<>% mutate(text=str_remove_all(text,rem_dig))
 mdata <- pre_pro_rep %>% filter(lang=="en") %>% select(gcode,text)
 #mdata %<>% mutate(text=str_remove(text, "c("))
-mdata %>% count(gcode) %>% ggplot(aes(x = gcode, y = n)) + geom_col()
-mdata %<>% filter(!gcode %in% c("400","410","411", "415"))
+mdata %>% count(gcode)# %>% ggplot(aes(x = gcode, y = n)) + geom_col()
+mdata %<>% filter(!gcode %in% c("402","410","411", "415"))
 mdata %<>% filter(gcode %in% c("401","403","404", "405"))
 mdata %<>% drop_na()
 mdata %<>% mutate(gcode=as.factor(gcode))
-tidy_split <- initial_split(mdata, strata = gcode)
+tidy_split <- initial_split(mdata, strata = gcode, prop = 1/2)
 train_data <- training(tidy_split)
 test_data <- testing(tidy_split)
 tidy_split
 
+write.csv(mdata, "mdata.csv")
 
 #train_data %<>% unnest_tokens()
 
 
-train_data <- recipe(gcode~., data = train_data) %>% themis::step_downsample(gcode) %>% prep() %>% juice()
+train_data <- recipe(gcode~., data = train_data) %>% themis::step_upsample(gcode) %>% prep() %>% juice()
 
-data_res <- train_data %>% vfold_cv(strata = gcode, v = 4, repeats = 1)
+data_res <- train_data %>% vfold_cv(strata = gcode, v = 19, repeats = 1)
 data_res <- vfold_cv(train_data)
 
 train_data %>% count(gcode)
@@ -128,20 +150,6 @@ model_rf <- rand_forest() %>%
 
 ```
 
-
-```{r}
-
-```
-
-
-```{r}
-lg_workflow <- workflow() %>%
-  # add the recipe
-  add_recipe(tf_idf_rec) %>%
-  # add the model
-  add_model(lg_model)
-
-```
 
 
 ```{r}
@@ -209,6 +217,7 @@ log_res_hash <- workflow_final_lg_hash %>%
 
 log_res_hash %>% collect_metrics(summarize = TRUE)
 ```
+
 ```{r}
 
 rf_res_hash <- workflow_rf_hash %>%
@@ -244,6 +253,14 @@ model_compare <- bind_rows(
   rf_metrics_tf, 
   rf_metrics_hash)
 
+library(xtable)
+library(stargazer)
+
+rf_stat1 <- rf_res_tf %>% collect_metrics(summarize = TRUE)
+
+stargazer(myt, type = "latex", out = "models.tex")
+
+print(xtable(myt, type = "latex"), file = "filename2.tex")
 
 model_comp <- model_compare %>%
   select(model, .metric, mean, std_err) %>%
@@ -274,9 +291,17 @@ last_fit_rf <- last_fit(workflow_rf_tf,
                         split = tidy_split,
                         metrics = metric_set(recall, precision, f_meas, accuracy, kap, roc_auc, sens, spec))
 
-last_fit_rf %>% collect_metrics()
+rf_stat2 <- last_fit_rf %>% collect_metrics()
 
 last_fit_rf %>% collect_predictions() %>% conf_mat(gcode, .pred_class) %>% autoplot(type = "heatmap")
+
+myt <- rf_stat1 %>% left_join(rf_stat2, by=".metric") %>% select(.metric, mean, std_err, .estimate)
+
+```
+```{r}
+
+library("spacyr")
+spacy_install()
 
 ```
 

@@ -35,6 +35,8 @@ getwd()
   # Filtering only pdfs with available GRI index page number
   gri_list_df %<>% filter((dld_status=="FE")|(dld_status=="OK"), !str_detect(pdf_contents_page,reg_pn), !pdf_contents_page=="")
   
+  gri_list_df %<>% filter((dld_status=="OK"))
+  
   # Making the page number into numeric format
   gri_list_df %<>% mutate(pdf_contents_page=as.numeric(pdf_contents_page))
   
