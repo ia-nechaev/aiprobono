@@ -93,7 +93,7 @@ temp_url_list %<>% mutate(request_status="", type_dld="", url_dld="", dld_status
 # temp_url_list$Report_PDF_Address %>% is.na() %>% sum()
 # temp_url_list <- temp_url_list[!(is.na(temp_url_list$Organization)),]
 
-create_directories()
+# create_directories() # run if sure
 
 # cat(req$status_code," ", req$type,  "\n")
 
