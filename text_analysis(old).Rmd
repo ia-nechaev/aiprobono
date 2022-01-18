@@ -1,0 +1,181 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+
+```{r}
+library(pdftools)
+library(tidyverse)
+library(magrittr)
+library(stringi)
+library(tidytext)
+
+```
+
+# top 10 bigrams in each code
+```{r}
+pre_pro_rep <- read.csv("companies_codes_text.csv")
+
+undata <- pre_pro_rep %>% 
+  unnest_tokens(bigram,text,token = "ngrams", n=2) #%>% 
+  #mutate(bigram = bigram %>% str_remove_all("[^[:alnum:]]")) %>% 
+  #filter(!is.na(bigram))
+  # anti_join(stop_words, by = "word")
+
+bigrams_separated <- undata %>% separate(bigram, c("word1", "word2"), sep = " ")
+bigrams_filtered <- bigrams_separated %>% filter(!word1 %in% stop_words$word) %>% filter(!word2 %in% stop_words$word)
+
+# new bigram counts:
+bigram_counts <- bigrams_filtered %>% count(word1, word2, sort = TRUE)
+bigrams_united <- bigrams_filtered %>% unite(bigram, word1, word2, sep = " ")
+bigrams_united %<>% add_count(X,bigram) %>% bind_tf_idf(term = bigram, document = X, n = n)
+
+bigrams_united %>% count(bigram, wt = tf_idf, sort = TRUE) %>% head(25)
+
+top_by_g <- bigrams_united %>% group_by(gcode) %>% count(bigram, wt = tf_idf, sort = TRUE, name = "tf_idf") %>% dplyr::slice(1:12) %>% ungroup()
+
+top_by_y <- bigrams_united %>% group_by(rep_year) %>% count(bigram, wt = tf_idf, sort = TRUE, name = "tf_idf") %>% dplyr::slice(1:12) %>% ungroup()
+
+# top bigrams in each g_code
+top_by_g %>% mutate(bigram = reorder_within(bigram, by = tf_idf, within = gcode)) %>%
+  ggplot(aes(x = bigram, y = tf_idf, fill = gcode)) +
+    geom_col(show.legend = FALSE) +
+    labs(x = NULL, y = "tf-idf") +
+    facet_wrap(~gcode, ncol = 3, scales = "free") +
+    coord_flip() +
+    scale_x_reordered() +
+    theme(axis.text.y = element_text(size = 6))
+
+```
+
+```{r}
+library(textdata)
+library(recipes)
+library(tidymodels)
+library(textrecipes)
+library(themis)
+library(tune)
+library(glmnet)
+
+glove6b <- embedding_glove6b(dimensions = 100)
+
+set.seed(1345)
+rem_punct <- regex("[[:punct:]]")
+rem_alpha <- regex("[[:alpha:]]")
+pre_pro_rep %<>% mutate(text=str_squish(text))
+pre_pro_rep %<>% mutate(text=str_remove_all(text,rem_punct))
+#pre_pro_rep %<>% mutate(text=str_remove_all(text,rem_alpha))
+mdata <- pre_pro_rep %>% filter(lang=="en") %>% select(gcode,text)
+#mdata %<>% mutate(text=str_remove(text, "c("))
+mdata %<>% mutate(gcode=as.factor(gcode))
+mdata %>% count(gcode) %>% ggplot(aes(x = gcode, y = n)) + geom_col()
+mdata %<>% filter(!gcode %in% c("400","410","411", "415"))
+mdata %<>% drop_na()
+
+tidy_split <- initial_split(mdata, strata = gcode)
+train_data <- training(tidy_split)
+test_data <- testing(tidy_split)
+tidy_split
+
+
+#train_data %<>% unnest_tokens()
+
+
+train_data <- recipe(gcode ~ ., data = train_data) %>% themis::step_upsample(gcode) %>% prep() %>% juice()
+
+data_res <- train_data %>% vfold_cv(strata = gcode, v = 16, repeats = 1)
+data_res <- vfold_cv(train_data)
+
+train_data %>% count(gcode)
+```
+
+
+```{r}
+
+tf_idf_rec <- recipe(gcode ~ ., data = train_data) %>%
+  step_tokenize(text) %>%
+  step_stem(text) %>%
+  #step_stopwords(text) %>%
+  step_tokenfilter(text, max_tokens = 1000) %>%
+  step_tfidf(all_predictors())
+
+tf_idf_data <- tf_idf_rec %>% prep() %>% juice()
+
+hash_rec <- recipe(gcode ~ ., data = train_data) %>%
+  step_tokenize(text) %>%
+  step_stem(text) %>%
+  #step_stopwords(text) %>%
+  step_tokenfilter(text, max_tokens = 1000) %>%
+  step_texthash(text, num_terms = 100)
+
+hash_rec %>% prep() %>% juice()
+
+```
+
+
+```{r}
+
+model_lg <- multinom_reg() %>%
+  set_args(penalty=tune(), mixture=NULL) %>% 
+  set_engine("glmnet") %>%
+  set_mode("classification")
+
+
+#model_lg <- multinom_reg(penalty = tune(), mixture = 1) %>% set_engine("glmnet") %>% set_mode("classification")
+
+model_rf <- rand_forest() %>% set_engine("ranger", importance = "impurity") %>% set_mode("classification")
+```
+
+
+```{r}
+
+predict(model_lg, tf_idf_data, type="response")
+
+```
+
+
+```{r}
+
+
+```
+
+
+```{r}
+logistic_grid <- grid_regular(parameters(model_lg), levels = 3)
+model_control <- control_grid(save_pred = TRUE)
+model_metrics <- metric_set(accuracy, roc_auc)
+
+# linear_hash_res <- tune_grid(model_lg, hash_rec, grid = logistic_grid, control = model_control, metrics = model_metrics, resamples = k_folds_data)
+
+linear_tf_res <- tune_grid(model_lg, tf_idf_rec, grid = logistic_grid, control = model_control, metrics = model_metrics, resamples = data_res)
+
+
+```
+
+
+```{r}
+log_res_hash <- workflow_lg_tf %>% fit_resamples( resamples = k_folds_data, metrics = metric_set( recall, precision, f_meas, accuracy, kap, roc_auc, sens, spec), control = control_resamples( save_pred = TRUE)
+)
+```
+
+
+```{r}
+workflow_general_tf <- workflow() %>% add_recipe(tf_idf_rec)
+workflow_lg_tf <- workflow_general_tf %>% add_model(model_lg)
+workflow_rf_tf <- workflow_general_tf %>% add_model(model_rf)
+
+workflow_general_hash <- workflow() %>% add_recipe(hash_rec)
+workflow_lg_hash <- workflow_general_hash %>% add_model(model_lg)
+workflow_rf_hash <- workflow_general_hash %>% add_model(model_rf)
+```
+
+
+```{r}
+
+rf_fit <- workflow_lg_tf %>%
+  # fit on the training set and evaluate on test set
+  last_fit(tidy_split)
+```
+
+
