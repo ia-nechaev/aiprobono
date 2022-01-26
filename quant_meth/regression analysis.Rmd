@@ -1,0 +1,100 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+## Libraries
+
+```{r}
+library(pdftools)
+library(tidyverse)
+library(magrittr)
+library(stringi)
+library(tabulizer)
+```
+
+
+## Company list preparation
+
+```{r}
+
+
+
+gri_reports <- read.csv("reports/GriTempUrlList3.csv") # data from GRI database
+
+gri_companylist <- gri_reports %>% # selecting reports from German companies and those that have been downloaded successfully
+  filter(str_detect(Country_Organization_Account,"Germany")) %>%
+  filter((dld_status=="FE")|(dld_status=="OK")) 
+
+gri_companylist[1:3,2] <-str_remove(gri_companylist[1:3,2],"Drillisch ") #company changed name
+
+pub_companylist <- read.csv("quant_meth/public_german_comp.csv") # data from MarketLine database
+
+pub_companylist %<>% filter(Company_Type=="Public") %>% select(Company_Name, Annual_Revenue_US.M, No_of_Employees, Primary_Sector, Market_Capitalization_Million_USD) # selecting columns of interest
+
+names(pub_companylist)[1] <- "Organization" # renaming "Company_Name" for further joining
+
+pub_companylist %<>% mutate(simp_name=iconv(str_squish(Organization), from="UTF-8", to="ASCII//TRANSLIT")) # convert to one encoding and getting rid of non ascii symbols in names
+
+my_companylist <- inner_join(gri_companylist,pub_companylist, by="Organization")
+
+my_companylist %>% distinct(Organization)
+
+```
+
+## Text extraction
+
+```{r}
+
+my_companylist %<>% filter(Publication_Year==2020)
+
+# Making the fullpath
+saving_dir <- "reports"
+my_companylist %<>% mutate(fullpath=str_c(saving_dir, ffolder, filename, sep = "/"))
+
+# my_companylist %<>% mutate(text=extract_text(fullpath)) #this worked but now it doesn't no idea why. had to replace with humble for loop
+
+setwd("../")
+for (i in 1:nrow(my_companylist)) {
+  my_companylist$text[i] <- extract_text(my_companylist$fullpath[i])
+}
+
+write_csv(my_companylist, "my_companylist.csv")
+
+```
+
+## Loading topic-specific dictionaries
+
+```{r}
+
+dict_emp <-read_csv("dict/employee_dict.csv",col_names="word")
+dict_soc_com <-read_csv("dict/social_community_dict.csv",col_names="word")
+dict_hr <-read_csv("dict/humanrights_dict.csv",col_names="word")
+dict_env <-read_csv("dict/environment_dict.csv",col_names="word")
+
+```
+
+## EDA
+
+```{r}
+
+
+
+```
+
+## Drafts
+
+```{r}
+
+economic_dictionary<-c("economy","unemployment","trade","tariffs")
+economic_tweets<-tweets[str_detect(tweets$text, paste(economic_dictionary, collapse="|")),]
+tdm.onlytags <- tdm[rownames(tdm)%in%TagSet$tag,]
+
+library("spacyr")
+spacy_initialize()
+#spacy_download_langmodel(model = "en", envname = "spacy_condaenv", conda = "auto")
+parsed_texts <- spacy_parse(my_companylist$text)
+
+```
+
+
