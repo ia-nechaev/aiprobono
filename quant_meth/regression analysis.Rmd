@@ -11,6 +11,7 @@ library(tidyverse)
 library(magrittr)
 library(stringi)
 library(tabulizer)
+library(cld2)
 ```
 
 
@@ -59,20 +60,66 @@ for (i in 1:nrow(my_companylist)) {
   my_companylist$text[i] <- extract_text(my_companylist$fullpath[i])
 }
 
+my_companylist %<>% mutate(lang=detect_language(text))
+
 write_csv(my_companylist, "my_companylist.csv")
 
 ```
 
-## Loading topic-specific dictionaries
+
+## Translate non-english text
+```{r}
+library(translateR)
+library(udpipe)
+
+dl <- udpipe_download_model(language = "german")
+udmodel_ger <- udpipe_load_model(file = dl$file_model)
+
+my_companylist_trans <- my_companylist %>% filter(!lang=="en")
+
+#need to split text into sentences as whole text translation gives httpheader error using udpipe for that
+
+up_ger <- udpipe_annotate(udmodel_ger, x = my_companylist_trans$text, doc_id = my_companylist_trans$fullpath)
+up_ger <- as.data.frame(up_ger)
+
+to_translate1 <- up_ger %>% filter(doc_id=="reports/covestro_ag/2020/zusammengefasster_lagebericht_2019_inklusive_erganzender_nachhaltigkeitsinformationen.pdf")
+to_translate2 <- up_ger %>% filter(doc_id=="reports/tag_immobilien_ag/2020/potenziale_verwirklichen_nachhaltigkeitsbericht_2019.pdf")
+
+to_translate1 <- unique(to_translate1["sentence"])
+to_translate2 <- unique(to_translate2["sentence"])
+
+translated1 <-translate(dataset=to_translate1,
+            content.field="sentence",
+            source.lang="de",
+            target.lang="en",
+            google.api.key="AIzaSyAb6Touf91zR5dp36Zn8UtHrVWRgVEpr4o")
+
+translated2 <-translate(dataset=to_translate2,
+            content.field="sentence",
+            source.lang="de",
+            target.lang="en",
+            google.api.key="AIzaSyAb6Touf91zR5dp36Zn8UtHrVWRgVEpr4o")
+
+
+my_companylist$text[3] <- capture.output(cat(translated1$translatedContent))
+my_companylist$text[8] <- capture.output(cat(translated2$translatedContent))
+
+
+```
+
+## Annotating text
 
 ```{r}
 
-dict_emp <-read_csv("dict/employee_dict.csv",col_names="word")
-dict_soc_com <-read_csv("dict/social_community_dict.csv",col_names="word")
-dict_hr <-read_csv("dict/humanrights_dict.csv",col_names="word")
-dict_env <-read_csv("dict/environment_dict.csv",col_names="word")
+udmodel <- udpipe_load_model(file = "english-ewt-ud-2.5-191206.udpipe")
+
+up <- udpipe_annotate(udmodel, x = my_companylist$text, doc_id = my_companylist$Organization)
+up <- as.data.frame(up)
+
+up %>% str()
 
 ```
+
 
 ## EDA
 
@@ -81,6 +128,67 @@ dict_env <-read_csv("dict/environment_dict.csv",col_names="word")
 
 
 ```
+
+## Loading topic-specific dictionaries
+
+```{r}
+dict_emp <-read_csv("dict/employee_dict.csv",col_names="word")
+dict_soc_com <-read_csv("dict/social_community_dict.csv",col_names="word")
+dict_hr <-read_csv("dict/humanrights_dict.csv",col_names="word")
+dict_env <-read_csv("dict/environment_dict.csv",col_names="word")
+```
+
+## Counting dictionary-based words
+```{r}
+
+my_dataset <- my_companylist %>% select(Organization, Market_Capitalization_Million_USD, No_of_Employees)
+
+stats_emp <- subset(up, token %in% dict_emp$word)
+tt <- stats_emp %>% group_by(doc_id) %>% count(token) %>% summarise(totalwords_emp=sum(n))
+my_dataset %<>% merge(tt, by.x="Organization", by.y="doc_id")
+
+stats_soc_com <- subset(up, token %in% dict_soc_com$word)
+tt <- stats_soc_com %>% group_by(doc_id) %>% count(token) %>% summarise(totalwords_soc_com=sum(n))
+my_dataset %<>% merge(tt, by.x="Organization", by.y="doc_id")
+
+stats_hr <- subset(up, token %in% dict_hr$word)
+tt <- stats_hr %>% group_by(doc_id) %>% count(token) %>% summarise(totalwords_hr=sum(n))
+my_dataset %<>% merge(tt, by.x="Organization", by.y="doc_id")
+
+stats_env <- subset(up, token %in% dict_env$word)
+tt <- stats_env %>% group_by(doc_id) %>% count(token) %>% summarise(totalwords_env=sum(n))
+my_dataset %<>% merge(tt, by.x="Organization", by.y="doc_id")
+
+```
+
+
+```{r}
+library(lattice)
+barchart(key ~ freq, data = head(stats_emp, 10), col = "cadetblue", 
+         main = "Most occurring words in dimension", xlab = "Freq")
+```
+
+
+```{r}
+```
+
+## Trying lm
+```{r}
+names(my_dataset)[2] <- "mark_cap"
+
+my_lm <- lm(log(mark_cap) ~ totalwords_emp+totalwords_soc_com+totalwords_hr+totalwords_env,
+  data = my_dataset
+)
+
+summary(my_lm)
+library(performance)
+library(see)
+library(visreg)
+
+visreg(my_lm)
+check_model(my_lm)
+```
+
 
 ## Drafts
 
@@ -94,6 +202,38 @@ library("spacyr")
 spacy_initialize()
 #spacy_download_langmodel(model = "en", envname = "spacy_condaenv", conda = "auto")
 parsed_texts <- spacy_parse(my_companylist$text)
+spacy_finalize()
+temp_list <- my_companylist %>% select(X, Organization, fullpath, pdf_contents_page)
+
+my_codes <- c("401", "401-1", "401-2", "401-3", "402", "402-1", "403", "403-1", "403-2", "403-3", "403-4", "403-5", "403-6", "403-7", "403-8", "403-9", "403-10", "404", "404-1", "404-2", "404-3", "405", "405-1", "405-2", "406", "406-1", "407", "407-1", "408", "408-1", "409", "409-1", "410", "410-1", "411", "411-1", "412", "412-1", "412-2", "412-3", "413", "413-1", "413-2", "414", "414-1", "414-2", "415", "415-1", "416", "416-1", "416-2", "417", "417-1", "417-2", "417-3", "418", "418-1", "419", "419-1")
+
+german_plc <- temp_list %>% mutate(gcode2=list(my_codes))
+
+german_plc %<>% unnest(gcode2)
+
+write.csv(german_plc, "german_plc.csv")
+write.csv(temp_list, "german_plc_plain.csv")
+
+
+
+translate(content.vec="Hello, world!",
+          source.lang="en",
+          target.lang="de",
+          google.api.key="AIzaSyAb6Touf91zR5dp36Zn8UtHrVWRgVEpr4o")
+
+
+
+
+paste0
+
+
+stats <- subset(x, upos %in% c("NOUN")) 
+stats <- txt_freq(stats$token)
+stats$key <- factor(stats$key, levels = rev(stats$key))
+barchart(key ~ freq, data = head(stats, 20), col = "cadetblue", 
+         main = "Most occurring nouns", xlab = "Freq")
+
+stats_emp$key <- factor(stats_emp$key, levels = rev(stats_emp$key))
 
 ```
 
