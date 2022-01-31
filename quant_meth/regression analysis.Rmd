@@ -1,6 +1,8 @@
 ---
 title: "R Notebook"
-output: html_notebook
+output:
+  html_notebook: default
+  pdf_document: default
 ---
 
 ## Libraries
@@ -16,12 +18,13 @@ library(cld2)
 
 
 ## Company list preparation
+### Loading data from GRI db
 
 ```{r}
-
-
-
+setwd("../")
 gri_reports <- read.csv("reports/GriTempUrlList3.csv") # data from GRI database
+
+# gri_reports %>% count(Country_Organization_Account, sort = T)
 
 gri_companylist <- gri_reports %>% # selecting reports from German companies and those that have been downloaded successfully
   filter(str_detect(Country_Organization_Account,"Germany")) %>%
@@ -29,15 +32,32 @@ gri_companylist <- gri_reports %>% # selecting reports from German companies and
 
 gri_companylist[1:3,2] <-str_remove(gri_companylist[1:3,2],"Drillisch ") #company changed name
 
-pub_companylist <- read.csv("quant_meth/public_german_comp.csv") # data from MarketLine database
+gri_companylist2 <- gri_reports %>% # selecting reports from German companies and those that have been downloaded successfully
+  filter(str_detect(Country_Organization_Account,"Switzerland")|str_detect(Country_Organization_Account,"Spain")|str_detect(Country_Organization_Account,"Sweden")) %>%
+  filter((dld_status=="FE")|(dld_status=="OK"))
+```
 
-pub_companylist %<>% filter(Company_Type=="Public") %>% select(Company_Name, Annual_Revenue_US.M, No_of_Employees, Primary_Sector, Market_Capitalization_Million_USD) # selecting columns of interest
+### Loading data from MarketLine db
+```{r}
+pub_companylist <- read.csv("public_german_comp.csv") # data from MarketLine database on German companies
+pub_companylist2 <- read.csv("spain_swe_switz.csv") # data from MarketLine database on other EU countries companies
+
+pub_companylist %<>% filter(Company_Type=="Public") %>% select(Company_Name, Annual_Revenue_US.M, No_of_Employees, Market_Capitalization_Million_USD) # selecting columns of interest
+pub_companylist2 %<>% filter(Company_Type=="Public") %>% select(Company_Name, Annual_Revenue_US.M, No_of_Employees, Market_Capitalization_Million_USD) # selecting columns of interest
 
 names(pub_companylist)[1] <- "Organization" # renaming "Company_Name" for further joining
+names(pub_companylist2)[1] <- "Organization" # renaming "Company_Name" for further joining
 
 pub_companylist %<>% mutate(simp_name=iconv(str_squish(Organization), from="UTF-8", to="ASCII//TRANSLIT")) # convert to one encoding and getting rid of non ascii symbols in names
+pub_companylist2 %<>% mutate(simp_name=iconv(str_squish(Organization), from="UTF-8", to="ASCII//TRANSLIT")) # convert to one encoding and getting rid of non ascii symbols in names
+```
 
+### Joining two sources: MarketLine & GRI db
+```{r}
 my_companylist <- inner_join(gri_companylist,pub_companylist, by="Organization")
+my_companylist2 <- inner_join(gri_companylist2,pub_companylist2, by="Organization")
+
+my_companylist <- full_join(my_companylist,my_companylist2)
 
 my_companylist %>% distinct(Organization)
 
@@ -72,39 +92,49 @@ write_csv(my_companylist, "my_companylist.csv")
 library(translateR)
 library(udpipe)
 
-dl <- udpipe_download_model(language = "german")
-udmodel_ger <- udpipe_load_model(file = dl$file_model)
+# dl <- udpipe_download_model(language = "german")
+# udmodel_ger <- udpipe_load_model(file = dl$file_model)
 
 my_companylist_trans <- my_companylist %>% filter(!lang=="en")
 
-#need to split text into sentences as whole text translation gives httpheader error using udpipe for that
+#need to split text into sentences as whole text translation gives httpheader error. using udpipe for that
 
-up_ger <- udpipe_annotate(udmodel_ger, x = my_companylist_trans$text, doc_id = my_companylist_trans$fullpath)
-up_ger <- as.data.frame(up_ger)
+# up_ger <- udpipe_annotate(udmodel_ger, x = my_companylist_trans$text, doc_id = my_companylist_trans$fullpath)
+# up_ger <- as.data.frame(up_ger)
 
 to_translate1 <- up_ger %>% filter(doc_id=="reports/covestro_ag/2020/zusammengefasster_lagebericht_2019_inklusive_erganzender_nachhaltigkeitsinformationen.pdf")
 to_translate2 <- up_ger %>% filter(doc_id=="reports/tag_immobilien_ag/2020/potenziale_verwirklichen_nachhaltigkeitsbericht_2019.pdf")
+to_translate3 <- up_ger %>% filter(doc_id=="reports/swiss_prime_site_ag/2020/geschaftsbericht_2019.pdf")
 
 to_translate1 <- unique(to_translate1["sentence"])
 to_translate2 <- unique(to_translate2["sentence"])
+to_translate3 <- unique(to_translate3["sentence"])
 
-translated1 <-translate(dataset=to_translate1,
-            content.field="sentence",
-            source.lang="de",
-            target.lang="en",
-            google.api.key="mykey")
+#translated1 <-translate(dataset=to_translate1,
+#            content.field="sentence",
+#            source.lang="de",
+#            target.lang="en",
+#            google.api.key="mykey")
 
-translated2 <-translate(dataset=to_translate2,
-            content.field="sentence",
-            source.lang="de",
-            target.lang="en",
-            google.api.key="mykey")
+#translated2 <-translate(dataset=to_translate2,
+#            content.field="sentence",
+#            source.lang="de",
+#            target.lang="en",
+#            google.api.key="mykey")
+
+#translated3 <-translate(dataset=to_translate3,
+#            content.field="sentence",
+#            source.lang="de",
+#            target.lang="en",
+#            google.api.key="mykey")
 
 
-my_companylist$text[3] <- capture.output(cat(translated1$translatedContent))
-my_companylist$text[8] <- capture.output(cat(translated2$translatedContent))
+#my_companylist$text[3] <- capture.output(cat(translated1$translatedContent))
+#my_companylist$text[8] <- capture.output(cat(translated2$translatedContent))
+#my_companylist$text[12] <- capture.output(cat(translated3$translatedContent))
 
-
+my_companylist$text[3] %>% glimpse()
+write_csv(my_companylist, "my_companylist.csv")
 ```
 
 ## Annotating text
@@ -113,20 +143,36 @@ my_companylist$text[8] <- capture.output(cat(translated2$translatedContent))
 
 udmodel <- udpipe_load_model(file = "english-ewt-ud-2.5-191206.udpipe")
 
-up <- udpipe_annotate(udmodel, x = my_companylist$text, doc_id = my_companylist$Organization)
-up <- as.data.frame(up)
+#up <- udpipe_annotate(udmodel, x = my_companylist$text, doc_id = my_companylist$Organization)
+#up <- as.data.frame(up)
 
 up %>% str()
 
 ```
 
 
-## EDA
+## Express network analysis of most cooccurrences of Nouns & Adjectives within sentence
 
 ```{r}
 
+up2 <- up %>% filter(!token=="â",!token=="â€")
+cooc <- cooccurrence(x = subset(up2, upos %in% c("NOUN", "ADJ")), 
+                     term = "lemma", 
+                     group = c("doc_id", "paragraph_id", "sentence_id"))
+cooc %>% str()
 
 
+library(igraph)
+library(ggraph)
+library(ggplot2)
+wordnetwork <- head(cooc, 50)
+wordnetwork <- graph_from_data_frame(wordnetwork)
+ggraph(wordnetwork, layout = "fr") +
+  geom_edge_link(aes(width = cooc, edge_alpha = cooc), edge_colour = "lightblue") +
+  geom_node_text(aes(label = name), col = "blue", size = 4) +
+  theme_graph(base_family = "Sans Serif") +
+  theme(legend.position = "none") +
+  labs(title = "Cooccurrences within sentence", subtitle = "Nouns & Adjectives")
 ```
 
 ## Loading topic-specific dictionaries
@@ -138,7 +184,7 @@ dict_hr <-read_csv("dict/humanrights_dict.csv",col_names="word")
 dict_env <-read_csv("dict/environment_dict.csv",col_names="word")
 ```
 
-## Counting dictionary-based words
+## Counting dictionary-based words and bigrams & preparing dataset for analisys
 ```{r}
 
 my_dataset <- my_companylist %>% select(Organization, Market_Capitalization_Million_USD, No_of_Employees)
@@ -151,6 +197,7 @@ stats_soc_com <- subset(up, token %in% dict_soc_com$word)
 tt <- stats_soc_com %>% group_by(doc_id) %>% count(token) %>% summarise(totalwords_soc_com=sum(n))
 my_dataset %<>% merge(tt, by.x="Organization", by.y="doc_id")
 
+
 stats_hr <- subset(up, token %in% dict_hr$word)
 tt <- stats_hr %>% group_by(doc_id) %>% count(token) %>% summarise(totalwords_hr=sum(n))
 my_dataset %<>% merge(tt, by.x="Organization", by.y="doc_id")
@@ -159,36 +206,148 @@ stats_env <- subset(up, token %in% dict_env$word)
 tt <- stats_env %>% group_by(doc_id) %>% count(token) %>% summarise(totalwords_env=sum(n))
 my_dataset %<>% merge(tt, by.x="Organization", by.y="doc_id")
 
-```
+tt2 <- up %>% subset(upos %in% c("NOUN","ADJ", "VERB", "AUX", "DET", "ADP", "PROPN")) %>% group_by(doc_id) %>% count(token) %>% summarise(totalwords=sum(n))
+my_dataset %<>% merge(tt2, by.x="Organization", by.y="doc_id")
 
+my_dataset %<>% mutate(share_tw_emp=totalwords_emp/totalwords,
+                       share_tw_soc_com=totalwords_soc_com/totalwords,
+                       share_tw_hr=totalwords_hr/totalwords,
+                       share_tw_env=totalwords_env/totalwords)
 
-```{r}
-library(lattice)
-barchart(key ~ freq, data = head(stats_emp, 10), col = "cadetblue", 
-         main = "Most occurring words in dimension", xlab = "Freq")
-```
-
-
-```{r}
-```
-
-## Trying lm
-```{r}
 names(my_dataset)[2] <- "mark_cap"
 
-my_lm <- lm(log(mark_cap) ~ totalwords_emp+totalwords_soc_com+totalwords_hr+totalwords_env,
-  data = my_dataset
-)
-
-summary(my_lm)
-library(performance)
-library(see)
-library(visreg)
-
-visreg(my_lm)
-check_model(my_lm)
+my_dataset %>% glimpse()
 ```
 
+### Looking for dictionary bigrams (found no need to include in final set as too few bigrams found)
+```{r}
+library(tidytext)
+bigrams_new <- my_companylist %>% 
+  unnest_tokens(bigram,text,token = "ngrams", n=2)
+
+stats_emp2 <- subset(bigrams_new, bigram %in% dict_emp$word)
+stats_soc_com2 <- subset(bigrams_new, bigram %in% dict_soc_com$word)
+stats_hr2 <- subset(bigrams_new, bigram %in% dict_hr$word)
+stats_env2 <- subset(bigrams_new, bigram %in% dict_env$word)
+
+print(c(nrow(stats_emp2), nrow(stats_soc_com2), nrow(stats_hr2), nrow(stats_env2)))
+tt3 <- stats_env2 %>% group_by(Organization) %>% count(bigram) %>% summarise(totalwords_env2=sum(n))
+my_dataset_temp <-my_dataset
+
+my_dataset_temp %<>% left_join(tt3, by="Organization")
+
+my_dataset_temp %<>% mutate(totalwords_env=totalwords_env+totalwords_env2)
+
+```
+
+## Applying lm
+```{r}
+
+
+my_lm1 <- lm(mark_cap ~ totalwords_emp+totalwords_soc_com+totalwords_hr+totalwords_env,
+             data = my_dataset)
+
+my_lm2 <- lm(mark_cap ~ share_tw_emp+share_tw_soc_com+share_tw_hr+share_tw_env,
+             data = my_dataset)
+
+my_lm3 <- lm(mark_cap ~ No_of_Employees+totalwords,
+             data = my_dataset)
+
+summary(my_lm1)
+summary(my_lm2)
+summary(my_lm3)
+```
+
+## Check for liniarity
+```{r}
+
+library(visreg)
+
+visreg(my_lm1)
+
+```
+## Quick check
+```{r}
+library(performance)
+library(see)
+check_model(my_lm1)
+```
+
+
+## Checking lm
+### Outliers
+f value Di larger than 4/(n – k - 1) = potential outlier
+n = number of observations
+k = number of explanatory variables (without intercept)
+results_object %>% 
+cooks.distance() %>% 
+round(digits=2) %>%
+sort(decreasing) %>% 
+head()
+
+or
+results_object %>% ols_plot_cooksd_chart()
+
+
+```{r}
+library(olsrr)
+my_lm1 %>% ols_plot_cooksd_chart()
+```
+### Removing ouliers and running regression again
+```{r}
+
+my_dataset2 <- my_dataset[-c(2),]
+my_lm1_2 <- lm(mark_cap ~ totalwords_emp+totalwords_soc_com+totalwords_hr+totalwords_env,
+             data = my_dataset2)
+summary(my_lm1_2)
+my_lm1_2 %>% ols_plot_cooksd_chart()
+
+```
+Results became worse. Decided not to delete outliers.
+
+### Multicollinearity
+Use of function ols_vif_tol() in package olsrr
+
+```{r}
+my_lm1 %>% ols_vif_tol()
+
+```
+VIF of totalwords_emp and totalwords_hr is higher than 5, hence multicollinearity observed (corresponds to in quick check results)
+
+### Residuals
+#### Normally distributed residuals:
+Function ols_test_normality() in package olsrr directly applicable to regression results object (No systematic biases & just random noise)
+
+```{r}
+my_lm1 %>% ols_test_normality()
+
+```
+Normal distribution hypothesis not to be rejected because p-value is above 0.01 in Shapiro-Wilk test
+
+#### Heteroscedasticity
+Function ols_test_breusch_pagan() in package olsrr directly applicable to regression results object
+```{r}
+my_lm1 %>% ols_test_breusch_pagan()
+
+```
+Prob>Chi2 = p-value p-value above 0.01 implying homoscedasticity cannot be rejected
+#### Running multiple versions of model 1
+
+```{r}
+
+library(stargazer)
+
+my_lm1_emp <- lm(mark_cap ~ totalwords_emp+totalwords_soc_com+totalwords_env,
+             data = my_dataset)
+my_lm1_sc <- lm(mark_cap ~ totalwords_soc_com+totalwords_env,
+             data = my_dataset)
+my_lm1_hr <- lm(mark_cap ~ totalwords_hr+totalwords_soc_com+totalwords_env,
+             data = my_dataset)
+#my_lm1_env <- lm(mark_cap ~ totalwords_env, data = my_dataset)
+
+stargazer(my_lm1_emp,my_lm1_sc,my_lm1_hr,my_lm1, type = "text")
+
+```
 
 ## Drafts
 
@@ -219,12 +378,7 @@ write.csv(temp_list, "german_plc_plain.csv")
 translate(content.vec="Hello, world!",
           source.lang="en",
           target.lang="de",
-          google.api.key="AIzaSyAb6Touf91zR5dp36Zn8UtHrVWRgVEpr4o")
-
-
-
-
-paste0
+          google.api.key="mykey")
 
 
 stats <- subset(x, upos %in% c("NOUN")) 
@@ -235,6 +389,25 @@ barchart(key ~ freq, data = head(stats, 20), col = "cadetblue",
 
 stats_emp$key <- factor(stats_emp$key, levels = rev(stats_emp$key))
 
+library(lattice)
+barchart(key ~ freq, data = head(stats_emp, 10), col = "cadetblue", 
+         main = "Most occurring words in dimension", xlab = "Freq")
+library(tidytext)
+bigrams_new <- my_companylist %>% 
+  unnest_tokens(bigram,text,token = "ngrams", n=2)
+
+stargazer(my_lm1)
+
+stargazer(my_lm1,my_lm2,my_lm3)
 ```
 
-
+Ex-ante checks
+Number of observations
+Type of dependent variable
+Linearity
+Ex-post checks with potentially model refinement
+Multicollinearity
+Outlier
+Normal distribution of residuals
+Heteroscedasticity
+Autocorrelation (spatial/temporal)
