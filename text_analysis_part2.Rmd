@@ -1,0 +1,370 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+
+```{r}
+library(pdftools)
+library(tidyverse)
+library(magrittr)
+library(stringi)
+library(tidytext)
+library(igraph)
+library(ggraph)
+library(ggplot2)
+
+
+```
+
+## Loading data
+```{r}
+ocpt <- readRDS("orlist_coges_pages_text_unnested.rds")
+ocpt %>% head()
+```
+## Annotating text
+```{r}
+library(udpipe)
+udmodel <- udpipe_load_model(file = "english-ewt-ud-2.5-191206.udpipe")
+
+ocpt %<>% mutate(doc_id=paste0(orig_id, ", ", gcode))
+
+up <- udpipe_annotate(udmodel, x = ocpt$text, doc_id = ocpt$doc_id)
+up <- as.data.frame(up)
+
+```
+## Making a list of verbs from available texts
+```{r}
+
+stats <- subset(up, upos %in% c("VERB")) 
+stats <- txt_freq(stats$lemma)
+stats %>% head(50)
+write.csv(stats, "verbs.csv")
+
+```
+## Uploading a list of grouped verbs
+```{r}
+verbs<-read.csv("verbs_grouped.csv")
+```
+
+```{r}
+verbs_qp <- verbs %>% filter(character=="QP") %>% select(verb)
+verbs_temp <- c("increase")
+up2 <- up %>% subset(lemma %in% verbs_temp)
+
+up3 <- up %>% subset(sentence %in% up2$sentence)
+
+cooc <- cooccurrence(x = subset(up3, upos %in% c("NOUN", "ADJ")), 
+                     term = "lemma", 
+                     group = c("doc_id", "paragraph_id", "sentence_id"))
+cooc %>% str()
+```
+
+
+```{r}
+wordnetwork <- head(cooc, 30)
+wordnetwork <- graph_from_data_frame(wordnetwork)
+ggraph(wordnetwork, layout = "fr") +
+  geom_edge_link(aes(width = cooc, edge_alpha = cooc), edge_colour = "lightblue") +
+  geom_node_text(aes(label = name), col = "blue", size = 4) +
+  theme_graph(base_family = "Sans Serif") +
+  theme(legend.position = "none") +
+  labs(title = "Cooccurrences within sentence", subtitle = "Nouns & Adjectives")
+
+```
+```{r}
+
+```
+
+```{r}
+undata2 <- pre_pro_rep %>% 
+  unnest_tokens(bigram,text,token = "ngrams", n=2) #%>% 
+  #mutate(bigram = bigram %>% str_remove_all("[^[:alnum:]]")) %>% 
+
+undata1 <- pre_pro_rep %>% 
+  unnest_tokens(word,text,token = "ngrams", n=1) %>% 
+  mutate(word = word %>% str_remove_all("[^[:alnum:]]")) %>% 
+  mutate(word = word %>% str_remove_all(rem_dig)) %>% 
+  mutate(word = word %>% str_remove_all("null")) %>% 
+  filter(!is.na(word)) %>% 
+  anti_join(stop_words, by = "word")
+
+bigrams_separated <- undata2 %>% separate(bigram, c("word1", "word2"), sep = " ")
+bigrams_filtered <- bigrams_separated %>% filter(!word1 %in% stop_words$word) %>% filter(!word2 %in% stop_words$word)
+
+# new bigram counts:
+bigram_counts <- bigrams_filtered %>% count(word1, word2, sort = TRUE)
+bigrams_united <- bigrams_filtered %>% unite(bigram, word1, word2, sep = " ")
+bigrams_united %<>% add_count(X,bigram) %>% bind_tf_idf(term = bigram, document = X, n = n)
+
+words <- undata1 %>% add_count(X,word) %>% bind_tf_idf(term = word, document = X, n = n)
+
+bigrams_united %>% count(bigram, wt = tf_idf, sort = TRUE) %>% head(25)
+
+top_by_g <- bigrams_united %>% group_by(gcode) %>% count(bigram, wt = tf_idf, sort = TRUE, name = "tf_idf") %>% dplyr::slice(1:12) %>% ungroup()
+
+top_by_g <- words %>% group_by(gcode) %>% count(word, wt = tf_idf, sort = TRUE, name = "tf_idf") %>% dplyr::slice(1:5) %>% ungroup()
+
+top_by_y <- bigrams_united %>% group_by(rep_year) %>% count(bigram, wt = tf_idf, sort = TRUE, name = "tf_idf") %>% dplyr::slice(1:12) %>% ungroup()
+
+# top bigrams in each g_code
+top_by_g %>% mutate(bigram = reorder_within(bigram, by = tf_idf, within = gcode)) %>%
+  ggplot(aes(x = bigram, y = tf_idf, fill = gcode)) +
+    geom_col(show.legend = FALSE) +
+    labs(x = NULL, y = "tf-idf") +
+    facet_wrap(~gcode, ncol = 3, scales = "free") +
+    coord_flip() +
+    scale_x_reordered() +
+    theme(axis.text.y = element_text(size = 6))
+
+
+top_by_g %>% mutate(word = reorder_within(word, by = tf_idf, within = gcode)) %>%
+  ggplot(aes(x = word, y = tf_idf, fill = gcode)) +
+    geom_col(show.legend = FALSE) +
+    labs(x = NULL, y = "tf-idf") +
+    facet_wrap(~gcode, ncol = 3, scales = "free") +
+    coord_flip() +
+    scale_x_reordered() +
+    theme(axis.text.y = element_text(size = 8))
+
+```
+
+```{r}
+library(textdata)
+library(recipes)
+library(tidymodels)
+library(textrecipes)
+library(themis)
+library(tune)
+library(glmnet)
+library(ranger)
+```
+
+
+```{r}
+mdata <- ocpt %>% ungroup() %>%  select(gcode,text)
+
+#glove6b <- embedding_glove6b(dimensions = 100)
+
+set.seed(1234)
+
+rem_punct <- regex("[[:punct:]]")
+rem_dig <- regex("[[:digit:]]")
+
+mdata %<>% mutate(text=str_squish(text),
+                  text=str_remove_all(text,rem_punct),
+                  text=str_remove_all(text,rem_dig))
+```
+
+
+```{r}
+# mdata %>% count(gcode, sort = T)# %>% ggplot(aes(x = gcode, y = n)) + geom_col()
+mdata %<>% filter(gcode %in% c("401","403","404", "405","413","414","417","412","416","419"))
+# mdata %<>% drop_na()
+mdata %<>% mutate(gcode=as.factor(gcode))
+write.csv(mdata, "mdata_2.csv")
+```
+
+
+```{r}
+tidy_split <- initial_split(mdata, strata = gcode, prop = 0.75)
+train_data <- training(tidy_split)
+test_data <- testing(tidy_split)
+tidy_split
+```
+
+
+```{r}
+recipe(gcode~., data = train_data) %>%  prep() %>% juice() %>% count(gcode)
+```
+
+
+```{r}
+data_res <- train_data %>% vfold_cv(strata = gcode, v = 10, repeats = 3)
+data_res <- vfold_cv(train_data)
+```
+
+
+```{r}
+tf_idf_rec <- recipe(gcode ~ ., data = train_data) %>%
+  step_tokenize(text) %>%
+  step_stem(text) %>%
+  step_stopwords(text) %>%
+  step_tokenfilter(text, max_tokens = 2000) %>%
+  step_tfidf(all_predictors())
+
+tf_idf_data <- tf_idf_rec %>% prep() %>% juice()
+```
+
+
+```{r}
+hash_rec <- recipe(gcode~., data = train_data) %>%
+  step_tokenize(text) %>%
+  step_stem(text) %>%
+  #step_stopwords(text) %>%
+  step_tokenfilter(text, max_tokens = 1000) %>%
+  step_texthash(text, num_terms = 100)
+
+hash_rec %>% prep() %>% juice()
+
+```
+
+
+```{r}
+model_lg <- multinom_reg() %>%
+  set_args(penalty=tune(), mixture=NULL) %>% 
+  set_engine("glmnet") %>%
+  set_mode("classification")
+
+model_rf <- rand_forest() %>%
+  set_engine("ranger", importance = "impurity") %>%
+  set_mode("classification")
+
+```
+
+
+
+```{r}
+logistic_grid <- grid_regular(parameters(model_lg), levels = 3)
+model_control <- control_grid(save_pred = TRUE)
+model_metrics <- metric_set(accuracy, roc_auc)
+```
+
+
+```{r}
+linear_tf_res <- tune_grid(model_lg, tf_idf_rec, grid = logistic_grid, control = model_control, metrics = model_metrics, resamples = data_res)
+linear_hash_res <- tune_grid(model_lg, hash_rec, grid = logistic_grid, control = model_control, metrics = model_metrics, resamples = data_res)
+
+```
+
+
+
+```{r}
+workflow_general_tf <- workflow() %>% add_recipe(tf_idf_rec)
+workflow_lg_tf <- workflow_general_tf %>% add_model(model_lg)
+workflow_rf_tf <- workflow_general_tf %>% add_model(model_rf)
+
+workflow_general_hash <- workflow() %>% add_recipe(hash_rec)
+workflow_lg_hash <- workflow_general_hash %>% add_model(model_lg)
+workflow_rf_hash <- workflow_general_hash %>% add_model(model_rf)
+```
+
+
+```{r}
+linear_tf_res %>% autoplot()
+best_param_linear_tf_res <- linear_tf_res %>% select_best(metric = 'accuracy')
+best_param_linear_tf_res
+workflow_final_lg_tf <- workflow_lg_tf %>%
+  finalize_workflow(parameters = best_param_linear_tf_res)
+
+log_res_tf <- workflow_final_lg_tf %>%
+  fit_resamples(resamples = data_res,
+                metrics = metric_set(recall, precision, f_meas, accuracy, kap, roc_auc, sens), control = control_resamples(save_pred = TRUE))
+
+log_res_tf %>% collect_metrics(summarize = TRUE)
+```
+
+
+```{r}
+linear_hash_res %>% autoplot()
+best_param_linear_hash_res <- linear_hash_res %>% select_best(metric = 'accuracy')
+best_param_linear_hash_res
+
+workflow_final_lg_hash <- workflow_lg_hash %>%
+  finalize_workflow(parameters = best_param_linear_hash_res)
+
+log_res_hash <- workflow_final_lg_hash %>%
+  fit_resamples( resamples = data_res,
+                 metrics = metric_set(recall, precision, f_meas, accuracy, kap, roc_auc, sens), control = control_resamples(save_pred = TRUE))
+
+log_res_hash %>% collect_metrics(summarize = TRUE)
+```
+
+```{r}
+
+rf_res_hash <- workflow_rf_hash %>%
+  fit_resamples(resamples = data_res,
+                metrics = metric_set(recall, precision, f_meas, accuracy, kap, roc_auc, sens),
+                control = control_resamples( save_pred = TRUE))
+
+rf_res_hash %>% collect_metrics(summarize = TRUE)
+
+```
+
+
+```{r}
+rf_res_tf <- workflow_rf_tf %>%
+  fit_resamples(resamples = data_res,
+                metrics = metric_set(recall, precision, f_meas, accuracy, kap, roc_auc, sens),
+                control = control_resamples( save_pred = TRUE))
+rf_res_tf %>% collect_metrics(summarize = TRUE)
+
+```
+```{r}
+log_metrics_tf <- log_res_tf %>% collect_metrics(summarise = TRUE) %>% mutate(model = "Logistic Regression TF-idf")
+log_metrics_hash <- log_res_hash %>% collect_metrics(summarise = TRUE) %>% mutate(model = "Logistic Regression Hash")
+rf_metrics_tf <- rf_res_tf %>% collect_metrics(summarise = TRUE) %>% mutate(model = "Random Forest TF-idf")
+rf_metrics_hash <- rf_res_hash %>% collect_metrics(summarise = TRUE) %>% mutate(model = "Random Forest Hash")
+
+
+model_compare <- bind_rows(
+  log_metrics_tf, 
+  log_metrics_hash, 
+  rf_metrics_tf, 
+  rf_metrics_hash)
+
+
+
+rf_stat1 <- rf_res_tf %>% collect_metrics(summarize = TRUE)
+```
+
+
+```{r}
+model_comp <- model_compare %>%
+  select(model, .metric, mean, std_err) %>%
+  pivot_wider(names_from = .metric, values_from = c(mean, std_err))
+
+
+model_comp %>%
+  arrange(mean_f_meas) %>%
+    mutate(model = fct_reorder(model, mean_f_meas)) %>%
+      ggplot(aes(model, mean_f_meas, fill=model)) +
+      geom_col() + coord_flip() +
+      scale_fill_brewer(palette = "YlGn") +
+      geom_text(size = 3, aes(label = round(mean_f_meas, 2), y = mean_f_meas + 0.08), vjust = 1)
+
+```
+
+```{r}
+rf_pred_tf <- rf_res_tf %>%
+  collect_predictions()
+
+rf_pred_tf %>% conf_mat(gcode, .pred_class)
+
+rf_pred_tf %>% conf_mat(gcode, .pred_class) %>% autoplot(type = "heatmap")
+```
+
+```{r}
+
+last_fit_rf <- last_fit(workflow_rf_tf,
+                        split = tidy_split,
+                        metrics = metric_set(recall, precision, f_meas, accuracy, kap, roc_auc, sens))
+
+rf_stat2 <- last_fit_rf %>% collect_metrics()
+rf_stat2
+
+last_fit_rf %>% collect_predictions() %>% conf_mat(gcode, .pred_class) %>% autoplot(type = "heatmap")
+
+myt <- rf_stat1 %>% left_join(rf_stat2, by=".metric") %>% select(.metric, mean, std_err, .estimate)
+
+```
+
+```{r}
+
+stargazer(myt, type = "latex", out = "models.tex")
+
+print(xtable(myt, type = "latex"), file = "filename2.tex")
+
+```
+
+
