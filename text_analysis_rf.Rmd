@@ -192,7 +192,5 @@ d2plot %>% ggplot(aes(x=gcode, y=n, group=gcode, fill=as.factor(gcode)))+
   labs(x="GRI code",
        y="Number of occurrences",
        title = "Impacts by NACE category")
-
-
 ```
 

@@ -1,0 +1,144 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+```{r}
+library(tidyverse)
+library(magrittr)
+library(stringi)
+library(stringr)
+library(readtext)
+library(dplyr)
+library(curl)
+library(pdftools)
+library(cld2)
+library(tabulizer)
+library(googleLanguageR)
+```
+
+```{r}
+
+lowerize <- function(mystring){
+  rem_punct <- regex("[[:punct:]]")
+  str_replace_all(
+            str_squish(
+              str_sub(
+                str_to_lower(
+                  str_remove_all(mystring, rem_punct), locale = "en"),
+              start=1, end=35)
+            ),
+          " ", "_")
+}
+```
+
+```{r}
+dl_comps <- read_csv("listed_danish_companies.csv")
+names(dl_comps) <- lowerize(names(dl_comps))
+names(dl_comps)
+```
+
+
+```{r}
+dl_comps %<>% mutate(company_name=iconv(company_name, from="UTF-8", to="ASCII//TRANSLIT"))
+
+dl_comps %<>% mutate(folder=str_sub(lowerize(str_remove_all(company_name, "A/S")), start=1, end=15))
+
+dl_comps %<>% mutate(pubyear=list(c("2021","2020","2019")))
+
+dl_comps %<>% unnest(pubyear)
+
+dl_comps %<>% mutate(full_path=str_c("listed_danish_companies",folder,str_c(folder,"_",pubyear,".pdf"), sep = "/"))
+
+dl_comps %<>% data.frame()
+```
+
+
+```{r}
+dirvec <-unique(dl_comps$folder)
+
+create_folders(dirvec) <- function (){
+  setwd("listed_danish_companies")
+  for (i in 1:length(dirvec)) {
+    dir.create(dirvec[i], recursive = F)  
+  }
+}
+# create_folders(divec)
+```
+
+
+```{r}
+setwd("listed_danish_companies")
+
+write_csv(dl_comps, "listed_danish_companies_fullpath.csv")
+```
+
+### Text extraction
+
+```{r}
+page_vector <- c()
+text_vector <- c()
+
+dl_comps %<>% mutate(text="")
+dl_comps %<>% mutate(pages="")
+for (i in 1:nrow(dl_comps)) {
+  page_vector <- c (1:pdf_info(dl_comps$full_path[i])$pages)
+  text_vector <- list(extract_text(dl_comps$full_path[i], page_vector))
+  
+  dl_comps$pages[i] <- list(page_vector)
+  dl_comps$text[i] <- text_vector
+}
+
+
+```
+
+
+```{r}
+dl_comps_unnested <- dl_comps %>% unnest(c(pages,text))
+
+dl_comps_unnested %<>% mutate(lang=detect_language(text))
+
+dl_comps_unnested %>% group_by(lang) %>% count
+
+#dl_comps_unnested_filtered <- dl_comps_unnested %>% filter(lang=="da")
+```
+
+
+```{r}
+# dl_comps_unnested_filtered %<>% slice(-206) # produces an error
+
+#translated <- translate(dataset=dl_comps_unnested_filtered,
+#            content.field="text",
+#            source.lang="da",
+#            target.lang="en",
+#            google.api.key="mykey")
+
+gl_auth("g_auth.json")
+
+for (i in 1:nrow(dl_comps_unnested)) {
+  
+  if(!dl_comps_unnested$lang[i]=="en"|is.na(dl_comps_unnested$lang[i])){
+
+    translated <- gl_translate(dl_comps_unnested$text[i], target="en")
+    dl_comps_unnested$lang[i]<-"en"
+    dl_comps_unnested$text[i] <- translated$translatedText
+  
+  }
+
+}
+
+dl_comps_unnested$text#[206]=="en"
+
+#dl_comps_unnested %<>% mutate(text=case_when(lang=="da"~gl_translate(text, target="en")$translatedText))
+
+
+vignette("translation", package = "googleLanguageR")
+gl_translate()
+# %<>% mutate(lang=detect_language(text))
+
+```
+```{r}
+
+write.csv(dl_comps_unnested, "listed_danish_companies_text.csv")
+```
+
