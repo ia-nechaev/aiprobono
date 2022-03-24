@@ -1,0 +1,198 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+
+
+```{r}
+
+library(parsnip)
+library(recipes)
+library(workflows)
+library(tidyverse)
+library(magrittr)
+library(tidymodels)
+library(textrecipes)
+
+```
+
+
+
+```{r}
+ocpt <- readRDS("orlist_coges_pages_text_unnested_final.rds")
+ocpt2 <- ocpt %>% ungroup()%>% distinct(fullpath, pdf_page, .keep_all = TRUE)
+mdata <- ocpt2 %>% ungroup() %>%  select(gcode,text)
+```
+
+
+```{r}
+rem_punct <- regex("[[:punct:]]")
+rem_dig <- regex("[[:digit:]]")
+
+mdata %<>% mutate(text=str_squish(text),
+                  text=str_remove_all(text,rem_punct),
+                  text=str_remove_all(text,rem_dig))
+
+# mdata %>% group_by(gcode) %>% count(sort = T)# %>% slice(1:8) %>% ungroup() # %>% ggplot(aes(x = gcode, y = n)) + geom_col()
+
+mdata %<>% filter(gcode %in% c("401","403","404", "407", "405","413","414","417","416","999"))
+# mdata %<>% filter(!gcode %in% c("409","410","411"))
+# mdata %<>% drop_na()
+mdata %<>% mutate(gcode=as.factor(gcode))
+```
+
+
+```{r}
+#downsampling
+
+#mdata %>% filter(gcode %in% c("999"))
+
+no_label_index <- which(mdata$gcode==999)
+# labeled_index <- which(!mdata$gcode==999)
+random_indexes <- sample(1:length(no_label_index), length(no_label_index)-300, replace=F)
+# random_downsample <- no_label_index[-c(random_indexes)]
+
+mdata <-mdata[-c(no_label_index[c(random_indexes)]),]
+```
+
+
+```{r}
+set.seed(1234)
+tidy_split <- initial_split(mdata, strata = gcode, prop = 0.7)
+train_data <- training(tidy_split)
+test_data <- testing(tidy_split)
+tidy_split
+```
+
+
+```{r}
+tf_idf_rec <- recipe(gcode ~ ., data = train_data) %>%
+  step_tokenize(text) %>%
+  step_stem(text) %>%
+  step_stopwords(text) %>%
+  step_tokenfilter(text, max_tokens = 1000) %>%
+  step_tfidf(all_predictors())
+
+train_data <- recipe(gcode~., data = train_data) %>% themis::step_upsample(gcode) %>% prep() %>% juice()
+train_data %<>% mutate(text=as.character(text))
+```
+
+
+```{r}
+model_rf <- rand_forest() %>%
+  set_engine("ranger", importance = "impurity", num.threads = parallel::detectCores()) %>%
+  set_mode("classification")
+
+wf_rf_tf <- workflow() %>%
+            add_recipe(tf_idf_rec) %>%
+            add_model(model_rf) 
+
+```
+
+
+```{r}
+data_res <- train_data %>% vfold_cv(strata = gcode, v = 10, repeats = 3)
+#data_res <- vfold_cv(train_data)
+rf_res <- wf_rf_tf %>%
+  fit_resamples(resamples = data_res,
+                metrics = metric_set(recall, precision, f_meas, accuracy, kap, roc_auc, sens),
+                control = control_resamples( save_pred = TRUE))
+
+rf_res %>% collect_metrics(summarize = TRUE)
+```
+
+
+```{r}
+last_fit_rf <- last_fit(wf_rf_tf,
+                        split = tidy_split,
+                        metrics = metric_set(recall, precision, f_meas, accuracy, kap, roc_auc, sens))
+rf_stat <- last_fit_rf %>% collect_metrics()
+rf_stat
+```
+
+```{r}
+prod_ds <- read.csv("listed_danish_companies_text_pure.csv") %>% select(-X)
+pred_ds <- read.csv("listed_danish_companies_text.csv") %>% select(-X)
+```
+
+
+```{r}
+wf_fit <- wf_rf_tf %>% fit(train_data)
+
+pred_prod <- wf_fit %>% predict(prod_ds)
+
+pred_ds %<>% mutate(gcode=pred_prod$.pred_class)
+
+```
+
+```{r}
+
+pred_ds %>% group_by(gcode, pubyear) %>% count()
+
+```
+## Page quantity
+```{r}
+
+library(ggplot2)
+
+d2plot <- pred_ds %>%
+  #filter(!gcode=="999") %>%
+  group_by(gcode, pubyear) %>% 
+  count() 
+
+
+
+
+d2plot %>% ggplot(aes(x=gcode, y=n, group=pubyear, fill=as.factor(pubyear)))+
+  geom_col(position = "dodge")+
+  theme_bw()
+
+```
+## Mean share of pages
+```{r}
+d2plot <- pred_ds %>%
+  #filter(!gcode=="999") %>%
+  #select(-text) %>% 
+  add_count(full_path) %>% 
+  group_by(full_path, gcode) %>% 
+  mutate(occur=n(), share=occur/n) %>% 
+  # ungroup() %>% 
+  group_by(gcode, pubyear) %>% 
+  mutate(mean=mean(share)) %>% 
+  filter(!gcode=="999")
+
+d2plot %>% ggplot(aes(x=gcode, y=mean, group=pubyear, fill=as.factor(pubyear)))+
+  geom_col(position = "dodge")
+```
+## Total page quantity
+```{r}
+d2plot <- pred_ds %>%
+  add_count(full_path)
+  
+d2plot %>% ggplot(aes(x=as.factor(pubyear),y=n,group=as.factor(pubyear)))+
+geom_boxplot()
+
+```
+
+## Impacts by NACE category
+```{r}
+
+d2plot <- pred_ds %>%
+  filter(!gcode=="999") %>%
+  group_by(gcode, nacecategory_title_primary) %>%
+  count() %>%
+  arrange(desc(n)) %>%
+  group_by(nacecategory_title_primary) %>% slice(1:5)
+
+d2plot %>% ggplot(aes(x=gcode, y=n, group=gcode, fill=as.factor(gcode)))+
+  geom_col(position = "dodge")+
+  facet_wrap(~ nacecategory_title_primary)+
+  coord_polar(theta = "x", direction=1)+
+  labs(x="GRI code",
+       y="Number of occurrences",
+       title = "Impacts by NACE category")
+
+
+```
+

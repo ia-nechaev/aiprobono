@@ -6,8 +6,8 @@ output: html_notebook
 
 ```{r}
 
-options(java.parameters = c("-XX:+UseConcMarkSweepGC", "-Xmx8192m")) #- run if outofmemory error while text extracting
-gc()
+options(java.parameters = c("-XX:+UseConcMarkSweepGC", "-Xmx16384m")) #- run if outofmemory error while text extracting
+#gc()
 library(pdftools)
 library(tidyverse)
 library(magrittr)
@@ -20,7 +20,7 @@ library(tabulizer)
 ```{r}
 compiled_gic <- read.csv("joined_df.csv")
 manual_gic_1 <- read.csv("eng_orgs_joined_man_page.csv")
-manual_gic_2 <- read.csv("orlist_with_gri_manual.csv")
+manual_gic_2 <- read.csv("orlist_with_gri_manual_final.csv")
 names(manual_gic_1)[14] <- "page"
 ```
 
@@ -45,40 +45,18 @@ columns_2group <- c("orig_id","organization","country","pub_year","fullpath","gc
 columns_full <- c("orig_id","organization","fullpath","gcode","gcode2","real_pdf_page")
 ```
 
-```{r}
 
-## first variant of text extraction
-
-y<-compiled_gic
-y<-manual_gic
-y %<>% mutate(text="")
-
-for (i in 1:nrow(y)){ #very poor design, uncomment pdf_text line if you need to run it
-  
-  out <- tryCatch(
-    expr = {
-      #x<-pdf_text(y$fullpath[i]) %>%  str_split("\n")
-      y$text[i]<-x[y$real_pdf_page[i]]
-    },
-    error = function(e){ 
-  
-      return(NULL)
-    }
-  )
-  
-}
-```
 
 ```{r}
-
 qq5 <- manual_gic_1 %>%
   select(all_of(columns_dry)) %>% 
   distinct(.keep_all = T) %>% 
-  filter(!is.na(real_pdf_page), real_pdf_page!="0") %>% 
+  filter(!is.na(page), page!="0") %>% 
   group_by(orig_id,organization,fullpath,gcode) %>%
   summarise(pdf_page = c(cur_data()), .groups = "rowwise")
 
 qq5[192:195,] %<>% mutate(fullpath="reports/kernel/2019/kernel_fy2019_annual_report.pdf") # due to manual processing of pages didn't have the right path
+qq5 %<>% filter(!orig_id==2)
 
 qq6 <- manual_gic_2 %>%
   select(all_of(columns_dry)) %>% 
@@ -90,38 +68,83 @@ qq6 <- manual_gic_2 %>%
 qq7 <- full_join(qq5,qq6)
 #qq7 %<>% unnest(pdf_page)
 #qq7 %>% group_by(gcode) %>% count(sort = T)
-
-
 ```
+
 
 ```{r}
+qq8 <- qq7 %>% unnest(cols = c(pdf_page))
 
+temp <- qq8 %>% ungroup() %>% group_by(fullpath) %>% summarise(pdf_page=list(pdf_page), .groups = "rowwise") #%>% ungroup()
 
-
+temp %<>% mutate(total_pages=pdf_info(fullpath)$pages,
+                 other_label_pages=list(c(1:total_pages)[!c(1:total_pages) %in% pdf_page]),
+                 gcode=999)
+temp %<>% select(fullpath,gcode,other_label_pages)
+names(temp)[3]<-"pdf_page"
+tt7 <- qq7
+qq7 %<>%
+   group_by(fullpath) %>%
+   summarise(orig_id=last(orig_id),
+             organization=last(organization),
+             fullpath = last(fullpath)) %>% 
+   merge(temp, by=c("fullpath")) %>% 
+   bind_rows(tt7, .) %>% 
+   arrange(orig_id)
 ```
-
 
 
 ```{r}
 ## second variant of extracting text. neat and quick
 
 qq7 %<>% mutate(text="")
+qq9 <- qq7[-c(1200),] # something wrong with pdf text extraction
 
-#for (i in 1:nrow(qq7)) {
-#  qq7$text[i] <- extract_text(qq7$fullpath[i],unlist(as.vector(qq7$pdf_page[i])))
-#}
+for (i in 1:nrow(qq7)) {
+  qq7$text[i] <- list(extract_text(qq7$fullpath[i],unlist(as.vector(qq7$pdf_page[i]))))
+}
 
-qq7 %<>% mutate(text=list(extract_text(fullpath, unlist(as.vector(pdf_page))))) # text extraction
 
-qq7 %<>% mutate(lang=list(detect_language(text)))
 
-#qq8 <- qq7 %>% unnest()
+#qq7 %<>% mutate(text=list(extract_text(fullpath, unlist(as.vector(pdf_page))))) # text extraction
+
+#qq7 %<>% mutate(lang=list(detect_language(text)))
+
+qq9 <- qq9 %>% unnest(cols = c(pdf_page,text))
 #qq9 <-qq8 %>% nest(cols = c(pdf_page, text, lang))
 #vignette("nest")
 
 #write.csv(qq8, "orlist_coges_pages_text_unnested.csv")
-saveRDS(qq8,"orlist_coges_pages_text_unnested.rds")
+saveRDS(qq9,"orlist_coges_pages_text_unnested_final.rds")
 
+```
+
+
+
+```{r}
+#adding other_label_pages to the text set
+
+pdf_info(qq7$fullpath[5])$pages
+
+temp <- qq8 %>% ungroup() %>% select(fullpath,pdf_page) %>% nest(cols=pdf_page)
+
+temp <- qq8 %>% ungroup() %>% select(fullpath,pdf_page) %>% group_by(fullpath) %>% summarise(pdf_page=c(cur_data()), .groups = "rowwise")
+
+
+
+tt7 <-qq7
+
+tt7 %>%
+   group_by(fullpath) %>%
+   summarise(orig_id=last(orig_id),
+             organization=last(organization),
+             fullpath = last(fullpath)) %>% 
+   merge(temp, by=c("fullpath")) %>% 
+   bind_rows(tt7, .) %>% 
+   arrange(orig_id)
+
+
+c(1:82)[]
+temp <- extract_text(qq7$fullpath[5], !unlist(as.vector(qq7$pdf_page[5])))
 ```
 
 ```{r}
@@ -160,7 +183,13 @@ qq3 %<>% mutate(text=list(c()))
 qq3[151:202,] %<>% mutate(text=list(extract_text(fullpath, unlist(as.vector(pdf_page)))))
 
 
+qq7 %<>% mutate(text="")
 
+temp %<>% mutate(total_pages=pdf_info(fullpath)$pages,
+                 other_label_pages=list(c(1:total_pages)[!c(1:total_pages) %in% pdf_page]),
+                 gcode=999)
+temp %<>% select(fullpath,gcode,other_label_pages)
+names(temp)[3]<-"pdf_page"
 
 
 rlang::last_error()
@@ -210,6 +239,29 @@ b[b$country %in% c("United Kingdom of Great Britain and Northern Ireland", "Unit
 
 ```
 
+```{r}
+
+## first variant of text extraction
+
+y<-compiled_gic
+y<-manual_gic
+y %<>% mutate(text="")
+
+for (i in 1:nrow(y)){ #very poor design, uncomment pdf_text line if you need to run it
+  
+  out <- tryCatch(
+    expr = {
+      #x<-pdf_text(y$fullpath[i]) %>%  str_split("\n")
+      y$text[i]<-x[y$real_pdf_page[i]]
+    },
+    error = function(e){ 
+  
+      return(NULL)
+    }
+  )
+  
+}
+```
 
 ```{r}
 

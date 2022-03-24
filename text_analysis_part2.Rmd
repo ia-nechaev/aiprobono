@@ -13,26 +13,34 @@ library(tidytext)
 library(igraph)
 library(ggraph)
 library(ggplot2)
-
-
 ```
 
 ## Loading data
 ```{r}
 ocpt <- readRDS("orlist_coges_pages_text_unnested.rds")
-ocpt %>% head()
+ocpt %>% glimpse()
 ```
+## Prepare sets
+```{r}
+
+#for modelling
+ocpt2 <- ocpt %>% ungroup()%>% distinct(fullpath, pdf_page, .keep_all = TRUE)
+
+#for text mining
+ocpt3 <- ocpt %>% filter(!gcode=="999") %>% ungroup() %>% distinct(fullpath, pdf_page, .keep_all = TRUE)
+ocpt3 %<>% mutate(doc_id=paste0(orig_id, ", ", gcode))
+```
+
 ## Annotating text
 ```{r}
 library(udpipe)
 udmodel <- udpipe_load_model(file = "english-ewt-ud-2.5-191206.udpipe")
 
-ocpt %<>% mutate(doc_id=paste0(orig_id, ", ", gcode))
-
-up <- udpipe_annotate(udmodel, x = ocpt$text, doc_id = ocpt$doc_id)
+up <- udpipe_annotate(udmodel, x = ocpt3$text, doc_id = ocpt3$doc_id)
 up <- as.data.frame(up)
-
 ```
+
+
 ## Making a list of verbs from available texts
 ```{r}
 
@@ -43,38 +51,260 @@ write.csv(stats, "verbs.csv")
 
 ```
 ## Uploading a list of grouped verbs
+
+To find synonims for English words we can use the WordNet and its R wrapper in the wordnet package. (https://bernhardlearns.blogspot.com/2017/04/cleaning-words-with-r-stemming.html)
 ```{r}
 verbs<-read.csv("verbs_grouped.csv")
+
+verbs %<>% mutate(verb=str_trim(verb))
+verbs %<>% unique()
 ```
 
 ```{r}
-verbs_qp <- verbs %>% filter(character=="QP") %>% select(verb)
-verbs_temp <- c("increase")
-up2 <- up %>% subset(lemma %in% verbs_temp)
+#verbs_qp <- verbs %>% filter(character=="QN") %>% select(verb)
+
+up2 <- up %>% subset(upos %in% c("VERB"))
+up2 %<>% subset(lemma %in% as.vector(verbs$verb))
+up2 %<>% merge(txt_freq(up2$lemma), by.x= "lemma", by.y = "key")
+# up2 %<>% count(lemma) %>%  mutate(freq = n / sum(n)) %>%   arrange(desc(n))
+
+up2  %<>%  left_join(verbs, by=c("lemma"="verb"))
+up2 %<>% unique()
+up2 %<>% separate(doc_id, c("doc", "gcode"), sep = ", ")
+# verbs %<>% merge(up2, by.x = "verb", by.y="lemma")
+
+```
+
+```{r}
+up2 %>%
+  distinct(lemma, .keep_all = T) %>% 
+  group_by(character) %>% arrange(desc(freq)) %>% slice(1:12) %>% ungroup() %>% 
+  mutate(verb = reorder_within(lemma, by = freq, within = character)) %>%
+  ggplot(aes(x = verb, y = freq, fill = character)) +
+    geom_col(show.legend = FALSE) +
+    labs(x = "Verbs", y = "frequency") +
+    facet_wrap(~character, ncol = 3, scales = "free_y") +
+    coord_flip() +
+    scale_x_reordered() +
+    theme(axis.text.y = element_text(size = 6))
+```
+
+
+```{r}
+
+up2 %>% 
+  distinct(lemma, .keep_all = T) %>% 
+  group_by(character) %>% summarize(sum=sum(freq)) %>% #arrange(desc(sum)) %>% 
+  ggplot(aes(x = character, y = sum)) +
+    geom_bar(stat = "sum",show.legend = FALSE)
+
+```
+
+
+```{r}
+
+up2 %>% 
+  group_by(gcode,character) %>% count(lemma) %>% summarize(sum=sum(n), .groups = "keep") %>%
+  mutate(character = reorder_within(character, by = sum, within = gcode)) %>%
+  ggplot(aes(x = character, y = sum, fill = gcode)) +
+    geom_col(show.legend = FALSE) +
+    labs(x = "Verbs", y = "frequency") +
+    facet_wrap(~gcode, ncol = 4, scales = "free_y") +
+    coord_flip() +
+    scale_x_reordered() +
+    theme(axis.text.y = element_text(size = 6))
+```
+```{r}
+verb_phrase_simp <- "((A|N)*N(P+D*(A|N)*N)*P*(M|V)*V(M|V)*|(M|V)*V(M|V)*D*(A|N)*N(P+D*(A|N)*N)*|(M|V)*V(M|V)*(P+D*(A|N)*N)+|(A|N)*N(P+D*(A|N)*N)*P*((M|V)*V(M|V)*D*(A|N)*N(P+D*(A|N)*N)*|(M|V)*V(M|V)*(P+D*(A|N)*N)+))" # Simple verb Phrase
+verb_phrase_with_cc <- "(((A(CA)*|N)*N((P(CP)*)+(D(CD)*)*(A(CA)*|N)*N)*(C(D(CD)*)*(A(CA)*|N)*N((P(CP)*)+(D(CD)*)*(A(CA)*|N)*N)*)*)(P(CP)*)*(M(CM)*|V)*V(M(CM)*|V)*(C(M(CM)*|V)*V(M(CM)*|V)*)*|(M(CM)*|V)*V(M(CM)*|V)*(C(M(CM)*|V)*V(M(CM)*|V)*)*(D(CD)*)*((A(CA)*|N)*N((P(CP)*)+(D(CD)*)*(A(CA)*|N)*N)*(C(D(CD)*)*(A(CA)*|N)*N((P(CP)*)+(D(CD)*)*(A(CA)*|N)*N)*)*)|(M(CM)*|V)*V(M(CM)*|V)*(C(M(CM)*|V)*V(M(CM)*|V)*)*((P(CP)*)+(D(CD)*)*(A(CA)*|N)*N)+|((A(CA)*|N)*N((P(CP)*)+(D(CD)*)*(A(CA)*|N)*N)*(C(D(CD)*)*(A(CA)*|N)*N((P(CP)*)+(D(CD)*)*(A(CA)*|N)*N)*)*)(P(CP)*)*((M(CM)*|V)*V(M(CM)*|V)*(C(M(CM)*|V)*V(M(CM)*|V)*)*(D(CD)*)*((A(CA)*|N)*N((P(CP)*)+(D(CD)*)*(A(CA)*|N)*N)*(C(D(CD)*)*(A(CA)*|N)*N((P(CP)*)+(D(CD)*)*(A(CA)*|N)*N)*)*)|(M(CM)*|V)*V(M(CM)*|V)*(C(M(CM)*|V)*V(M(CM)*|V)*)*((P(CP)*)+(D(CD)*)*(A(CA)*|N)*N)+))" # Verb phrase with coordination conjunction
+```
+
+```{r}
 
 up3 <- up %>% subset(sentence %in% up2$sentence)
+up3 %<>% separate(doc_id, c("doc", "gcode"), sep = ", ")
 
-cooc <- cooccurrence(x = subset(up3, upos %in% c("NOUN", "ADJ")), 
+up3 %<>% mutate(phrase_tag=as_phrasemachine(upos,type="upos"))
+
+verb_phrases <- keywords_phrases(up3$phrase_tag, term = up3$token, 
+                                pattern = verb_phrase_simp, is_regex = TRUE, 
+                                ngram_max = 7, 
+                                detailed = TRUE)
+
+head(sort(table(verb_phrases$keyword), decreasing=TRUE), 20)
+```
+
+
+```{r}
+library(textstem)
+verb_phrases2 <-verb_phrases
+
+lemmed <- verb_phrases %>% unnest_tokens(word,keyword,token = "ngrams", n=1) 
+lemmed %<>% mutate(lemma=lemmatize_words(word, dictionary = lexicon::hash_lemmas))
+lemmed_ss <- lemmed %>% subset(lemma %in% verbs$verb[verbs$character=="QP"])
+verb_phrases2 %<>% subset(start %in% lemmed_ss$start & end %in% lemmed_ss$end)
+
+
+verb_phrases2 %>% 
+  filter(ngram>=3) %>%
+  merge(txt_freq(verb_phrases2$keyword), by.x= "keyword", by.y = "key") %>% 
+  arrange(desc(freq)) %>% 
+  #group_by(keyword,freq) %>% summari
+  distinct(keyword,freq)
+
+# verbs$verb[verbs$character=="QP"]
+
+```
+
+
+```{r}
+verb_phrases <- lemmed %>%
+  group_by(start, end) %>%
+  summarise(string = c(word)) %>%
+  rowwise()
+
+  nest_by(ngram, pattern, start, end)
+```
+
+
+
+
+## Trying to find cooccurrences amoung slected verbs and nouns — some uncertainty introduced since lemma can be both noun and a verb.
+```{r}
+cooc <- cooccurrence(x = subset(up3, upos %in% c("NOUN", "VERB")), 
                      term = "lemma", 
-                     group = c("doc_id", "paragraph_id", "sentence_id"))
+                     group = c("doc", "gcode", "paragraph_id", "sentence_id"))
+cooc %<>% subset(term1 %in% verbs$verb | term2 %in% verbs$verb) 
 cooc %>% str()
 ```
 
 
 ```{r}
-wordnetwork <- head(cooc, 30)
+wordnetwork <- head(cooc, 50)
 wordnetwork <- graph_from_data_frame(wordnetwork)
 ggraph(wordnetwork, layout = "fr") +
   geom_edge_link(aes(width = cooc, edge_alpha = cooc), edge_colour = "lightblue") +
   geom_node_text(aes(label = name), col = "blue", size = 4) +
   theme_graph(base_family = "Sans Serif") +
   theme(legend.position = "none") +
-  labs(title = "Cooccurrences within sentence", subtitle = "Nouns & Adjectives")
+  labs(title = "Cooccurrences within sentence", subtitle = "Nouns & Verbs")
+
+```
+## Merging done badly
+```{r}
+tempds<-up2 %>% select(doc, gcode, paragraph_id, sentence_id, freq, freq_pct, lemma, character) 
+
+tempds <- left_join(up3, tempds, by=c("doc", "gcode", "paragraph_id", "sentence_id"))
+
+tempds %<>% distinct(doc, gcode, paragraph_id, sentence_id, token_id, .keep_all = T)
+```
+
+
+## Top 5 verbs in every verb group
+```{r}
+t5v <- up2 %>% 
+  select(lemma,character,freq) %>%
+  distinct() %>% 
+  group_by(character) %>% 
+  arrange(desc(freq)) %>% 
+  slice(1:5) %>% 
+  ungroup()
+t5v
+```
+
+## Most cooccured nouns with verbs by character in 401 code
+
+```{r}
+freq <- tempds %>%
+  filter(gcode=="401") %>% 
+  subset(lemma.y %in% t5v$lemma & upos %in% "NOUN") %>%
+  group_by(lemma.y) %>% count(lemma.x) %>% mutate(freq = n / sum(n)) %>% ungroup()
+freq
+freq %>% 
+  group_by(lemma.y) %>% arrange(desc(freq)) %>% slice(1:6) %>% ungroup() %>% 
+  merge(t5v %>% select(lemma,character), by.x="lemma.y", by.y="lemma") %>% 
+  mutate(lemma.y = str_c("(",character,") ",lemma.y, sep=""),
+         noun = reorder_within(lemma.x, by = n, within = lemma.y)) %>%
+  ggplot(aes(x = noun, y = n, fill = character)) +
+    geom_col(show.legend = FALSE) +
+    labs(x = "Nouns", y = "frequency") +
+    facet_wrap(~lemma.y, ncol = 4, scales = "free_y") +
+    coord_flip() +
+    scale_x_reordered() +
+    #facet_grid(~character)+
+    theme(axis.text.y = element_text(size = 6))
+
+```
+
+## Top Nouns cooccured with verbs by every verb-character
+```{r}
+ 
+tempds %>%
+  subset(lemma.y %in% t5v$lemma & upos %in% "NOUN") %>%
+  group_by(gcode,character) %>% count(lemma.x) %>% mutate(freq = n / sum(n)) %>% ungroup() %>% 
+  filter(gcode=="401") %>% 
+  group_by(character) %>% arrange(desc(n)) %>% slice(1:12) %>% ungroup() %>%
+  #mutate(noun = reorder_within(lemma.x, by = n, within = character),) %>%
+  ggplot(aes(x = lemma.x, y = n, fill = character)) +
+    geom_col(show.legend = FALSE) +
+    labs(x = "Nouns", y = "frequency") +
+    #facet_wrap(~character, ncol = 6, scales = "free_y") +
+    coord_flip() +
+    #scale_x_reordered() +
+    facet_grid(~character)+
+    theme(axis.text.y = element_text(size = 6))
+
+```
+
+
+
+
+
+
+```{r}
+
+library(igraph)
+library(ggraph)
+library(ggplot2)
+plot_annotation <- function(x, size = 3){
+  stopifnot(is.data.frame(x) & all(c("sentence_id", "token_id", "head_token_id", "dep_rel",
+                                     "token", "lemma", "upos", "xpos", "feats") %in% colnames(x)))
+  x <- x[!is.na(x$head_token_id), ]
+  x <- x[x$sentence_id %in% min(x$sentence_id), ]
+  edges <- x[x$head_token_id != 0, c("token_id", "head_token_id", "dep_rel")]
+  edges$label <- edges$dep_rel
+  g <- graph_from_data_frame(edges,
+                             vertices = x[, c("token_id", "token", "lemma", "upos", "xpos", "feats")],
+                             directed = TRUE)
+  ggraph(g, layout = "linear") +
+    geom_edge_arc(ggplot2::aes(label = dep_rel, vjust = -0.20),
+                  arrow = grid::arrow(length = unit(4, 'mm'), ends = "last", type = "closed"),
+                  end_cap = ggraph::label_rect("wordswordswords"),
+                  label_colour = "red", check_overlap = TRUE, label_size = size) +
+    geom_node_label(ggplot2::aes(label = token), col = "darkgreen", size = size, fontface = "bold") +
+    geom_node_text(ggplot2::aes(label = upos), nudge_y = -0.35, size = size) +
+    theme_graph(base_family = "Arial Narrow") +
+    labs(title = "udpipe output", subtitle = "tokenisation, parts of speech tagging & dependency relations")
+}
+
+up3[645:663,]
+plot_annotation(up3[645:663,])
+
 
 ```
 ```{r}
 
+up4 <- up2 %>% filter(dep_rel=="root")
+
+up4 %>% group_by(character) %>% count()
+
 ```
+
+
+
+
+
+
 
 ```{r}
 undata2 <- pre_pro_rep %>% 
@@ -142,7 +372,7 @@ library(ranger)
 
 
 ```{r}
-mdata <- ocpt %>% ungroup() %>%  select(gcode,text)
+mdata <- ocpt2 %>% ungroup() %>%  select(gcode,text)
 
 #glove6b <- embedding_glove6b(dimensions = 100)
 
@@ -158,16 +388,33 @@ mdata %<>% mutate(text=str_squish(text),
 
 
 ```{r}
-# mdata %>% count(gcode, sort = T)# %>% ggplot(aes(x = gcode, y = n)) + geom_col()
-mdata %<>% filter(gcode %in% c("401","403","404", "405","413","414","417","412","416","419"))
+mdata %>% group_by(gcode) %>% count(sort = T)# %>% slice(1:8) %>% ungroup() # %>% ggplot(aes(x = gcode, y = n)) + geom_col()
+
+mdata %<>% filter(gcode %in% c("401","403","404", "407", "405","413","414","417","416","999"))
+# mdata %<>% filter(!gcode %in% c("409","410","411"))
 # mdata %<>% drop_na()
 mdata %<>% mutate(gcode=as.factor(gcode))
+
+#downsampling
+
+mdata %>% filter(gcode %in% c("999"))
+
+no_label_index <- which(mdata$gcode==999)
+# labeled_index <- which(!mdata$gcode==999)
+random_indexes <- sample(1:length(no_label_index), length(no_label_index)-200, replace=F)
+# random_downsample <- no_label_index[-c(random_indexes)]
+
+mdata <-mdata[-c(no_label_index[c(random_indexes)]),]
+```
+
+
+```{r}
 write.csv(mdata, "mdata_2.csv")
 ```
 
 
 ```{r}
-tidy_split <- initial_split(mdata, strata = gcode, prop = 0.75)
+tidy_split <- initial_split(mdata, strata = gcode, prop = 0.7)
 train_data <- training(tidy_split)
 test_data <- testing(tidy_split)
 tidy_split
@@ -175,7 +422,10 @@ tidy_split
 
 
 ```{r}
-recipe(gcode~., data = train_data) %>%  prep() %>% juice() %>% count(gcode)
+train_data <- recipe(gcode~., data = train_data) %>% themis::step_upsample(gcode) %>% prep() %>% juice()
+
+
+train_data %<>% mutate(text=as.character(text))
 ```
 
 
@@ -190,7 +440,7 @@ tf_idf_rec <- recipe(gcode ~ ., data = train_data) %>%
   step_tokenize(text) %>%
   step_stem(text) %>%
   step_stopwords(text) %>%
-  step_tokenfilter(text, max_tokens = 2000) %>%
+  step_tokenfilter(text, max_tokens = 1000) %>%
   step_tfidf(all_predictors())
 
 tf_idf_data <- tf_idf_rec %>% prep() %>% juice()
@@ -201,7 +451,7 @@ tf_idf_data <- tf_idf_rec %>% prep() %>% juice()
 hash_rec <- recipe(gcode~., data = train_data) %>%
   step_tokenize(text) %>%
   step_stem(text) %>%
-  #step_stopwords(text) %>%
+  step_stopwords(text) %>%
   step_tokenfilter(text, max_tokens = 1000) %>%
   step_texthash(text, num_terms = 100)
 
@@ -316,6 +566,7 @@ model_compare <- bind_rows(
 
 
 rf_stat1 <- rf_res_tf %>% collect_metrics(summarize = TRUE)
+rf_stat1
 ```
 
 
@@ -356,13 +607,15 @@ rf_stat2
 last_fit_rf %>% collect_predictions() %>% conf_mat(gcode, .pred_class) %>% autoplot(type = "heatmap")
 
 myt <- rf_stat1 %>% left_join(rf_stat2, by=".metric") %>% select(.metric, mean, std_err, .estimate)
+myt
 
 ```
 
 ```{r}
-
-stargazer(myt, type = "latex", out = "models.tex")
-
+library(stargazer)
+library(xtable)
+#stargazer(myt, type = "latex", out = "models.tex")
+stargazer(myt, type = "text")
 print(xtable(myt, type = "latex"), file = "filename2.tex")
 
 ```
